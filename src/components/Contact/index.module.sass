@@ -1,0 +1,19 @@
+@import "../../styles/mixins"
+
+.contact
+    @include container
+    display: flex
+    width: 100%
+    justify-content: space-between
+    flex-wrap: wrap
+
+    &__numbers
+        display: flex
+        gap: 16px
+        @include font(14px , #41444B, medium)
+
+    &__socials
+        display: flex
+        gap: 20px
+        color: #495251
+        cursor: pointer

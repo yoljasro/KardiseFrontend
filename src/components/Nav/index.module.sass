@@ -1,0 +1,22 @@
+@import "../../styles/mixins"
+
+.nav
+    @include container
+    display: flex
+    width: 100%
+    justify-content: space-between
+    flex-wrap: wrap
+
+    &__hr
+        width: 100%
+
+    &__menu
+        display: flex
+        list-style: none
+        gap: 40px
+        margin-top: 25px
+        cursor: pointer
+        @include font(22px , #495251 , regular)
+
+    &__logo
+        margin-top: 25px

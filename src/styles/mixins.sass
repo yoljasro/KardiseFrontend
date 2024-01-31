@@ -1,0 +1,60 @@
+@mixin container
+    width: 100%
+    padding: 20px 370px
+    margin: auto
+    max-width: 1791px
+    overflow-x: hidden
+    @media (max-width:998px)
+        padding: 30px 13px
+        width: 95%
+
+@mixin font($size, $color, $weight)
+    font-size: $size
+    color: $color
+
+    @if $weight == black
+        font-weight: 400 !important
+        font-family: Kanit-Black !important
+    @else if $weight == medium
+        font-weight: 500 !important
+        line-height: 16px !important
+        font-family: Kanit-Medium !important
+    @else if $weight == bold
+        font-weight: 600 !important
+        font-family: Kanit-Bold !important
+    @else if $weight == regular
+        font-weight: 500 !important
+        font-family: Kanit-Regular !important
+    @else if $weight == extra-bold
+        font-weight: 700 !important
+        font-family: Kanit-ExtraBold !important
+    @else if $weight == thin
+        font-weight: 500 !important
+        font-family: Kanit-Thin !important
+    @else if $weight == open-bold
+        font-weight: 500 !important
+        font-family: OpenSans_Condensed-Bold !important
+    @else if $weight == open-medium
+        font-weight: 500 !important
+        font-family: OpenSans_Condensed-Medium !important
+    @else if $weight == opensans-boldorg
+        font-weight: 600 !important
+        font-family: OpenSans-Bold !important
+    @else if $weight == opensans-medium
+        font-weight: 700 !important
+        font-family: OpenSans-Medium !important
+    @else if $weight == open-regular
+        font-weight: 500 !important
+        font-family: OpenSans-Regular !important
+    @else if $weight == opensans-bold
+        font-weight: 800 !important
+        font-family: OpenSans-ExtraBold !important
+    @else if $weight == inter-extrabold
+        font-weight: 800 !important
+        font-family: Inter-ExtraBold !important
+    @else if $weight == inter-light
+        font-weight: 300 !important
+        font-family: Inter-Light !important
+    @else if $weight == inter-bold
+        font-weight: 700 !important
+        font-family: Inter-Bold !important

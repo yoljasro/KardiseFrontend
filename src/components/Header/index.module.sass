@@ -7,12 +7,71 @@
     object-fit: cover
     background-size: cover
     background-repeat: no-repeat
-    
+    box-shadow: #000000
+
     &__info
         padding-top: 267px
         padding-left: 370px
 
     &__text
-        @include font(80px , #FFFFFF , semi-bold )
+        @include font(80px , #FFFFFF , kanit-semibold )
         width: 100%
         max-width: 786px
+
+    &__cards
+        display: flex
+        justify-content: center
+        width: 100%
+        flex-wrap: wrap
+        margin-top: 225px
+
+    &__card
+        width: 100%
+        max-width: 290px
+        height: 235px
+        background: #495251
+        padding-left: 40px
+        padding-top: 60px
+
+    &__cardTwo
+        width: 100%
+        max-width: 290px
+        height: 235px
+        background: #B4C634
+        padding-left: 40px
+        padding-top: 60px
+
+    &__title
+        @include font(100px , #FFFFFF , light)
+
+    &__subTitle
+        @include font(22px, #FFFFFF , light)
+
+    &__directions
+        width: 100%
+        max-width: 501px
+        height: 549px
+        background: #FFFFFF
+        margin-top: -200px
+        box-shadow: 0px 4px 4px 0px #000000
+        padding-left: 61px
+
+    &__companyText
+        @include font(30px , #495251 , kanit-semibold)
+        padding-top: 20px
+
+    &__content
+        display: flex
+        flex-direction: column
+        gap: 45px
+        width: 100%
+        margin-top: 45px
+
+    &__media
+        display: flex
+        gap: 20px
+        width: 100%
+    
+    &__subInfo
+        padding-top: 18px
+        @include font(19px , #41444B , black)

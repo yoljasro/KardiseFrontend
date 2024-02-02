@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.sass";
 import { Contact } from "@/components/Contact";
 import { Nav } from "@/components/Nav";
 import { Header } from "@/components/Header";
+import { About } from "@/components/About";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Contact/>
         <Nav/>
         <Header/>
+        <About/>
       </main>
     </>
   );

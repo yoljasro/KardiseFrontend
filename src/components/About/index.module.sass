@@ -1,0 +1,28 @@
+@import "../../styles/mixins"
+
+.about
+    @include container
+    display: flex
+    width: 100%
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 240px
+
+    &__info
+        width: 50%
+
+    &__title
+        @include font(14px , #B4C634 , kanit-semibold)
+        padding-top: 86px
+
+    &__desc
+        @include font(50px , #16213E, kanit-semibold)
+        padding-top: 10px
+
+    &__speed
+        @include font(17px , #495251 , bold)
+        padding-top: 23px
+
+    &__company
+        @include font(17px , #41444B , regular)
+        padding-top: 27px

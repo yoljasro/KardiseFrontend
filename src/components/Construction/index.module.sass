@@ -1,0 +1,37 @@
+@import "../../styles/mixins"
+
+.construction
+    display: flex
+    width: 100%
+    // flex-wrap: wrap
+    margin-top: 100px
+    padding-right: 2px
+    justify-content: center
+
+    &__card
+        width: 100%
+        max-width: 356px
+        height: 600px
+        background-image: url('/assets/img/bg1.png')
+        background-repeat: no-repeat
+        border: 1px solid #D8D8D8
+        margin-left: -5px
+        &:last-child
+            background-image: url('/assets/img/bg3.png')
+        &:nth-child(3)
+            background-image: url('/assets/img/bg2.png')
+
+    &__title
+        @include font(45px , #FFFFFF , light)
+        padding-left: 27px
+        padding-top: 60px
+
+    &__number
+        @include font(100px , #FFFFFF , black)
+        text-align: center
+        padding-top: 50px
+
+    &__numberText
+        @include font(100px , #FFFFFF , black)
+        text-align: center
+        padding-top: 100px

@@ -6,6 +6,9 @@ import { Contact } from "@/components/Contact";
 import { Nav } from "@/components/Nav";
 import { Header } from "@/components/Header";
 import { About } from "@/components/About";
+import { Construction } from "@/components/Construction";
+import { Location } from "@/components/Location";
+import { Video } from "@/components/Video";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +26,9 @@ export default function Home() {
         <Nav/>
         <Header/>
         <About/>
+        <Construction/>
+        <Location/>
+        <Video/>
       </main>
     </>
   );

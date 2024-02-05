@@ -9,12 +9,65 @@
         justify-content: center
         z-index: 0
 
-
     &__adress
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        align-items: center
+        align-content: center
+
+    &__card
         width: 100%
         max-width: 480px
         height: 285px
         background: #FFFFFF
-        box-shadow: 0px 2px 0px 2px #00215B
-        z-index: -1 !important
+        box-shadow: 0px 4px 4px 0px #00215B
+        border: none
+        z-index: 3 !important
         top: -200px
+        position: relative
+
+    &__cardLine
+        width: 100%
+        height: 7px
+        background: #B4C634
+
+    &__cardTitle
+        @include font(14px , #41444B , light)
+        padding-left: 50px
+        padding-top: 69px
+
+    &__cardDesc
+        @include font(24px , #515755 , kanit-semibold)
+        padding-left: 50px
+        padding-top: 30px
+
+    &__phone
+        margin-left: 60px
+        position: relative
+        top: -170px
+        display: flex
+        gap: 20px
+
+    &__companyPhone
+        @include font(14px , #B4C634 , light)
+        margin-top: -11px
+        padding-bottom: 15px
+
+    &__number
+        @include font(22px ,#B4C634  , light )
+
+    &__email
+        margin-left: 27px
+        position: relative
+        top: -170px
+        display: flex
+        gap: 20px
+
+    &__companyEmail
+        @include font(14px , #515755 , light)
+        margin-top: -11px
+        padding-bottom: 15px
+
+    &__emailName
+        @include font(22px ,#515755  , light )

@@ -9,6 +9,7 @@ import { About } from "@/components/About";
 import { Construction } from "@/components/Construction";
 import { Location } from "@/components/Location";
 import { Video } from "@/components/Video";
+import { Footer } from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function Home() {
         <Construction/>
         <Location/>
         <Video/>
+        <Footer/>
       </main>
     </>
   );

@@ -17,7 +17,7 @@ export const Contact: FC<any> = () => {
                 <p>+ 998 93 389 54 39</p>
             </div>
             <div className={styles.contact__socials}>
-                <FaTwitter />
+                <FaTwitter  />
                 <FaFacebookF />
                 <FaLinkedinIn />
                 <FaYoutube />

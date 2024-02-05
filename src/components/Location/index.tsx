@@ -1,43 +1,77 @@
-import React from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-//styles
-import styles from "./index.module.sass";
+import React, { FC, useState, useEffect } from "react";
+import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
+import styles from './index.module.sass';
 
-export const Location: React.FC = () => {
-    const containerStyle = {
-        width: '100%',
-        height: '591px',
+const mapContainerStyle = {
+    width: "95%",
+    height: "500px",
+    marginBottom: "100px",
+};
+
+const center = {
+    lat: 41.344821,
+    lng: 69.204804,
+};
+
+type Location = {
+    lat: number;
+    lng: number;
+};
+
+type Place = {
+    location: Location;
+    name: string;
+};
+
+type MapProps = {};
+
+export const Location: FC<MapProps> = () => {
+    const [places, setPlaces] = useState<Place[]>([
+        {
+            name: "Sariq Bola",
+            location: { lat: 41.315280, lng: 69.289190 },
+        },
+    ]);
+
+    const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
+
+    const onMarkerClick = (place: Place) => {
+        setSelectedPlace(place);
     };
 
-    const center = {
-        lat: 41.315280 , // Kardise kompaniyasining latitude
-        lng: 69.289190, // Kardise kompaniyasining longitude
-    };
+    useEffect(() => {
+        // Bu useEffect belgilangan manzilni tanlangan bo'lib qoladi
+        if (selectedPlace) {
+            // Manzil belgilanadi
+            window.location.href = `https://maps.google.com/?q=${selectedPlace.location.lat},${selectedPlace.location.lng}`;
+        }
+    }, [selectedPlace]);
 
     return (
         <div className={styles.location}>
-        <LoadScript googleMapsApiKey="AIzaSyCDwGCZMzBTOv6Oe4LwQYJ76bDCc6ZYP_A">
-            <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
-                {/* Kardise kompaniyasining markeri */}
-                <Marker
-                    position={center}
-                    title="Kardise Kompaniyasi"
-                    icon={{
-                        path:
-                            'M16 0C7.163 0 0 7.163 0 16s7.163 16 16 16 16-7.163 16-16S24.837 0 16 0zm0 23c-4.417 0-8-3.582-8-8s3.583-8 8-8 8 3.582 8 8-3.583 8-8 8z',
-                        fillColor: 'red',
-                        fillOpacity: 1,
-                        scale: 1,
-                        strokeColor: 'black',
-                        strokeWeight: 2,
-                    }}
-                />
-            </GoogleMap>
-        </LoadScript>
-        <div className={styles.location__info}>
-            {/* <div className={styles.location__adress}></div> */}
+            <div>``
+            </div>
+            <div>
+                <LoadScript googleMapsApiKey="AIzaSyCDwGCZMzBTOv6Oe4LwQYJ76bDCc6ZYP_A">
+                    <GoogleMap
+                        mapContainerStyle={mapContainerStyle}
+                        center={center}
+                        zoom={12}
+                    >
+                        {places.map((place, index) => (
+                            <Marker
+                                key={index}
+                                position={place.location}
+                                label={place.name}
+                                onClick={() => onMarkerClick(place)}
+                                icon={{
+                                    url: selectedPlace === place ? "http://maps.google.com/mapfiles/ms/icons/red-dot.png" : "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+                                }}
+                            />
+                        ))}
+                    </GoogleMap>
+                </LoadScript>
+            </div>
         </div>
-        </div >
     );
 };
-

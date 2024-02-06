@@ -1,9 +1,10 @@
-import React, { FC, useState, useEffect } from "react";
-import { GoogleMap, Marker, LoadScript } from "@react-google-maps/api";
-import styles from './index.module.sass';
+import { useState, FC, useEffect } from "react";
+import { GoogleMap, LoadScript, Marker, InfoWindow } from "@react-google-maps/api";
 // next components
 import Image from "next/image";
 import Link from "next/link";
+// styles
+import styles from './index.module.sass'
 
 const mapContainerStyle = {
     width: "100%",
@@ -12,8 +13,8 @@ const mapContainerStyle = {
 };
 
 const center = {
-    lat: 41.344821,
-    lng: 69.204804,
+    lat: 41.3111, // Toshkentning koordinatalari
+    lng: 69.2401,
 };
 
 type Location = {
@@ -24,6 +25,7 @@ type Location = {
 type Place = {
     location: Location;
     name: string;
+    info: string;
 };
 
 type MapProps = {};
@@ -31,8 +33,9 @@ type MapProps = {};
 export const Location: FC<MapProps> = () => {
     const [places, setPlaces] = useState<Place[]>([
         {
-            name: "Sariq Bola",
-            location: { lat: 41.315280, lng: 69.289190 },
+            name: "Toshkent",
+            location: { lat: 41.3111, lng: 69.2401 },
+            info: "O'zbekistonning poytaxti",
         },
     ]);
 
@@ -42,17 +45,24 @@ export const Location: FC<MapProps> = () => {
         setSelectedPlace(place);
     };
 
-    useEffect(() => {
-        // Bu useEffect belgilangan manzilni tanlangan bo'lib qoladi
-        if (selectedPlace) {
-            // Manzil belgilanadi
-            window.location.href = `https://maps.google.com/?q=${selectedPlace.location.lat},${selectedPlace.location.lng}`;
-        }
-    }, [selectedPlace]);
+    const closeInfoWindow = () => {
+        setSelectedPlace(null);
+    };
 
     return (
         <div className={styles.location}>
             <div>
+                {selectedPlace && (
+                    <InfoWindow
+                        position={selectedPlace.location}
+                        onCloseClick={closeInfoWindow}
+                    >
+                        <div>
+                            <h2>{selectedPlace.name}</h2>
+                            <p>{selectedPlace.info}</p>
+                        </div>
+                    </InfoWindow>
+                )}
             </div>
             <div>
                 <LoadScript googleMapsApiKey="AIzaSyCDwGCZMzBTOv6Oe4LwQYJ76bDCc6ZYP_A">
@@ -68,7 +78,7 @@ export const Location: FC<MapProps> = () => {
                                 label={place.name}
                                 onClick={() => onMarkerClick(place)}
                                 icon={{
-                                    url: selectedPlace === place ? "http://maps.google.com/mapfiles/ms/icons/red-dot.png" : "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+                                    url: selectedPlace === place ? "http://maps.google.com/mapfiles/ms/icons/red-dot.png" : "http://maps.google.com/mapfiles/ms/icons/gold-dot.png",
                                 }}
                             />
                         ))}

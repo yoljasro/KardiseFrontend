@@ -15,6 +15,7 @@
 
     &__text
         @include font(80px , #FFFFFF , kanit-semibold )
+        font-family: Roboto !important
         width: 100%
         max-width: 786px
 
@@ -31,7 +32,7 @@
         height: 235px
         background: #495251
         padding-left: 40px
-        padding-top: 60px
+        padding-top: 40px
 
     &__cardTwo
         width: 100%
@@ -39,7 +40,7 @@
         height: 235px
         background: #B4C634
         padding-left: 40px
-        padding-top: 60px
+        padding-top: 40px
 
     &__title
         @include font(100px , #FFFFFF , light)
@@ -53,12 +54,13 @@
         height: 549px
         background: #FFFFFF
         margin-top: -200px
-        box-shadow: 0px 4px 4px 0px #000000
+        filter: drop-shadow(0px 2px 4px #00215b54)
         padding-left: 61px
 
     &__companyText
         @include font(30px , #495251 , kanit-semibold)
         padding-top: 20px
+        font-family: Roboto !important
 
     &__content
         display: flex
@@ -71,7 +73,7 @@
         display: flex
         gap: 20px
         width: 100%
-    
+
     &__subInfo
         padding-top: 18px
         @include font(19px , #41444B , black)

@@ -1,0 +1,67 @@
+@import "../../styles/mixins"
+
+.project
+    display: flex
+    flex-direction: column
+    justify-content: center
+    // @include container
+    margin-top: 90px
+    width: 100%
+    align-items: center
+    align-content: center
+
+    &__title
+        @include font(14px , #B4C634 , light)
+        text-align: center
+        font-family: Roboto !important
+
+    &__subTitle
+        @include font(55px , #16213E , kanit-semibold)
+        text-align: center
+        font-family: Roboto !important
+        padding-top: 10px
+
+    &__cards
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 20px
+        width: 80%
+        margin-top: 40px
+
+    &__card
+        width: 100%
+        height: 320px
+        max-width: 380px
+        background-image: url("/assets/img/projects.png")
+        background-repeat: no-repeat
+        background-size: cover
+        cursor: pointer
+        overflow: hidden
+        &:hover
+            transition: 0.2s ease
+            border: 2px solid #90F594
+
+        &:hover &__info
+            display: flex !important
+            transition: 0.9s ease
+
+        &__info
+            display: flex
+            flex-direction: column
+            text-align: center
+            align-content: center
+            align-items: center
+            justify-content: center
+            gap: 10px
+            background-color: #D8D8D8
+            width: 100%
+            height: 320px
+            display: none
+
+    &__type
+        @include font(14px , #D4D7DD , light)
+
+    &__name
+        @include font(18px , #FFFFFF , regular)
+        font-family: Roboto !important

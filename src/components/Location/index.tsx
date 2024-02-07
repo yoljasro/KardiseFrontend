@@ -13,8 +13,8 @@ const mapContainerStyle = {
 };
 
 const center = {
-    lat: 41.3111, // Toshkentning koordinatalari
-    lng: 69.2401,
+    lat: 41.315281, // Toshkentning koordinatalari
+    lng: 69.289192  ,
 };
 
 type Location = {

@@ -21,8 +21,8 @@ export const Contact: FC<any> = () => {
                 <FaFacebookF />
                 <FaLinkedinIn />
                 <FaYoutube />
-
-            </div>
+                <p> Write your number: </p>
+            </div>  
         </div>
     );
 };

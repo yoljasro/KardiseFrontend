@@ -1,0 +1,24 @@
+@import "../../styles/mixins"
+
+.process
+    display: flex
+    flex-direction: column
+    justify-content: center
+    // @include container
+    margin-top: 90px
+    width: 100%
+    align-items: center
+    align-content: center
+
+    &__title
+        @include font(14px , #B4C634 , light)
+        text-align: center
+        font-family: Roboto !important
+
+    &__subTitle
+        @include font(55px , #16213E , kanit-semibold)
+        text-align: center
+        font-family: Roboto !important
+        padding-top: 10px
+
+    

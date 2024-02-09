@@ -11,6 +11,7 @@ import { Location } from "@/components/Location";
 import { Video } from "@/components/Video";
 import { Footer } from "@/components/Footer";
 import { Projects } from "@/components/Projects";
+import { Process } from "@/components/Process";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function Home() {
         <Header/>
         <About/>
         <Construction/>
+        <Process/>
         <Projects/>
         <Location/>
         <Video/>

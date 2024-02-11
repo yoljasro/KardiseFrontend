@@ -10,8 +10,8 @@ import { Construction } from "@/components/Construction";
 import { Location } from "@/components/Location";
 import { Video } from "@/components/Video";
 import { Footer } from "@/components/Footer";
-import { Projects } from "@/components/Projects";
 import { Process } from "@/components/Process";
+import {Projects} from "@/components/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 

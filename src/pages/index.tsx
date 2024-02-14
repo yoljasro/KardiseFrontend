@@ -12,6 +12,7 @@ import { Video } from "@/components/Video";
 import { Footer } from "@/components/Footer";
 import { Process } from "@/components/Process";
 import {Projects} from "@/components/Projects";
+import { Clients } from "@/components/Clients";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default function Home() {
         <Process/>
         <Projects/>
         <Location/>
+        <Clients/>
         <Video/>
         <Footer/>
       </main>

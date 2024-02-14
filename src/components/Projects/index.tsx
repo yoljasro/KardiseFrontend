@@ -1,6 +1,6 @@
 // Projects.tsx
 import React, { useEffect, useState } from 'react';
-import fetchData from '../API'; // ApiComponent manzilini to'g'rilang
+import { fetchData, clientsAPI } from '../API'; // ApiComponent manzilini to'g'rilang
 import { Project } from '../../types'; // TypeScript Types yoki Interface
 // styles
 import styles from './index.module.sass'
@@ -14,9 +14,8 @@ export const Projects: React.FC = () => {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const data = await fetchData();
+                const data = await fetchData('/projects'); // projects endpointni qo'shing
                 setProjects(data || []);
-                console.log(data) // Agar ma'lumotlar bo'lmasa, bo'sh array bilan to'ldiring
             } catch (error) {
                 console.error('Error fetching projects:', error);
             }
@@ -42,5 +41,3 @@ export const Projects: React.FC = () => {
         </div>
     );
 };
-
-

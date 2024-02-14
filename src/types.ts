@@ -10,3 +10,15 @@ export interface Project {
 export interface ApiResponse {
     projects: Project[];
 }
+
+
+export interface Client {
+    _id?: string;
+    title: string;
+    video: string;
+    __v?: number
+}
+
+export interface ClientsResponse {
+    clients: Client[];
+}

@@ -13,7 +13,13 @@ const About: FC<any> = () => {
         <div className={styles.about}>
             <div className={styles.about__background}>
                 <p className={styles.about__title}>О нас</p>
-                <div className={styles.about__card}></div>
+                <div className={styles.about__card}>
+                    <div className={styles.about__line}>
+                        <p className={styles.about__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ </p>
+                        <p className={styles.about__number}>+ 998 93 389 13 12</p>
+                        <p className={styles.about__number}>+ 998 93 389 54 39</p>
+                    </div>
+                </div>
             </div>
         </div>
     );

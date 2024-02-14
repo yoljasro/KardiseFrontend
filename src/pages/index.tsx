@@ -26,8 +26,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <Contact/>
-        <Nav/>
+        {/* <Contact/> */}
+        {/* <Nav/> */}
         <Header/>
         <About/>
         <Construction/>
@@ -36,7 +36,7 @@ export default function Home() {
         <Location/>
         <Clients/>
         <Video/>
-        <Footer/>
+        {/* <Footer/> */}
       </main>
     </>
   );

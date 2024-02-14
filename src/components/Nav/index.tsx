@@ -13,10 +13,14 @@ export const Nav: FC<any> = () => {
     return (
         <div className={styles.nav}>
             <hr className={styles.nav__hr} />
-            <Image className={styles.nav__logo} src={'/assets/img/logo.png'} alt="logo" width={139} height={44} />
-            
+            <Link href={'/'}>
+                <Image className={styles.nav__logo} src={'/assets/img/logo.png'} alt="logo" width={139} height={44} />
+            </Link>
+
             <ul className={styles.nav__menu}>
-                <li>O нас</li>
+                <Link href={'/about'}>
+                    <li>O нас</li>
+                </Link>
                 <li>Услуги</li>
                 <li>Проекты</li>
                 <li>Техника Парк</li>

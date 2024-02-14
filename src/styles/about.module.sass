@@ -1,0 +1,23 @@
+@import "./mixins"
+
+.about
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-content: center
+    align-items: center
+
+    &__background
+        width: 100%
+        background-image: url('/assets/img/about.png')
+        background-size: cover
+        background-repeat: no-repeat
+        height: 419px
+        max-width: 1920px
+
+    &__title
+        @include font(55px , #FFFFFF , kanit-semibold)
+        font-family: Roboto !important
+        padding-top: 155px
+        padding-left: 371px

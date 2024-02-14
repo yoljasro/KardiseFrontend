@@ -6,6 +6,7 @@ import { FC } from "react";
 // next components
 import Image from "next/image";
 import Link from "next/link";
+import { Group } from "@/components/Group";
 // react icons
 
 const About: FC<any> = () => {
@@ -21,6 +22,7 @@ const About: FC<any> = () => {
                     </div>
                 </div>
             </div>
+            <Group/>
         </div>
     );
 };

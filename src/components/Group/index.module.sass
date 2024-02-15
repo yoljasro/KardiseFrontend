@@ -1,5 +1,64 @@
 @import "../../styles/mixins"
 
 .group
-    @include container
     margin-top: 217px !important
+    display: flex
+    flex-wrap: wrap
+    gap: 123px
+    width: 100% !important
+    justify-content: center
+    align-content: center
+    align-items: center
+
+
+    &__person
+        background-image: url("/assets/img/group.png")
+        background-size: cover
+        background-repeat: no-repeat
+        width: 100%
+        max-width: 400px
+        height: 620px
+        box-sizing: border-box
+        overflow: hidden
+
+    &__card
+        width: 100%
+        max-width: 236px
+        height: 179px
+        background: #B4C634
+        padding-left: 22px
+        padding-top: 25px
+        margin-top: 420px
+        margin-left: 23px
+
+    &__cardTitle
+        @include font(100px , #FFFFFF , light)
+        font-family: Roboto !important
+
+    &__cardSubTitle
+        @include font(17px, #FFFFFF , light)
+        font-family:  Roboto !important
+
+    &__title
+        @include font(14px , #B4C634 , medium)
+
+    &__desc
+        @include font(55px , #16213E , bold)
+        padding-top: 10px
+
+    &__storyCard
+        width: 100%
+        max-width: 653px
+        height: 242px
+        background: #F9F9F9
+        margin-top: 50px
+        display: flex
+        flex-direction: column
+        // justify-content: center
+        // align-items: center
+        // align-content: center
+
+    &__storyCardInfo
+        @include font(17px , #000000, light)
+        text-align: center
+        padding: 22px 61px 80px 51px

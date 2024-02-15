@@ -10,7 +10,6 @@
     align-content: center
     align-items: center
 
-
     &__person
         background-image: url("/assets/img/group.png")
         background-size: cover
@@ -27,17 +26,17 @@
         height: 179px
         background: #B4C634
         padding-left: 22px
-        padding-top: 25px
+        padding-top: 20px
         margin-top: 420px
         margin-left: 23px
 
     &__cardTitle
         @include font(100px , #FFFFFF , light)
-        font-family: Roboto !important
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important
 
     &__cardSubTitle
         @include font(17px, #FFFFFF , light)
-        font-family:  Roboto !important
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important
 
     &__title
         @include font(14px , #B4C634 , medium)
@@ -54,11 +53,16 @@
         margin-top: 50px
         display: flex
         flex-direction: column
-        // justify-content: center
-        // align-items: center
-        // align-content: center
 
     &__storyCardInfo
-        @include font(17px , #000000, light)
-        text-align: center
-        padding: 22px 61px 80px 51px
+        // @include font(17px , #000000, light)
+        padding: 22px 61px 0px 51px
+        font-style: 17px
+        color: #000000
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+
+    &__storyCardName
+        @include font(25px , #16213E , bold)
+        padding-left: 51px
+        padding-top: 10px
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important

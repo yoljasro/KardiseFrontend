@@ -5,6 +5,7 @@ import { ApiResponse, ClientsResponse } from '../../types'; // O'zgartirish kera
 const apiUrl = 'http://localhost:5000'; // BaseUrl
 const projectsEndpoint = '/projects'; // Backend projects endPoint
 const clientsEndpoint = '/clients'; // Backend clients endPoint
+const mottoEndpoint = '/motto'; // Backend motto endpoint
 
 const fetchData = async (endpoint: string): Promise<ApiResponse[]> => {
   try {

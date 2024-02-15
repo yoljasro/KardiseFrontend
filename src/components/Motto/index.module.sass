@@ -1,0 +1,64 @@
+@import "../../styles/mixins"
+
+.motto
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    align-items: center
+    margin-top: 90px
+
+    &__background
+        width: 100%
+        background-image: url('/assets/img/mottobg.png')
+        background-size: cover
+        background-repeat: no-repeat
+        height: 773px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
+        max-width: 1920px
+
+    &__name
+        @include font(60px , #FFFFFF, light)
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important
+
+    &__title
+        @include font(17px , #FFFFFF , light)
+        padding-top: 20px
+
+    &__cards
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        width: 100%
+        flex-wrap: wrap
+        gap: 18px
+
+    &__card
+        width: 100%
+        max-width: 371px
+        height: 131px
+        background: #FFFFFF
+        filter: drop-shadow(0px 2px 4px #00215b54)
+        display: flex
+        align-content: center
+        align-items: center
+        padding-left: 30px
+        gap: 21px
+        margin-top: -66px
+
+    &__cardInfo
+        display: flex
+        flex-direction: column
+        gap: 10px
+
+    &__cardTitle
+        @include font(20px , #16213E , black)
+
+    &__cardDesc
+        @include font(17px, #000000 , light)

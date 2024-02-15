@@ -7,6 +7,7 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Group } from "@/components/Group";
+import { Motto } from "@/components/Motto";
 // react icons
 
 const About: FC<any> = () => {
@@ -23,6 +24,7 @@ const About: FC<any> = () => {
                 </div>
             </div>
             <Group/>
+            <Motto/>
         </div>
     );
 };

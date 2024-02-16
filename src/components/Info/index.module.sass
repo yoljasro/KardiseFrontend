@@ -1,0 +1,49 @@
+@import "../../styles/mixins"
+
+.info
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin-top: 100px
+    gap: 140px
+    width: 100%
+    padding-left: 100px
+
+
+    &__content
+        width: 100%
+        max-width: 623px
+        @include font(16px  , #000000 , regular)
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important
+
+    &__contentTwo
+        width: 100%
+        max-width: 623px
+        @include font(16px  , #000000 , regular)
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important
+        margin-top: 47px
+
+    &__list
+        display: flex
+        flex-direction: column
+        gap: 5px
+        margin-top: 5px
+        margin-left: 15px
+
+    &__mediaCards
+        display: flex
+        flex-direction: column
+        gap: 95px
+
+    &__card
+        display: flex
+        gap: 27px
+
+    &__cardTitle
+        @include font(17px , #000000 , bold)
+
+    &__cardDesc
+        @include font(17px , #000000 , light)
+        width: 100%
+        max-width: 406px
+        padding-top: 2px

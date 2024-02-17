@@ -6,6 +6,11 @@
     // flex-wrap: wrap
     justify-content: center
     margin-top: 190px
+    align-content: center
+    align-items: center
+    overflow: hidden
+    @media (max-width:769px)
+        flex-direction: column
 
     &__contact
         width: 100%
@@ -14,6 +19,15 @@
         background: #B4C634
         padding-left: 270px
         padding-top: 80px
+        @media (max-width:769px)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            align-items: center
+            text-align: center
+            width: 100%
+            padding: 0
 
     &__title
         @include font(34px , #FFFFFF , light)
@@ -61,6 +75,15 @@
         background: #515755
         padding-left: 270px
         padding-top: 80px
+        @media (max-width:769px)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            align-items: center
+            text-align: center
+            width: 100%
+            padding: 0
 
     &__menu
         @include font(22px , #FFFFFF , light )
@@ -76,4 +99,4 @@
             @include font(17px , #D4D7DD , light)
             padding-top: 20px
             cursor: pointer
-
+            font-family: Verdana, Geneva, Tahoma, sans-serif !important

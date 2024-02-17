@@ -5,7 +5,13 @@
     display: flex
     width: 100%
     justify-content: space-between
-    flex-wrap: wrap
+    // flex-wrap: wrap
+    @media (max-width:769px)
+        justify-content: center
+        align-content: center
+        align-items: center
+        flex-direction: column
+        gap: 10px
 
     &__numbers
         display: flex

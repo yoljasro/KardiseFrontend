@@ -28,15 +28,15 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         {/* <Contact/> */}
         {/* <Nav/> */}
-        <Header/>
+        {/* <Header/>
         <About/>
         <Construction/>
         <Process/>
         <Projects/>
         <Location/>
         <Clients/>
-        <Video/>
-        {/* <Footer/> */}
+        <Video/>  */}
+        {/* {/* <Footer/> */}
       </main>
     </>
   );

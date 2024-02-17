@@ -11,6 +11,7 @@
     overflow: hidden
     // opacity:0.7
     @media (max-width:769px)
+        height: 1700px
 
     &__info
         padding-top: 267px
@@ -29,7 +30,7 @@
         font-family: Roboto !important
         width: 100%
         max-width: 786px
-        @media (max-width:769px)   
+        @media (max-width:769px)
             @include font(50px , #FFFFFF , kanit-semibold )
             text-align: center
 
@@ -37,8 +38,15 @@
         display: flex
         justify-content: center
         width: 100%
-        flex-wrap: wrap
+        // flex-wrap: wrap
         margin-top: 225px
+        @media (max-width:769px)
+            margin-top: 80px
+            flex-direction: column
+            gap: 30px
+            justify-content: center
+            align-content: center
+            align-items: center
 
     &__card
         width: 100%
@@ -70,11 +78,22 @@
         margin-top: -200px
         filter: drop-shadow(0px 2px 4px #00215b54)
         padding-left: 61px
+        @media (max-width:769px)
+            max-width: 400px
+            margin-top: 70px
+            padding-left: 0
+            height: 480px
+            justify-content: center
+            align-content: center
+            align-items: center
 
     &__companyText
         @include font(30px , #495251 , kanit-semibold)
         padding-top: 20px
         font-family: Roboto !important
+        @media (max-width:769px)
+            @include font(25px , #495251 , kanit-semibold)
+            text-align: center
 
     &__content
         display: flex
@@ -82,12 +101,23 @@
         gap: 45px
         width: 100%
         margin-top: 45px
+        @media (max-width:769px)
+            gap: 25px
+            justify-content: center
+            align-items: center
+            align-content: center
 
     &__media
         display: flex
         gap: 20px
         width: 100%
+        @media (max-width:769px)
+            justify-content: center
+            align-items: center
+            align-content: center
 
     &__subInfo
         padding-top: 18px
         @include font(19px , #41444B , black)
+        @media (max-width:769px)
+            @include font(18px , #41444B , light)

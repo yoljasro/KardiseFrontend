@@ -16,7 +16,9 @@ export const Header: FC<any> = () => {
             <div className={styles.header__info}>
                 <p className={styles.header__text}>Лидер - в сфере проектирования
                     и строительства</p>
-                <Btn />
+                <div className={styles.header__btn}>
+                    <Btn />
+                </div>
             </div>
             <div className={styles.header__cards}>
                 <div className={styles.header__card}>

@@ -17,10 +17,10 @@ export const Contact: FC<any> = () => {
                 <p>+ 998 93 389 54 39</p>
             </div>
             <div className={styles.contact__socials}>
-                <FaTwitter  />
-                <FaFacebookF />
-                <FaLinkedinIn />
-                <FaYoutube />
+                <FaTwitter className={styles.contact__icon} />
+                <FaFacebookF className={styles.contact__icon}  />
+                <FaLinkedinIn className={styles.contact__icon} />
+                <FaYoutube className={styles.contact__icon} />
             </div>  
         </div>
     );

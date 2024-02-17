@@ -12,7 +12,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <div>
             <Contact />
-            {/* <Nav /> */}
+            <Nav />
             <main>{children}</main>
             <Footer />
         </div>

@@ -7,10 +7,30 @@
     justify-content: space-between
     flex-wrap: wrap
 
+    @media (max-width: 769px)
+        flex-direction: column
+        text-align: center
+
     &__hr
         width: 100%
         position: relative
         top: -10px
+
+    &__logo
+        margin-top: 25px
+
+    &__burger
+        flex-direction: column
+        cursor: pointer
+        display: none
+        @media (max-width:769px)
+            display: flex
+
+        &Line
+            width: 30px
+            height: 3px
+            background-color: #495251
+            margin: 5px 0
 
     &__menu
         display: flex
@@ -18,7 +38,29 @@
         gap: 40px
         margin-top: 20px
         cursor: pointer
-        @include font(22px , #495251 , regular)
+        @include font(22px, #495251, regular)
 
-    &__logo
-        margin-top: 25px
+        @media (max-width: 769px)
+            display: none
+
+    &Open
+        &__menu
+            display: flex
+            flex-direction: column
+            position: absolute
+            top: 80px
+            left: 0
+            right: 0
+            background-color: white
+            z-index: 1
+            gap: 10px
+            padding: 10px
+
+    &__menuCloseBtn
+        display: none
+        @media (max-width:769px)
+            display: flex
+            width: 100%
+            max-width: 30px
+            text-align: center
+            align-items: center

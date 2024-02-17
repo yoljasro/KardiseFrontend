@@ -8,7 +8,6 @@
     flex-wrap: wrap
 
     @media (max-width: 769px)
-        flex-direction: column
         text-align: center
 
     &__hr
@@ -23,6 +22,8 @@
         flex-direction: column
         cursor: pointer
         display: none
+        transition: 1s ease
+        margin-top: 15px
         @media (max-width:769px)
             display: flex
 
@@ -51,10 +52,17 @@
             top: 80px
             left: 0
             right: 0
-            background-color: white
+            background-color: #B4C634
             z-index: 1
             gap: 10px
             padding: 10px
+            transition: 1s ease
+            color: #FFFFFFFF
+            font-family: Verdana, Geneva, Tahoma, sans-serif !important
+
+    &__btn
+        display: flex
+        justify-content: end
 
     &__menuCloseBtn
         display: none
@@ -63,4 +71,11 @@
             width: 100%
             max-width: 30px
             text-align: center
-            align-items: center
+            justify-content: center
+            color: white
+            border: none
+            background: #B4C634
+            padding: 5px
+            border-radius: 2px
+            margin-right: 20px
+            @include font(24px , white, light)

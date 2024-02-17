@@ -9,11 +9,11 @@ export const Nav: FC<any> = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const closeMenu = ()=>{
+  const closeMenu = () => {
     setIsMenuOpen(false)
   }
 
-  useEffect(() =>    {
+  useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 769) {
         setIsMenuOpen(false);
@@ -47,9 +47,11 @@ export const Nav: FC<any> = () => {
       </div>
 
       <ul className={`${styles.nav__menu} ${isMenuOpen ? styles.navOpen__menu : ""}`}>
-      <button className={styles.nav__menuCloseBtn} onClick={closeMenu}>X</button>
+        <div className={styles.nav__btn}>
+          <button className={styles.nav__menuCloseBtn} onClick={closeMenu}>X</button>
+        </div>
         <Link href={"/about"}>
-          <li>O нас</li>  
+          <li>O нас</li>
         </Link>
         <li>Услуги</li>
         <li>Проекты</li>

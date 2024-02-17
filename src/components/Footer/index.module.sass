@@ -33,18 +33,26 @@
 
     &__title
         @include font(34px , #FFFFFF , light)
+        @media (max-width:769px)
+            @include font(27px , #FFFFFF , light)
 
     &__subTitle
         @include font(12px , #FFFFFF , light)
         padding-top: 2px
+        @media (max-width:769px)
+            @include font(12px , #FFFFFF , light)
 
     &__call
         @include font(14px , #EBECEE, light)
         padding-top: 22px
+        @media (max-width:769px)
+            @include font(12px , #EBECEE , light)
 
     &__phone
         @include font(34px ,  #FFFFFF , light)
         padding-top: 10px
+        @media (max-width:769px)
+            @include font(27px , #EBECEE , light)
 
     &__social
         display: flex

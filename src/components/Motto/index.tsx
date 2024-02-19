@@ -21,22 +21,20 @@ export const Motto: FC<any> = () => {
                 <div className={styles.motto__card}>
                     <Image src={'/assets/img/1.svg'} alt="number" width={70} height={72} />
                     <div className={styles.motto__cardInfo}>
-                        <p className={styles.motto__cardTitle}>Kind Consulation</p>
-                        <p className={styles.motto__cardDesc}>Etiam ac leo at quam aliquet</p>
+                        <p className={styles.motto__cardTitle}>НАДЕЖНОСТЬ</p>
+                        {/* <p className={styles.motto__cardDesc}>Etiam ac leo at quam aliquet</p> */}
                     </div>
                 </div>
                 <div className={styles.motto__card}>
                     <Image src={'/assets/img/2.svg'} alt="number" width={70} height={72} />
                     <div className={styles.motto__cardInfo}>
-                        <p className={styles.motto__cardTitle}>Kind Consulation</p>
-                        <p className={styles.motto__cardDesc}>Etiam ac leo at quam aliquet</p>
+                        <p className={styles.motto__cardTitle}>КАЧЕСТВО</p>
                     </div>
                 </div>
                 <div className={styles.motto__card}>
                     <Image src={'/assets/img/3.svg'} alt="number" width={70} height={72} />
                     <div className={styles.motto__cardInfo}>
-                        <p className={styles.motto__cardTitle}>Kind Consulation</p>
-                        <p className={styles.motto__cardDesc}>Etiam ac leo at quam aliquet</p>
+                        <p className={styles.motto__cardTitle}>СКОРОСТЬ</p>
                     </div>
                 </div>
             </div>

@@ -9,6 +9,7 @@
 
     @media (max-width: 769px)
         text-align: center
+        margin-bottom: 150px
 
     &__hr
         width: 100%
@@ -48,6 +49,8 @@
         &__menu
             display: flex
             flex-direction: column
+            height: auto
+            transition: height 2s ease
             position: absolute
             top: 120px
             left: 0
@@ -55,12 +58,10 @@
             background-color: #B4C634
             z-index: 1
             gap: 10px
-            gap: 10px
             padding: 10px
             transition: 1s ease
             color: #FFFFFFFF
 
-            // font-family: Verdana, Geneva, Tahoma, sans-serif !important
 
     &__btn
         display: flex

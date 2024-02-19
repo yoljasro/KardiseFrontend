@@ -50,7 +50,7 @@ export const Nav: FC<any> = () => {
         <div className={styles.nav__btn}>
           <button className={styles.nav__menuCloseBtn} onClick={closeMenu}>X</button>
         </div>
-        <Link href={"/about"}>
+        <Link onClick={closeMenu} href={"/about"}>
           <li>O нас</li>
         </Link>
         <li>Услуги</li>

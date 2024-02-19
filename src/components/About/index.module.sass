@@ -5,25 +5,64 @@
     display: flex
     width: 100%
     justify-content: space-between
-    flex-wrap: wrap
     margin-top: 240px
 
-    &__info
-        width: 50%
+    @media (max-width: 769px)
+        flex-direction: column
+        align-items: center
+        align-content: center
 
-    &__title
+    &__info
+
+        @media (max-width: 769px)
+            width: 100%
+            text-align: center
+
         @include font(14px , #B4C634 , light)
         padding-top: 86px
+
+        @media (max-width: 769px)
+            padding-top: 20px
+            @include font(12px , #B4C634 , light)
 
     &__desc
         @include font(50px , #16213E, kanit-semibold)
         padding-top: 10px
-        
+
+        @media (max-width: 769px)
+            font-size: 36px
+            @include font(35px , #16213E, kanit-semibold)
+
+    &__btn
+        @media (max-width:769px)
+            display: flex
+            justify-content: center
+            margin-top: -20px
 
     &__speed
         @include font(17px , #495251 , light)
         padding-top: 23px
 
+        @media (max-width: 769px)
+            @include font(15px , #495251 , light)
+
     &__company
         @include font(17px , #41444B , regular)
         padding-top: 27px
+
+        @media (max-width: 769px)
+            @include font(16px , #495251 , light)
+
+    &__content
+        @media (max-width: 769px)
+            display: flex
+            justify-content: center
+            align-content: center
+            align-items: center
+            width: 100%
+
+    &__image
+        @media (max-width:769px)
+            width: 350px !important
+            height: 380px !important
+            margin-top: 40px

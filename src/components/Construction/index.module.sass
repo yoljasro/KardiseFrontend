@@ -8,12 +8,28 @@
     padding-right: 2px
     justify-content: center
 
+    @media (max-width:769px)
+        flex-direction: column
+        align-content: center
+        align-items: center
+        justify-content: center
+        width: 100%
+        gap: 10px
+        padding: 3px
+
+    &__image
+        @media (max-width:769px)
+            width: 95%
+            height: 250px
+            border-radius: 10px
+
     &__card
         width: 100%
         max-width: 356px
         height: 600px
         background-image: url('/assets/img/bg1.png')
         background-repeat: no-repeat
+        background-size: cover
         border: 1px solid #D8D8D8
         margin-left: -5px
         &:last-child
@@ -21,17 +37,35 @@
         &:nth-child(3)
             background-image: url('/assets/img/bg2.png')
 
+        @media (max-width:769px)
+            height: 200px
+            max-width: 95%
+            border-radius: 10px
+
     &__title
         @include font(45px , #FFFFFF , light)
         padding-left: 27px
         padding-top: 60px
+
+        @media (max-width:769px)
+            @include font(32px , #FFFFFF , light)
+            text-align: center
+            padding-top: 25px
 
     &__number
         @include font(100px , #FFFFFF , kanit-light)
         text-align: center
         padding-top: 50px
 
+        @media (max-width:769px)
+            @include font(80px , #FFFFFF , kanit-light)
+            padding-top: 30px
+
     &__numberText
         @include font(100px , #FFFFFF , kanit-light)
         text-align: center
         padding-top: 100px
+
+        @media (max-width:769px)
+            @include font(80px , #FFFFFF , kanit-light)
+            padding-top: 30px

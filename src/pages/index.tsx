@@ -28,7 +28,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
          {/* <Header/> */}
         <About/>
-        {/* <Construction/> */}
+        <Construction/>
         {/* <Process/> */}
         {/* <Projects/> */}
         {/* <Location/> */}

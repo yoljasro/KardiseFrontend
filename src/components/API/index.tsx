@@ -1,11 +1,12 @@
 // ApiComponent.ts
 import axios from 'axios';
-import { ApiResponse, ClientsResponse } from '../../types'; // O'zgartirish kerak
+import { ApiResponse, ClientsResponse , ProjectLogoResponse } from '../../types'; // O'zgartirish kerak
 
 const apiUrl = 'http://localhost:5000'; // BaseUrl
 const projectsEndpoint = '/projects'; // Backend projects endPoint
 const clientsEndpoint = '/clients'; // Backend clients endPoint
 const mottoEndpoint = '/motto'; // Backend motto endpoint
+const projectsLogo = '/projectlogos' // Backend logo endpoint
 
 const fetchData = async (endpoint: string): Promise<ApiResponse[]> => {
   try {
@@ -31,4 +32,18 @@ const clientsAPI = async (): Promise<ClientsResponse> => {
   }
 };
 
-export { projectsEndpoint, clientsEndpoint, fetchData, clientsAPI };
+
+const projectsLogoAPI = async (): Promise<ProjectLogoResponse> => {
+  try {
+    const response = await axios.get(`${apiUrl}${projectsLogo}`);
+    const data = response.data as ProjectLogoResponse;
+    console.log(data); // Get Clients info
+    return data;
+  } catch (error) {
+    console.error(`Error fetching clients data:`, error);
+    throw error;
+  }
+};
+
+
+export { projectsEndpoint, clientsEndpoint, fetchData, clientsAPI  , projectsLogoAPI};

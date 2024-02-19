@@ -26,8 +26,8 @@ export const Projects: React.FC = () => {
 
     return (
         <div className={styles.project}>
-            <p className={styles.project__title}>НАМ ДОВЕРЯЮТ </p>
-            <p className={styles.project__subTitle}>Наши Проекты</p>
+            <p className={styles.project__title}>ЧТО МЫ ДЕЛАЕМ  </p>
+            <p className={styles.project__subTitle}>Процес работы</p>
             <div className={styles.project__cards}>
                 {projects.map((project) => (
                     <div style={{ backgroundImage: `url(http://localhost:5000${project.image.replace(/\\/g, '/')})` }} className={styles.project__card} key={project._id}>

@@ -22,3 +22,13 @@ export interface Client {
 export interface ClientsResponse {
     clients: Client[];
 }
+
+export interface ProjectLogos {
+    _id?: string;
+    image : string;
+    __v?: number
+}
+
+export interface ProjectLogoResponse {
+    projectLogos: ProjectLogos[];
+}

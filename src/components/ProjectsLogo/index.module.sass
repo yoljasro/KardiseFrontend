@@ -1,0 +1,37 @@
+@import "../../styles/mixins"
+
+.projectsLogo
+    width: 100%
+    margin-top: 100px
+    padding: 40px
+
+    &__title
+        @include font(14px , #B4C634 , light)
+        text-align: center
+        font-family: Roboto !important
+
+        @media (max-width:769px)
+            @include font(12px , #B4C634 , light)
+
+    &__subTitle
+        @include font(55px , #16213E , kanit-semibold)
+        text-align: center
+        font-family: Roboto !important
+        padding-top: 10px
+
+    &__logos
+        display: flex
+        gap: 40px
+        margin-top: 50px
+
+    &__carousel
+        margin-top: 50px
+        padding: 44px
+
+    &__logo
+        @media (max-width:769px)
+            width: 300px
+            height: 80px
+
+// .customDotListStyle
+//     position:  relative !important

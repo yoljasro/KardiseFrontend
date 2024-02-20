@@ -15,11 +15,17 @@
         text-align: center
         font-family: Roboto !important
 
+        @media (max-width:769px)
+            @include font(12px , #B4C634 , light)
+
     &__subTitle
         @include font(55px , #16213E , kanit-semibold)
         text-align: center
         font-family: Roboto !important
         padding-top: 10px
+
+        @media (max-width:769px)
+            @include font(40px , #16213E , kanit-semibold)
 
     &__cards
         display: flex
@@ -34,6 +40,7 @@
             justify-content: center
             align-content: center
             align-items: center
+            gap: 10px
 
     &__card
         width: 100%
@@ -46,6 +53,7 @@
         @media (max-width:769px)
             height: 250px !important
             max-width: 95% !important
+            border-radius: 10px
 
         &:hover
             transition: 0.7s ease
@@ -69,11 +77,15 @@
                 backdrop-filter: blur(10px)
                 transition: 0.4s ease
 
-
     &__type
         @include font(14px , black , light)
-        
+
+        @media (max-width:769px)
+            @include font(13px , black , light)
 
     &__name
         @include font(18px , #FFFFFF , regular)
         font-family: Roboto !important
+
+        @media (max-width:769px)
+            @include font(16px , #FFFFFF , regular)

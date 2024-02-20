@@ -14,7 +14,7 @@ export interface ApiResponse {
 
 export interface Client {
     _id?: string;
-    title: string;
+    title?: string;
     video: string;
     __v?: number
 }

@@ -75,8 +75,8 @@ export const ProjectsLogo: React.FC = () => {
                     // className={styles.projectLogo__logo}
                     src={`http://localhost:5000${logo.image}`}
                     alt={`Logo ${index + 1}`}
-                    width="100%" // Hozirgi o'zgartirish
-                    height="auto" // Hozirgi o'zgartirish
+                    width="100%" 
+                    height="auto" 
                   />
                 </div>
               ))}

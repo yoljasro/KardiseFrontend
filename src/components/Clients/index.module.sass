@@ -6,8 +6,6 @@
     justify-content: center
     margin-top: 90px
     width: 100%
-    // align-items: center
-    // align-content: center
 
     &__title
         @include font(14px , #B4C634 , light)
@@ -24,11 +22,19 @@
         display: flex
         justify-content: center
         flex-direction: column
+        align-content: center
+        align-items: center
         width: 100%
+        margin-top: 50px
 
     &__video
         height: 550px
-        width: 100%
+        width: 100% !important
+        background-color: #B4C634
+
+        @media (max-width:769px)
+            width: 95%
+            height: 350px
 
     &__videoTitle
         @include font(24px , black , light)

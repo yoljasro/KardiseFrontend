@@ -12,6 +12,16 @@ import Link from "next/link";
 export const Clients: FC<any> = () => {
     const [clients, setClients] = useState<Client[]>([]);
 
+    const handleVideoClick = (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) => {
+        const video = event.currentTarget;
+        if (video.paused) {
+          video.play();
+          video.requestFullscreen(); // Videoni full ekran rejimiga o'tkazish
+        } else {
+          video.pause();
+        }
+      };
+
     useEffect(() => {
         const fetchClients = async () => {
             try {
@@ -33,8 +43,8 @@ export const Clients: FC<any> = () => {
             <div className={styles.client__cards}>
                 {clients.map((client) => (
                     <div className={styles.client__videos} key={client._id}>
-                        <p className={styles.client__videoTitle}>{client.title}</p>
-                        <video className={styles.client__video} controls autoPlay>
+                        {/* <p className={styles.client__videoTitle}>{client.title}</p> */}
+                        <video onClick={handleVideoClick} className={styles.client__video} >
                             <source src={`http://localhost:5000${client.video}`} type="video/mp4" />
                         </video>
                     </div>

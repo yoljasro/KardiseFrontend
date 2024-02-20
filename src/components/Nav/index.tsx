@@ -53,9 +53,11 @@ export const Nav: FC<any> = () => {
         <Link onClick={closeMenu} href={"/about"}>
           <li>O нас</li>
         </Link>
-        <li>Услуги</li>
+        <Link onClick={closeMenu} href={"/services"}>
+          <li>Услуги</li>
+        </Link>
         {/* <li>Проекты</li> */}
-        <li>Техника Парк</li>
+        <li>Парк Техники</li>
         {/* <li>Контакты</li> */}
       </ul>
     </div>

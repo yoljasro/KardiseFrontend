@@ -30,8 +30,8 @@ export default function Home() {
         <About/>
         <Construction/>
         {/* <Process/> */}
-        {/* <Projects/> */}
-        {/* <Location/> */}
+        <Projects/>
+        <Location/>
         {/* <Clients/> */}
         {/* <Video/>   */}
         {/* {/* <Footer/> */}

@@ -1,0 +1,110 @@
+@import "./mixins"
+
+.park
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-content: center
+    align-items: center
+    margin-top: 15px
+
+    &__background
+        width: 100%
+        background-image: url('/assets/img/services.jpg')
+        background-size: cover
+        background-repeat: no-repeat
+        height: 419px
+        max-width: 1920px
+
+    &__title
+        @include font(55px , #FFFFFF , kanit-semibold)
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important
+        padding-top: 155px
+        padding-left: 371px
+
+    &__card
+        width: 100%
+        max-width: 482px
+        height: 195px
+        background: #FFFFFF
+        filter: drop-shadow(0px 2px 4px #00215b54)
+        margin-left: 1068px
+        margin-top: 120px
+        color: #B4C634
+
+    &__line
+        width: 100%
+        height: 7px
+        background: #B4C634
+
+    &__call
+        font-family: Roboto
+        font-size: 14px
+        padding-top: 67px
+        padding-left: 65px
+
+    &__number
+        @include font(22px , #B4C634, light)
+        padding-left: 65px
+        font-family: Roboto !important
+        padding-top: 5px
+
+    &__cards
+        margin-top: 201px
+        display: flex
+        flex-direction: column
+        width: 100%
+        justify-content: center
+        align-content: center
+        align-items: center
+
+    &__content
+        display: flex
+
+    &__statistics
+        display: flex
+        gap: 123px
+
+    &__listone
+        list-style: none
+        display: flex
+        flex-direction: column
+        gap: 5px
+        @include font(24px , #FFFFFF ,extra-bold)
+        margin-top: 25px
+
+    &__listtwo
+        list-style: none
+        display: flex
+        flex-direction: column
+        gap: 5px
+        @include font(24px , #FFFFFF ,extra-bold)
+        margin-top: 25px
+
+    &__image
+        width: 100% !important
+        max-width: 589px !important
+        object-fit: fill !important
+
+    &__info
+        width: 589px
+        height: auto
+        background: #B4C634
+        padding-left: 50px
+        display: flex
+        flex-direction: column
+        align-content: center
+        justify-content: center
+        max-width: 589px
+        &:nth-child(1)
+            background: #515755
+
+    &__cardName
+        @include font(34px , #FFFFFF , kanit-semibold)
+
+    &__cardType
+        @include font(24px , #FFFFFF , light)
+        width: 100%
+        max-width: 501px
+        padding-top: 25px

@@ -61,28 +61,30 @@
 
     &__content
         display: flex
-            
+
     &__image
         width: 100% !important
         max-width: 589px !important
-        object-fit: cover !important
-       
+        object-fit: fill !important
+
     &__info
-        width: 100%
+        width: 589px    
         height: auto
         background: #B4C634
         padding-left: 50px
         display: flex
         flex-direction: column
-        align-content: center   
+        align-content: center
         justify-content: center
         max-width: 589px
+        &:nth-child(1)
+            background: #515755
 
     &__cardName
         @include font(34px , #FFFFFF , kanit-semibold)
 
     &__cardType
         @include font(24px , #FFFFFF , light)
-        width: 100% 
+        width: 100%
         max-width: 501px
         padding-top: 25px

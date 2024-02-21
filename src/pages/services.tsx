@@ -40,8 +40,24 @@ const Services: FC<any> = () => {
                     </div>
                     <Image src={'/assets/img/service2.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
                 </div>
+
+                <div className={styles.services__content}>
+                    <Image src={'/assets/img/service3.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
+                    <div className={styles.services__info}>
+                        <p className={styles.services__cardName}>Услуга III</p>
+                        <p className={styles.services__cardType}>проектные и архитектурные работы</p>
+                    </div>
+                </div>
+
+                <div className={styles.services__content}>
+                    <div className={styles.services__info}>
+                        <p className={styles.services__cardName}>Услуга IV</p>
+                        <p className={styles.services__cardType}>строительно-монтажные работы</p>
+                    </div>
+                    <Image src={'/assets/img/service4.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
+                </div>
             </div>
-        </div>
+        </div >
     );
 };
 

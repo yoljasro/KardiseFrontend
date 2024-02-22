@@ -9,12 +9,27 @@
     width: 100%
     padding-left: 100px
 
+    @media (max-width:769px)
+        flex-direction: column
+        text-align: center
+        padding-left: 0
+        align-content: center
+        align-items: center
+        justify-content: center
+        gap: 80px
 
     &__content
         width: 100%
         max-width: 623px
         @include font(16px  , #000000 , regular)
         font-family: Verdana, Geneva, Tahoma, sans-serif !important
+
+        @media (max-width:769px)
+            @include font(16px  , #000000 , regular)
+            padding: 0 2px
+            text-align: left
+            padding-left: 15px
+            padding-right: 5px
 
     &__contentTwo
         width: 100%
@@ -23,6 +38,13 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif !important
         margin-top: 47px
 
+        @media (max-width:769px)
+            @include font(16px  , #000000 , regular)
+            padding: 0 2px
+            text-align: left
+            padding-left: 15px
+            padding-right: 5px
+
     &__list
         display: flex
         flex-direction: column
@@ -30,20 +52,38 @@
         margin-top: 5px
         margin-left: 15px
 
+        @media (max-width:769px)
+            margin-top: 20px
+            text-align: left
+
     &__mediaCards
         display: flex
         flex-direction: column
         gap: 95px
 
+        @media (max-width:769px)
+            gap: 60px
+            padding-left: 15px
+            padding-right: 5px
+
     &__card
         display: flex
         gap: 27px
 
+        @media (max-width:769px)
+            // gap: 
+
     &__cardTitle
         @include font(17px , #000000 , bold)
+
+        @media (max-width:769px)
+             @include font(15px , #000000 , light)
 
     &__cardDesc
         @include font(17px , #000000 , light)
         width: 100%
         max-width: 406px
         padding-top: 2px
+
+        @media (max-width:769px)
+             @include font(15px , #000000 , regular)

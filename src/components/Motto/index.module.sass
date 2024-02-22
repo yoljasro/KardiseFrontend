@@ -18,17 +18,29 @@
         display: flex
         flex-direction: column
         justify-content: center
-        align-content: center
         align-items: center
         max-width: 1920px
+
+        @media (max-width:769px)
+            text-align: center
+            justify-content: start
+            padding-top: 80px
+            height: 820px
 
     &__name
         @include font(60px , #FFFFFF, light)
         font-family: Verdana, Geneva, Tahoma, sans-serif !important
 
+        @media (max-width:769px)
+            @include font(45px , #FFFFFF, light)
+
     &__title
         @include font(17px , #FFFFFF , light)
+        font-family: Verdana, Geneva, Tahoma, sans-serif !important
         padding-top: 20px
+
+        @media (max-width:769px)
+            @include font(16px , #FFFFFF, light)
 
     &__cards
         display: flex
@@ -38,6 +50,11 @@
         width: 100%
         flex-wrap: wrap
         gap: 18px
+
+        @media (max-width:769px)
+            flex-direction: column
+            gap: 80px
+            margin-top: -390px
 
     &__card
         width: 100%
@@ -52,6 +69,9 @@
         gap: 21px
         margin-top: -66px
 
+        @media (max-width:769px)
+            text-align: center
+
     &__cardInfo
         display: flex
         flex-direction: column
@@ -61,6 +81,9 @@
         @include font(20px , #16213E , extra-bold)
         font-family: Verdana, Geneva, Tahoma, sans-serif !important
 
+        @media (max-width:769px)
+            @include font(18px , #16213E , extra-bold)
+            font-family: Verdana, Geneva, Tahoma, sans-serif !important
 
     &__cardDesc
         @include font(17px, #000000 , light)

@@ -38,6 +38,7 @@ export const Info: FC<any> = () => {
           </ul>
         </div>
       </div>
+      
       <div className={styles.info__mediaCards}>
         <div className={styles.info__card}>
           <Image src={'/assets/img/ruler.svg'} alt="ruler" width={78} height={75} />

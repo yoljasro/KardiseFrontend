@@ -8,14 +8,30 @@
     align-content: center
     align-items: center
     margin-top: 15px
+    max-width: 1920px
+
+    @media (max-width:769px)
+        width: 100%
+        justify-content: center
+        align-content: center
+        align-items: center
 
     &__background
         width: 100%
-        background-image: url('/assets/img/services.jpg')
+        background-image: url('/assets/img/about.png')
         background-size: cover
         background-repeat: no-repeat
         height: 419px
         max-width: 1920px
+
+        @media (max-width:769px)
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            align-items: center
+            height: auto
+            width: 100%
 
     &__title
         @include font(55px , #FFFFFF , kanit-semibold)
@@ -23,15 +39,34 @@
         padding-top: 155px
         padding-left: 371px
 
+        @media (max-width:769px)
+            text-align: center
+            padding-left: 0
+            padding-top: 25px
+            @include font(45px , #FFFFFF , kanit-semibold)
+
     &__card
         width: 100%
         max-width: 482px
         height: 195px
         background: #FFFFFF
         filter: drop-shadow(0px 2px 4px #00215b54)
-        margin-left: 1068px
         margin-top: 120px
         color: #B4C634
+        float: right
+        position: relative
+        right: 370px
+
+        @media (max-width:769px)
+            max-width: 95%
+            margin-bottom: 25px
+            margin-top: 50px
+            text-align: center
+            justify-content: center
+            align-content: center
+            align-items: center
+            float: none
+            right: 0
 
     &__line
         width: 100%
@@ -44,11 +79,17 @@
         padding-top: 67px
         padding-left: 65px
 
+        @media (max-width:769px)
+            padding-left: 0
+
     &__number
         @include font(22px , #B4C634, light)
         padding-left: 65px
         font-family: Roboto !important
         padding-top: 5px
+
+        @media (max-width:769px)
+            padding-left: 0
 
     &__cards
         margin-top: 201px
@@ -62,13 +103,25 @@
     &__content
         display: flex
 
+        @media (max-width:769px)
+            flex-direction: column
+            justify-content: center
+            align-content: center
+            align-items: center
+            width: 100%
+            gap: 15px
+
     &__image
         width: 100% !important
         max-width: 589px !important
         object-fit: fill !important
 
+        @media (max-width:769px)
+            max-width: 92% !important
+            height: 300px !important
+
     &__info
-        width: 589px    
+        width: 589px
         height: auto
         background: #B4C634
         padding-left: 50px
@@ -77,8 +130,13 @@
         align-content: center
         justify-content: center
         max-width: 589px
+        height: 433px
         &:nth-child(1)
             background: #515755
+
+        @media (max-width:769px)
+            max-width: 92%
+            height: 300px !important
 
     &__cardName
         @include font(34px , #FFFFFF , kanit-semibold)

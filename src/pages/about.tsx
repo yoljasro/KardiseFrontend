@@ -25,8 +25,8 @@ const About: FC<any> = () => {
                 </div>
             </div>
             <Group/>
-            <Motto/>
-            <Info/>
+            {/* <Motto/> */}
+            {/* <Info/> */}
         </div>
     );
 };

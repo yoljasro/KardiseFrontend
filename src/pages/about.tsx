@@ -6,9 +6,9 @@ import { FC } from "react";
 // next components
 import Image from "next/image";
 import Link from "next/link";
-import { Group } from "@/components/Group";
-import { Motto } from "@/components/Motto";
-import { Info } from "@/components/Info";
+import { Group } from "../components/Group";
+import { Motto } from "../components/Motto";
+import { Info } from "../components/Info";
 // react icons
 
 const About: FC<any> = () => {

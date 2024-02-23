@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect  , useRef} from "react";
+import React, { FC, useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import anime, { AnimeInstance } from "animejs"
@@ -37,19 +37,21 @@ export const Nav: FC<any> = () => {
 
 
   return (
-    <div  className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ""}`}>
-        <Fade left cascade className={styles.branding__container}>
-      <hr className={styles.nav__hr} />
-      <Link href={"/"}>
-        <Image
-          className={styles.nav__logo}
-          src={"/assets/img/logo.png"}
-          alt="logo"
-          width={139}
-          height={44}
-        />
+    <div className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ""}`}>
+      <Fade left cascade className={styles.branding__container}>
+        <hr className={styles.nav__hr} />
+        <Link href={"/"}>
+          <Fade left cascade>
+            <Image
+              className={styles.nav__logo}
+              src={"/assets/img/logo.png"}
+              alt="logo"
+              width={139}
+              height={44}
+            />
+          </Fade>
 
-      </Link>
+        </Link>
       </Fade>
 
 
@@ -59,21 +61,31 @@ export const Nav: FC<any> = () => {
         <div className={styles.nav__burgerLine}></div>
       </div>
 
+
       <ul className={`${styles.nav__menu} ${isMenuOpen ? styles.navOpen__menu : ""}`}>
-        <div className={styles.nav__btn}>
-          <button className={styles.nav__menuCloseBtn} onClick={closeMenu}>X</button>
-        </div>
-        <Link onClick={closeMenu} href={"/about"}>
-          <li>O нас</li>
-        </Link>
-        <Link onClick={closeMenu} href={"/services"}>
-          <li>Услуги</li>
-        </Link>
-        {/* <li>Проекты</li> */}
-        <Link onClick={closeMenu} href={"/park"}>
-          <li>Парк Техники</li>
-        </Link>
-        {/* <li>Контакты</li> */}
+        <Fade right cascade>
+          <div className={styles.nav__btn}>
+            <button className={styles.nav__menuCloseBtn} onClick={closeMenu}>X</button>
+          </div>
+          <Link onClick={closeMenu} href={"/about"}>
+            <Zoom cascade>
+              <li>O нас</li>
+            </Zoom>
+          </Link>
+          <Link onClick={closeMenu} href={"/services"}>
+            <Zoom cascade>
+              <li>Услуги</li>
+            </Zoom>
+          </Link>
+          {/* <li>Проекты</li> */}
+          <Link onClick={closeMenu} href={"/park"}>
+            <Zoom cascade>
+              <li>Парк Техники</li>
+            </Zoom>
+          </Link>
+          {/* <li>Контакты</li> */}
+
+        </Fade>
       </ul>
     </div>
   );

@@ -9,6 +9,9 @@ declare module 'react-reveal' {
         children?: React.ReactNode;
         left? : true;
         cascade: true;
+        top? : true;
+        right? : true;
+        bottom? : true;
     }
 
     interface ZoomProps {
@@ -17,6 +20,10 @@ declare module 'react-reveal' {
         fraction?: number; // To'g'ri: number
         zoomStyle?: {};
         children?: React.ReactNode; // To'g'ri: React.ReactNode
+        cascade? : true;
+        left? : true;
+        right? : true;
+        top? : true;
     }
 
     export const Fade: React.FC<FadeProps>;

@@ -1,10 +1,18 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { FC, useState, useEffect  , useRef} from "react";
 import Image from "next/image";
 import Link from "next/link";
+import anime, { AnimeInstance } from "animejs"
 import styles from "./index.module.sass";
+
+//react-reveal
+import Zoom from 'react-reveal/Zoom'
+import Fade from 'react-reveal/Fade'
+
+
 
 export const Nav: FC<any> = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -27,8 +35,10 @@ export const Nav: FC<any> = () => {
     };
   }, [isMenuOpen]);
 
+
   return (
-    <div className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ""}`}>
+    <div  className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ""}`}>
+        <Fade left cascade className={styles.branding__container}>
       <hr className={styles.nav__hr} />
       <Link href={"/"}>
         <Image
@@ -38,7 +48,10 @@ export const Nav: FC<any> = () => {
           width={139}
           height={44}
         />
+
       </Link>
+      </Fade>
+
 
       <div className={styles.nav__burger} onClick={toggleMenu}>
         <div className={styles.nav__burgerLine}></div>

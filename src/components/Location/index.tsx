@@ -28,18 +28,18 @@ type Place = {
     info: string;
 };
 
-type MapProps = {};
-
+type MapProps = {};   
+                                
 export const Location: FC<MapProps> = () => {
     const [places, setPlaces] = useState<Place[]>([
         {
-            name: "Toshkent", // Toshkentni o'chirib Kardise qo'shing
-            location: { lat: 41.2995, lng: 69.2401 }, // Toshkent koordinatalari
+            name: "Toshkent",
+            location: { lat: 41.2995, lng: 69.2401 },
             info: "O'zbekistonning poytaxti",
         },
         {
             name: "Kardise",
-            location: { lat: 35.861660, lng: 104.195396 },
+            location: { lat: 41.2995, lng: 69.2401 }, // Kardise locatsiyasi
             info: "Qurilish Kompaniyasi",
         },
     ]);
@@ -83,8 +83,7 @@ export const Location: FC<MapProps> = () => {
                                 label={place.name}
                                 onClick={() => onMarkerClick(place)}
                                 icon={{
-                                    url: selectedPlace === place ? "http://maps.google.com/mapfiles/ms/icons/gold-dot.png" : "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
-
+                                    url: selectedPlace === place ? "/public/assets/img/arrow.svg" : "/public/assets/img/arrow.svg",
                                 }}
                             />
                         ))}

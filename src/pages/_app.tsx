@@ -1,4 +1,4 @@
-import "@/styles/globals.sass";
+import "../styles/globals.sass";
 import type { AppProps } from "next/app";
 import { Layout } from "../components/Layout"
 import NextNProgress from 'nextjs-progressbar';

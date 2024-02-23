@@ -1,19 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.sass";
-import { Contact } from "@/components/Contact";
-import { Nav } from "@/components/Nav";
-import { Header } from "@/components/Header";
-import { About } from "@/components/About";
-import { Construction } from "@/components/Construction";
-import { Location } from "@/components/Location";
-import { Video } from "@/components/Video";
-import { Footer } from "@/components/Footer";
-import { Process } from "@/components/Process";
-import {Projects} from "@/components/Projects";
-import { Clients } from "@/components/Clients";
-import { ProjectsLogo } from "@/components/ProjectsLogo";
+import styles from "../styles/Home.module.sass";
+import { Contact } from "../components/Contact";
+import { Nav } from "../components/Nav";
+import { Header } from "../components/Header";
+import { About } from "../components/About";
+import { Construction } from "../components/Construction";
+import { Location } from "../components/Location";
+import { Video } from "../components/Video";
+import { Footer } from "../components/Footer";
+import { Process } from "../components/Process";
+import {Projects} from "../components/Projects";
+import { Clients } from "../components/Clients";
+import { ProjectsLogo } from "../components/ProjectsLogo";
 
 const inter = Inter({ subsets: ["latin"] });
 

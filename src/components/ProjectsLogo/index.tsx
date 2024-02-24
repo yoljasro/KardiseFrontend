@@ -9,44 +9,48 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 //styles
 import styles from './index.module.sass'
+// react-reveal
+import { Zoom } from 'react-reveal';
 
 
 const responsive = {
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 4,
-        slidesToSlide: 1,
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 3,
-        slidesToSlide: 1,
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-        slidesToSlide: 1,
-    },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+    slidesToSlide: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 3,
+    slidesToSlide: 1,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1,
+  },
 };
 
 export const ProjectsLogo: React.FC = () => {
-    const [projectLogos, setProjectLogos] = useState<ProjectLogos[]>([]);
+  const [projectLogos, setProjectLogos] = useState<ProjectLogos[]>([]);
 
-    useEffect(() => {
-        const fetchProjectsLogos = async () => {
-            try {
-                const data = await projectsLogoAPI();
-                setProjectLogos(data || []); // O'zgartirildi
-                console.log(data)
-            } catch (error) {
-                console.error('Error fetching projectlogos:', error);
-            }
-        };
+  useEffect(() => {
+    const fetchProjectsLogos = async () => {
+      try {
+        const data = await projectsLogoAPI();
+        setProjectLogos(data || []); // O'zgartirildi
+        console.log(data)
+      } catch (error) {
+        console.error('Error fetching projectlogos:', error);
+      }
+    };
 
-        fetchProjectsLogos();
-    }, []);
+    fetchProjectsLogos();
+  }, []);
 
-    return (
+  return (
+    <>
+      <Zoom top cascade>
         <div className={styles.projectsLogo}>
           <p className={styles.projectsLogo__title}>НАМ ДОВЕРЯЮТ </p>
           <p className={styles.projectsLogo__subTitle}>Наши Проекты</p>
@@ -75,16 +79,18 @@ export const ProjectsLogo: React.FC = () => {
                     // className={styles.projectLogo__logo}
                     src={`http://localhost:5000${logo.image}`}
                     alt={`Logo ${index + 1}`}
-                    width="100%" 
-                    height="auto" 
+                    width="100%"
+                    height="auto"
                   />
                 </div>
               ))}
             </Carousel>
-            ) : (
-                <p>Rasmlar yuklanmoqda...</p>
-            )
-            }
+          ) : (
+            <p>Rasmlar yuklanmoqda...</p>
+          )
+          }
         </div >
-    );
+      </Zoom>
+    </>
+  );
 };

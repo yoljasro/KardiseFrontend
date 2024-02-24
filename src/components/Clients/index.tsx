@@ -8,6 +8,8 @@ import { FC } from "react";
 // next components
 import Image from "next/image";
 import Link from "next/link";
+// react-reveal
+import { Rotate  , Flip} from "react-reveal";
 
 export const Clients: FC<any> = () => {
     const [clients, setClients] = useState<Client[]>([]);
@@ -15,12 +17,12 @@ export const Clients: FC<any> = () => {
     const handleVideoClick = (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) => {
         const video = event.currentTarget;
         if (video.paused) {
-          video.play();
-          video.requestFullscreen(); // Videoni full ekran rejimiga o'tkazish
+            video.play();
+            video.requestFullscreen(); // Videoni full ekran rejimiga o'tkazish
         } else {
-          video.pause();
+            video.pause();
         }
-      };
+    };
 
     useEffect(() => {
         const fetchClients = async () => {
@@ -37,19 +39,23 @@ export const Clients: FC<any> = () => {
     }, []);
 
     return (
-        <div className={styles.client}>
-            <p className={styles.client__title}>НАМ ДОВЕРЯЮТ  </p>
-            <p className={styles.client__subTitle}>Наши клиенты</p>
-            <div className={styles.client__cards}>
-                {clients.map((client) => (
-                    <div className={styles.client__videos} key={client._id}>
-                        {/* <p className={styles.client__videoTitle}>{client.title}</p> */}
-                        <video onClick={handleVideoClick} className={styles.client__video} >
-                            <source src={`http://localhost:5000${client.video}`} type="video/mp4" />
-                        </video>
+        <>
+            <Flip left cascade>
+                <div className={styles.client}>
+                    <p className={styles.client__title}>НАМ ДОВЕРЯЮТ  </p>
+                    <p className={styles.client__subTitle}>Наши клиенты</p>
+                    <div className={styles.client__cards}>
+                        {clients.map((client) => (
+                            <div className={styles.client__videos} key={client._id}>
+                                {/* <p className={styles.client__videoTitle}>{client.title}</p> */}
+                                <video onClick={handleVideoClick} className={styles.client__video} >
+                                    <source src={`http://localhost:5000${client.video}`} type="video/mp4" />
+                                </video>
+                            </div>
+                        ))}
                     </div>
-                ))}
-            </div>
-        </div>
+                </div>
+            </Flip>
+        </>
     );
 };

@@ -7,6 +7,9 @@ import styles from './index.module.sass'
 // next components
 import Image from "next/image";
 import Link from "next/link";
+// react-reveal
+import { Zoom, Fade } from "react-reveal";
+
 
 export const Projects: React.FC = () => {
     const [projects, setProjects] = useState<Project[]>([]);
@@ -25,19 +28,23 @@ export const Projects: React.FC = () => {
     }, []);
 
     return (
-        <div className={styles.project}>
-            <p className={styles.project__title}>ЧТО МЫ ДЕЛАЕМ  </p>
-            <p className={styles.project__subTitle}>Процес работы</p>
-            <div className={styles.project__cards}>
-                {projects.map((project) => (
-                    <div style={{ backgroundImage: `url(http://localhost:5000${project.image.replace(/\\/g, '/')})` }} className={styles.project__card} key={project._id}>
-                        <div className={styles.project__card__info}>
-                            <p className={styles.project__type}>{project.title}</p>
-                            <p className={styles.project__name}>{project.description}</p>
-                        </div>
+        <>
+            <Fade bottom cascade>
+                <div className={styles.project}>
+                    <p className={styles.project__title}>ЧТО МЫ ДЕЛАЕМ  </p>
+                    <p className={styles.project__subTitle}>Процес работы</p>
+                    <div className={styles.project__cards}>
+                        {projects.map((project) => (
+                            <div style={{ backgroundImage: `url(http://localhost:5000${project.image.replace(/\\/g, '/')})` }} className={styles.project__card} key={project._id}>
+                                <div className={styles.project__card__info}>
+                                    <p className={styles.project__type}>{project.title}</p>
+                                    <p className={styles.project__name}>{project.description}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                ))}
-            </div>
-        </div>
+                </div>
+            </Fade>
+        </>
     );
 };

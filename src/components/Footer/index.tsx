@@ -12,8 +12,8 @@ import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa"
 import { Rotate, Flip, Zoom } from "react-reveal";
 
 export const Footer: FC<any> = () => {
-    return (
-        <>
+        return (
+            <>
             <Zoom cascade>
                 <div className={styles.footer}>
                     <div className={styles.footer__contact}>

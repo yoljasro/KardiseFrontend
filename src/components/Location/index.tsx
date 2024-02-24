@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 // styles
 import styles from './index.module.sass'
+// react-reveal
+import { Rotate  , Flip, Fade , Zoom} from "react-reveal";
 
 const mapContainerStyle = {
     width: "100%",
@@ -55,6 +57,8 @@ export const Location: FC<MapProps> = () => {
     };
 
     return (
+        <>
+        <Zoom bottom cascade>
         <div className={styles.location}>
             <div>
                 {selectedPlace && (
@@ -90,6 +94,7 @@ export const Location: FC<MapProps> = () => {
                     </GoogleMap>
                 </LoadScript>
             </div>
+            <Rotate cascade>
             <div className={styles.location__adress}>
                 <div className={styles.location__card}>
                     <div className={styles.location__cardLine}></div>
@@ -115,6 +120,9 @@ export const Location: FC<MapProps> = () => {
                     </div>
                 </div>
             </div>
+            </Rotate>
         </div>
+        </Zoom>
+        </>
     );
 };

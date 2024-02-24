@@ -24,6 +24,7 @@ declare module 'react-reveal' {
         left? : true;
         right? : true;
         top? : true;
+        bottom? : true;
     }
 
     interface RotateProps {

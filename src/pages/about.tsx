@@ -9,13 +9,17 @@ import Link from "next/link";
 import { Group } from "../components/Group";
 import { Motto } from "../components/Motto";
 import { Info } from "../components/Info";
-// react icons
+// react-reveal
+import { Rotate  , Flip, Fade , Zoom} from "react-reveal";
 
 const About: FC<any> = () => {
     return (
+        <>
+        <Zoom cascade >
         <div className={styles.about}>
             <div className={styles.about__background}>
                 <p className={styles.about__title}>О нас</p>
+                <Flip cascade >
                 <div className={styles.about__card}>
                     <div className={styles.about__line}>
                         <p className={styles.about__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ </p>
@@ -23,11 +27,14 @@ const About: FC<any> = () => {
                         <p className={styles.about__number}>+ 998 93 389 54 39</p>
                     </div>
                 </div>
+                </Flip>
             </div>
             <Group/>
             <Motto/>
             <Info/>
         </div>
+        </Zoom>
+        </>
     );
 };
 

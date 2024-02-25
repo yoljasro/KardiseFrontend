@@ -7,39 +7,49 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Btn } from "../Btn";
-// react icons
+// react-reveal
+import { Rotate, Flip, Fade, Zoom } from "react-reveal";
 
 export const Info: FC<any> = () => {
   return (
     <div className={styles.info}>
       <div>
         <div className={styles.info__content}>
-          <p className={styles.info__text}>Компания KARDISE - многопрофильная структура, масштабы бизнеса которой выходят за рамки исключительно девелоперской деятельности.
-            Деятельность группы сфокусирована на нескольких бизнес-направлениях</p>
+          <Zoom cascade>
+            <p className={styles.info__text}>Компания KARDISE - многопрофильная структура, масштабы бизнеса которой выходят за рамки исключительно девелоперской деятельности.
+              Деятельность группы сфокусирована на нескольких бизнес-направлениях</p>
+          </Zoom>
           <ul className={styles.info__list}>
-            <li>строительство и девелопмент </li>
-            <li>инвестиции в землю</li>
-            <li>инвестиции в сфере общепита</li>
-            <li>инвестиции в сфере обслуживание машин и механизмов.</li>
+            <Fade left cascade>
+              <li>строительство и девелопмент </li>
+              <li>инвестиции в землю</li>
+              <li>инвестиции в сфере общепита</li>
+              <li>инвестиции в сфере обслуживание машин и механизмов.</li>
+            </Fade>
           </ul>
         </div>
 
         <div className={styles.info__contentTwo}>
-          <p className={styles.info__text}>Основными направлениями деятельности компании KARDISE являются:</p>
+          <Zoom cascade>
+            <p className={styles.info__text}>Основными направлениями деятельности компании KARDISE являются:</p>
+          </Zoom>
           <ul className={styles.info__list}>
-            <li>строительство объектов жилья, социальных объектов и коммерческой недвижимости </li>
-            <li>оформление земельных участков под строительство </li>
-            <li>проектные и архитектурные работы </li>
-            <li>строительно-монтажные работы</li>
-            <li> устройство инженерии и телекоммуникаций</li>
-            <li>снос и реконструкция ветхого жилого фонда </li>
-            <li>отделочные работы и благоустройство территорий</li>
-            <li>производствостроительныхматериалови конструкций.</li>
+            <Rotate cascade>
+              <li>строительство объектов жилья, социальных объектов и коммерческой недвижимости </li>
+              <li>оформление земельных участков под строительство </li>
+              <li>проектные и архитектурные работы </li>
+              <li>строительно-монтажные работы</li>
+              <li> устройство инженерии и телекоммуникаций</li>
+              <li>снос и реконструкция ветхого жилого фонда </li>
+              <li>отделочные работы и благоустройство территорий</li>
+              <li>производствостроительныхматериалови конструкций.</li>
+            </Rotate>
           </ul>
         </div>
       </div>
-      
+
       <div className={styles.info__mediaCards}>
+        <Zoom right cascade>
         <div className={styles.info__card}>
           <Image src={'/assets/img/ruler.svg'} alt="ruler" width={78} height={75} />
           <p className={styles.info__cardTitle}>Строительная группа</p>
@@ -64,6 +74,7 @@ export const Info: FC<any> = () => {
               Инженер слаботочных систем - 3 человека.</p>
           </div>
         </div>
+        </Zoom>
       </div>
     </div>
   );

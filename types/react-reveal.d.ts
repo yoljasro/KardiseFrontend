@@ -51,8 +51,23 @@ declare module 'react-reveal' {
         top? : true;
     }
 
+    interface RevealProps {
+        duration?: number; // To'g'ri: number
+        delay?: number; // To'g'ri: number
+        fraction?: number; // To'g'ri: number
+        zoomStyle?: {};
+        children?: React.ReactNode; // To'g'ri: React.ReactNode
+        cascade? : true;
+        left? : true;
+        right? : true;
+        top? : true;
+        effect: string;
+    }
+
+
     export const Fade: React.FC<FadeProps>;
     export const Zoom: React.FC<ZoomProps>;
     export const Rotate: React.FC<RotateProps>;
     export const Flip: React.FC<FlipProps>;
+    export const Reveal: React.FC<RevealProps>;
 }

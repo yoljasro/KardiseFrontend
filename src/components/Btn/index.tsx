@@ -20,7 +20,7 @@ export const Btn: FC<any> = () => {
                         УЗНАТЬ БОЛЬШЕ
                         <Image src={'/assets/img/arrow.svg'} alt="arrow" width={13} height={14} />
                     </button >
-                </div>
+                </div>  
             </Fade>
 
         </div>

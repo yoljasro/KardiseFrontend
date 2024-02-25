@@ -12,7 +12,7 @@ import Link from "next/link";
 import { Rotate  , Flip} from "react-reveal";
 
 export const Clients: FC<any> = () => {
-    const [clients, setClients] = useState<Client[]>([]);
+    const [clients, setClients] = useState<any>([]);
 
     const handleVideoClick = (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) => {
         const video = event.currentTarget;
@@ -24,19 +24,20 @@ export const Clients: FC<any> = () => {
         }
     };
 
-    useEffect(() => {
-        const fetchClients = async () => {
-            try {
-                const data = await clientsAPI();
-                setClients(data || []);
-                console.log(data) // Agar ma'lumotlar bo'lmasa, bo'sh array bilan to'ldiring
-            } catch (error) {
-                console.error('Error fetching clients:', error);
-            }
-        };
+   
+useEffect(() => {
+    const fetchClients = async () => {
+        try {
+            const data = await clientsAPI();
+            setClients(data || []);
+            console.log(data);
+        } catch (error) {
+            console.error('Error fetching clients:', error);
+        }
+    };
 
-        fetchClients();
-    }, []);
+    fetchClients();
+}, []);
 
     return (
         <>

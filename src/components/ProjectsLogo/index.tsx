@@ -32,14 +32,13 @@ const responsive = {
 };
 
 export const ProjectsLogo: React.FC = () => {
-  const [projectLogos, setProjectLogos] = useState<ProjectLogos[]>([]);
+  const [projectLogos, setProjectLogos] = useState<any>([]);
 
   useEffect(() => {
     const fetchProjectsLogos = async () => {
       try {
         const data = await projectsLogoAPI();
         setProjectLogos(data || []); // O'zgartirildi
-        console.log(data)
       } catch (error) {
         console.error('Error fetching projectlogos:', error);
       }

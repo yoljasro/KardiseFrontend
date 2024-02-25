@@ -12,7 +12,7 @@ import { Zoom, Fade } from "react-reveal";
 
 
 export const Projects: React.FC = () => {
-    const [projects, setProjects] = useState<Project[]>([]);
+    const [projects, setProjects] = useState<any>([]);
 
     useEffect(() => {
         const fetchProjects = async () => {

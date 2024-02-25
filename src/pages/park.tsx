@@ -86,7 +86,7 @@ const Park: FC<any> = () => {
                                     <li>Грузоподъемность</li>
                                     <li>Габариты кузова (Д*Ш*В)</li>
                                     <li> мм</li>
-                                </ul>
+                                </ul>  
                                 </Fade>
                                 <ul className={styles.park__listtwo}>
                                     <li>6x4.</li>

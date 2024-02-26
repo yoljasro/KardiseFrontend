@@ -15,8 +15,8 @@ const mapContainerStyle = {
 };
 
 const center = {
-    lat: 41.2995, // Kardise koordinatalari
-    lng: 69.2401,
+    lat: 41.315280, // Kardise koordinatalari
+    lng: 69.289190 ,
 };
 
 type Location = {
@@ -36,12 +36,7 @@ export const Location: FC<MapProps> = () => {
     const [places, setPlaces] = useState<Place[]>([
         {
             name: "Kardise",
-            location: { lat: 41.2995, lng: 69.2401 },
-            info: "Qurilish Kompaniyasi",
-        },
-        {
-            name: "Kardise",
-            location: { lat: 41.2995, lng: 69.2401 }, // Kardise locatsiyasi
+            location: { lat: 41.315280, lng: 69.289190 },
             info: "Qurilish Kompaniyasi",
         },
     ]);

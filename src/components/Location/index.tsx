@@ -28,7 +28,7 @@ type Place = {
 
 type MapProps = {};
 
-const Location: FC<MapProps> = () => {
+export const Location: FC<MapProps> = () => {
     const [places, setPlaces] = useState<Place[]>([
         {
             name: "Kardise",
@@ -118,4 +118,3 @@ const Location: FC<MapProps> = () => {
     );
 };
 
-export default Location;

@@ -1,12 +1,8 @@
-import { useState, FC, useEffect } from "react";
+import { useState, FC } from "react";
 import { GoogleMap, LoadScript, Marker, InfoWindow } from "@react-google-maps/api";
-// next components
 import Image from "next/image";
-import Link from "next/link";
-// styles
-import styles from './index.module.sass'
-// react-reveal
-import { Rotate, Zoom } from "react-reveal";
+import { Zoom, Rotate } from "react-reveal";
+import styles from './index.module.sass';
 
 const mapContainerStyle = {
     width: "100%",
@@ -15,7 +11,7 @@ const mapContainerStyle = {
 };
 
 const center = {
-    lat: 41.315280, // Kardise koordinatalari
+    lat: 41.315280,
     lng: 69.289190,
 };
 
@@ -32,7 +28,7 @@ type Place = {
 
 type MapProps = {};
 
-export const Location: FC<MapProps> = () => {
+const Location: FC<MapProps> = () => {
     const [places, setPlaces] = useState<Place[]>([
         {
             name: "Kardise",
@@ -73,7 +69,7 @@ export const Location: FC<MapProps> = () => {
                             <GoogleMap
                                 mapContainerStyle={mapContainerStyle}
                                 center={center}
-                                zoom={12}
+                                zoom={15}
                             >
                                 {places.map((place, index) => (
                                     <Marker

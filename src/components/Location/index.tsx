@@ -11,8 +11,8 @@ const mapContainerStyle = {
 };
 
 const center = {
-    lat: 41.315280,
-    lng: 69.289190,
+    lat: 41.315281,
+    lng: 69.289192,
 };
 
 type Location = {
@@ -32,7 +32,7 @@ const Location: FC<MapProps> = () => {
     const [places, setPlaces] = useState<Place[]>([
         {
             name: "Kardise",
-            location: { lat: 41.315280, lng: 69.289190 },
+            location: { lat: 41.315281, lng: 69.289192 },
             info: "Qurilish Kompaniyasi",
         },
     ]);

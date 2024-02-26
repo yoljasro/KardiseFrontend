@@ -50,7 +50,7 @@ useEffect(() => {
                             <div className={styles.client__videos} key={client._id}>
                                 {/* <p className={styles.client__videoTitle}>{client.title}</p> */}
                                 <video onClick={handleVideoClick} className={styles.client__video} >
-                                    <source src={`http://localhost:5000${client.video}`} type="video/mp4" />
+                                    <source src={`http://152.42.162.108${client.video}`} type="video/mp4" />
                                 </video>
                             </div>
                         ))}

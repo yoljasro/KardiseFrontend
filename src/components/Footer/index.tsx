@@ -13,8 +13,8 @@ import { GrInstagram } from "react-icons/gr"
 import { Rotate, Flip, Zoom } from "react-reveal";
 
 export const Footer: FC<any> = () => {
-        return (
-            <>
+    return (
+        <>
             <Zoom cascade>
                 <div className={styles.footer}>
                     <div className={styles.footer__contact}>
@@ -25,12 +25,12 @@ export const Footer: FC<any> = () => {
                             <p className={styles.footer__phone}>+ 998 93 389 13 12</p>
                         </Flip>
                         <Rotate cascade>
-                        <div className={styles.footer__social}>
-                            <div className={styles.footer__circle}><GrInstagram className={styles.footer__icon} /></div>
-                            <div className={styles.footer__circle}><FaFacebookF className={styles.footer__icon} /></div>
-                            <div className={styles.footer__circle}><FaLinkedinIn className={styles.footer__icon} /></div>
-                            <div className={styles.footer__circle}><FaYoutube className={styles.footer__icon} /></div>
-                        </div>
+                            <div className={styles.footer__social}>
+                                <div className={styles.footer__circle}><GrInstagram className={styles.footer__circle__icon} /></div>
+                                <div className={styles.footer__circle}><FaFacebookF className={styles.footer__circle__icon} /></div>
+                                <div className={styles.footer__circle}><FaLinkedinIn className={styles.footer__circle__icon} /></div>
+                                <div className={styles.footer__circle}><FaYoutube className={styles.footer__circle__icon} /></div>
+                            </div>
                         </Rotate>
                         <p className={styles.footer__reserved}>KARDISE © Все права защищены. Авторские права 2024.</p>
                     </div>
@@ -38,16 +38,27 @@ export const Footer: FC<any> = () => {
                         <Rotate cascade>
                             <p className={styles.footer__menu}>Быстрые ссылки</p>
                             <ul className={styles.footer__nav}>
-                                <li>О нас</li>
-                                <li>Услуги</li>
-                                <li>Проекты</li>
-                                <li>Техника Парк</li>
-                                <li>Контакты</li>
+                                <li>
+                                    <Link className={styles.footer__link} href={'/about'}>
+                                        О нас
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link className={styles.footer__link} href={'/services'}>
+                                        Услуги
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link className={styles.footer__link} href={'/park'}>
+                                        Техника Парк
+                                    </Link>
+                                </li>
                             </ul>
                         </Rotate>
                     </div>
                 </div>
-            </Zoom>
+            </Zoom >
         </>
     );
 };

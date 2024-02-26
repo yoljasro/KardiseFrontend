@@ -10,7 +10,7 @@ import Link from "next/link";
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube  , FaInstagram} from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 // react reveal
-import { Fade, Zoom } from "react-reveal";
+import { Fade, Zoom , Flip , Rotate} from "react-reveal";
 
 export const Contact: FC<any> = () => {
     return (
@@ -24,12 +24,12 @@ export const Contact: FC<any> = () => {
 
 
             <div className={styles.contact__socials}>
-                <Fade right cascade>
+                <Rotate  cascade>
                 <GrInstagram className={styles.contact__icon} />
                     <FaFacebookF className={styles.contact__icon} />
                     <FaLinkedinIn className={styles.contact__icon} />
                     <FaYoutube className={styles.contact__icon} />
-                </Fade>
+                </Rotate>
 
             </div>
         </div >

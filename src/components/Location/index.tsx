@@ -35,9 +35,9 @@ type MapProps = {};
 export const Location: FC<MapProps> = () => {
     const [places, setPlaces] = useState<Place[]>([
         {
-            name: "Toshkent",
+            name: "Kardise",
             location: { lat: 41.2995, lng: 69.2401 },
-            info: "O'zbekistonning poytaxti",
+            info: "Qurilish Kompaniyasi",
         },
         {
             name: "Kardise",
@@ -87,8 +87,8 @@ export const Location: FC<MapProps> = () => {
                                 label={place.name}
                                 onClick={() => onMarkerClick(place)}
                                 icon={{
-                                    url: selectedPlace === place ? "/public/assets/img/arrow.svg" : "/public/assets/img/arrow.svg",
-                                }}
+                                    url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+                                  }}
                             />
                         ))}
                     </GoogleMap>

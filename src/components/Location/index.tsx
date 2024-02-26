@@ -74,7 +74,7 @@ export const Location: FC<MapProps> = () => {
                 )}
             </div>
             <div>
-                <LoadScript googleMapsApiKey="AIzaSyCDwGCZMzBTOv6Oe4LwQYJ76bDCc6ZYP_A">
+                <LoadScript googleMapsApiKey="AIzaSyCBNEcEo5qilBZTygjDy59HcujlvPYS4XI">
                     <GoogleMap
                         mapContainerStyle={mapContainerStyle}
                         center={center}

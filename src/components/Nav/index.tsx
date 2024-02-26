@@ -67,27 +67,26 @@ export const Nav: FC<any> = () => {
           <div className={styles.nav__btn}>
             <button className={styles.nav__menuCloseBtn} onClick={closeMenu}>X</button>
           </div>
-          <Link onClick={closeMenu} href={"/about"}>
-            <Zoom cascade>
-              <li>O нас</li>
-            </Zoom>
-          </Link>
-          <Link onClick={closeMenu} href={"/services"}>
-            <Zoom cascade>
-              <li>Услуги</li>
-            </Zoom>
-          </Link>
-          {/* <li>Проекты</li> */}
-          <Link onClick={closeMenu} href={"/park"}>
-            <Zoom cascade>
-              <li>Парк Техники</li>
-            </Zoom>
-          </Link>
-          {/* <li>Контакты</li> */}
+          <Zoom cascade>
+            <Link className={styles.nav__link} onClick={closeMenu} href={"/about"}>
+              <li className={styles.nav__li}>
+                O нас</li>
+            </Link>
+          </Zoom>
+          <Zoom cascade>
+            <Link className={styles.nav__link} onClick={closeMenu} href={"/services"}>
+              <li className={styles.nav__li}>Услуги</li>
+            </Link>
+          </Zoom>
+          <Zoom cascade>
+            <Link className={styles.nav__link} onClick={closeMenu} href={"/park"}>
+              <li className={styles.nav__li}>Парк Техники</li>
+            </Link>
+          </Zoom>
 
         </Fade>
       </ul>
-    </div>
+    </div >
   );
 };
 

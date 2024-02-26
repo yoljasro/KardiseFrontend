@@ -34,6 +34,54 @@
             background-color: #495251
             margin: 5px 0
 
+    &__li
+        &:hover
+            // transform: scale(1.1)
+            // transition: 0.3s ease
+
+    &__link
+        position: relative
+        display: block
+        text-decoration: none
+        transition: .5s
+        z-index: 1
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            border-top: 2px solid #262626
+            border-bottom: 2px solid #262626
+            transform: scaleY(2)
+            opacity: 0
+            transition: .3s
+
+        &:after
+            content: ''
+            position: absolute
+            top: 2px
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: #262626
+            transform: scale(0)
+            opacity: 0
+            transition: .3s
+            z-index: -1
+            text-align: center
+
+        &:hover
+            color: #fff
+            &:before
+                transform: scaleY(1)
+                opacity: 1
+
+            &:after
+                transform: scaleY(1)
+                opacity: 1
+
     &__menu
         display: flex
         list-style: none
@@ -63,12 +111,9 @@
             color: #FFFFFFFF
             padding-bottom: 30px
 
-
-
     &__btn
         display: flex
         justify-content: flex-end
-        
 
     &__menuCloseBtn
         display: none

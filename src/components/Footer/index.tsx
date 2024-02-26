@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 // react icons
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr"
 // react-reveal
 import { Rotate, Flip, Zoom } from "react-reveal";
 
@@ -25,7 +26,7 @@ export const Footer: FC<any> = () => {
                         </Flip>
                         <Rotate cascade>
                         <div className={styles.footer__social}>
-                            <div className={styles.footer__circle}><FaTwitter className={styles.footer__icon} /></div>
+                            <div className={styles.footer__circle}><GrInstagram className={styles.footer__icon} /></div>
                             <div className={styles.footer__circle}><FaFacebookF className={styles.footer__icon} /></div>
                             <div className={styles.footer__circle}><FaLinkedinIn className={styles.footer__icon} /></div>
                             <div className={styles.footer__circle}><FaYoutube className={styles.footer__icon} /></div>

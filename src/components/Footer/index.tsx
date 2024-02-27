@@ -10,20 +10,20 @@ import Link from "next/link";
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr"
 // react-reveal
-import { Rotate, Flip, Zoom } from "react-reveal";
+import { Rotate, Flip, Zoom , Fade} from "react-reveal";
 
 export const Footer: FC<any> = () => {
     return (
         <>
-            <Zoom cascade>
+            <Fade  cascade>
                 <div className={styles.footer}>
                     <div className={styles.footer__contact}>
-                        <Flip cascade>
+                        <Fade left cascade>
                             <p className={styles.footer__title}>KARDISE</p>
                             <p className={styles.footer__subTitle}>ENGINEERING</p>
                             <p className={styles.footer__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ</p>
                             <p className={styles.footer__phone}>+ 998 93 389 13 12</p>
-                        </Flip>
+                        </Fade>
                         <Rotate cascade>
                             <div className={styles.footer__social}>
                                 <div className={styles.footer__circle}><GrInstagram className={styles.footer__circle__icon} /></div>
@@ -58,7 +58,7 @@ export const Footer: FC<any> = () => {
                         </Rotate>
                     </div>
                 </div>
-            </Zoom >
+            </Fade >
         </>
     );
 };

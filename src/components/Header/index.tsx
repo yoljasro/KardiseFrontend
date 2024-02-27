@@ -17,7 +17,7 @@ export const Header: FC<any> = () => {
         <div className={styles.header}>
             <div className={styles.header__info}>
                 <Zoom top cascade>
-                    <p className={styles.header__text}>Лидер - в сфере проектирования
+                    <p className={styles.header__text}>Лидер - в сфере   проектирования
                         и строительства</p>
                 </Zoom>
                 <div className={styles.header__btn}>

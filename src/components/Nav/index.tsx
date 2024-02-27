@@ -44,7 +44,7 @@ export const Nav: FC<any> = () => {
           <Fade left cascade>
             <Image
               className={styles.nav__logo}
-              src={"/assets/img/logo.png"}
+              src={"/assets/img/logo2.png"}
               alt="logo"
               width={139}
               height={44}

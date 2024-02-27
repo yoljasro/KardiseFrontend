@@ -9,7 +9,7 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 // react-reveal
-import { Rotate  , Flip} from "react-reveal";
+import { Rotate  , Flip , Zoom , Fade} from "react-reveal";
 
 export const Clients: FC<any> = () => {
     const [clients, setClients] = useState<any>([]);
@@ -41,7 +41,7 @@ useEffect(() => {
 
     return (
         <>
-            <Flip left cascade>
+            <Fade  cascade>
                 <div className={styles.client}>
                     <p className={styles.client__title}>НАМ ДОВЕРЯЮТ  </p>
                     <p className={styles.client__subTitle}>Наши клиенты</p>
@@ -49,14 +49,14 @@ useEffect(() => {
                         {clients.map((client) => (
                             <div className={styles.client__videos} key={client._id}>
                                 {/* <p className={styles.client__videoTitle}>{client.title}</p> */}
-                                <video onClick={handleVideoClick} className={styles.client__video} >
+                                <video onClick={handleVideoClick} className={styles.client__video} controls >
                                     <source src={`http://152.42.162.108${client.video}`} type="video/mp4" />
                                 </video>
                             </div>
                         ))}
                     </div>
                 </div>
-            </Flip>
+            </Fade>
         </>
     );
 };

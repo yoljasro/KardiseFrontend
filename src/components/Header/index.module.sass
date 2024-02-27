@@ -12,6 +12,11 @@
         padding: 0px 5px
         // height: auto
 
+    @media (min-width:1000px) and (max-width:1200px)
+        justify-content: center
+        align-content: center
+        align-items: center
+
     &__info
         padding-top: 267px
         padding-left: 370px
@@ -19,10 +24,23 @@
             padding-left: 0
             padding-top: 100px
 
+        @media (min-width:1000px) and (max-width:1200px)
+            padding-left: 0px
+            justify-content: center
+            align-content: center
+            align-items: center
+            padding-top: 100px
+            max-width: 100% !important
+
     &__btn
         @media (max-width:769px)
             display: flex
             justify-content: center
+
+        @media (min-width:1000px) and (max-width:1200px)
+            width: 100%
+            justify-content: center
+            display: flex
 
     &__text
         @include font(80px , #FFFFFF , kanit-semibold )
@@ -32,6 +50,13 @@
         @media (max-width:769px)
             @include font(50px , #FFFFFF ,kanit-semibold )
             text-align: center
+
+        @media (min-width:1000px) and (max-width:1200px)
+            text-align: center
+            justify-content: center
+            @include font(50px , #FFFFFF ,kanit-semibold )
+            max-width: 900px
+            padding-left: 150px
 
     &__cards
         display: flex
@@ -45,6 +70,16 @@
             justify-content: center
             align-content: center
             align-items: center
+            padding-bottom: 50px
+
+        @media (min-width:800px) and (max-width:1200px)
+            margin-top: 80px
+            flex-direction: column
+            gap: 30px
+            justify-content: center
+            // align-content: center
+            padding-left: 100px
+            // align-items: center
             padding-bottom: 50px
 
     &__card
@@ -89,7 +124,7 @@
         @include font(100px , #FFFFFF , light)
 
         @media (max-width:769px)
-            @include font(95px , #FFFFFF , light)
+            @include font(90px , #FFFFFF , light)
 
     &__subTitle
         @include font(22px, #FFFFFF , light)
@@ -114,6 +149,13 @@
             justify-content: center
             align-content: center
             align-items: center
+
+        @media (min-width:1000px) and (max-width:1200px)
+            margin-left: 400px
+            margin-top: -530px
+            height: 500px
+            max-width: 450px
+            padding-left: 40px
 
     &__companyText
         @include font(30px , #495251 , kanit-semibold)
@@ -142,9 +184,6 @@
         width: 100%
         @media (max-width:769px)
             margin-left: 30px
-            // justify-content: center
-            // align-items: center
-            // align-content: center
 
     &__subInfo
         padding-top: 18px

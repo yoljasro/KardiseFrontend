@@ -13,6 +13,9 @@
         flex-direction: column
         margin-top: 50px
 
+    @media (min-width:100px) and (max-width:1200px)
+
+
     &__contact
         width: 100%
         height: 489px
@@ -31,6 +34,16 @@
             padding: 0
             height: 420px
             width: 100% !important
+
+        @media (min-width:100px) and (max-width:1200px)
+            padding: 0
+            text-align: center
+            padding-top: 30px
+            align-content: center
+            align-items: center
+            justify-content: center
+            display: flex
+            flex-direction: column
 
     &__title
         @include font(34px , #FFFFFF , light)
@@ -117,11 +130,18 @@
         gap: 5px
         margin-bottom: 20px
 
+        @media (min-width:100px) and (max-width:1200px)
+            gap: 2px
+
         & li
             @include font(17px , #D4D7DD , light)
             padding-top: 20px
             cursor: pointer
             font-family: Verdana, Geneva, Tahoma, sans-serif !important
+
+            @media (min-width:100px) and (max-width:1200px)
+                padding-top: 40px
+
 
     &__link
         position: relative

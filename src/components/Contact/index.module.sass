@@ -5,13 +5,19 @@
     display: flex
     width: 100%
     justify-content: space-between
-    // flex-wrap: wrap
     @media (max-width:769px)
         justify-content: center
         align-content: center
         align-items: center
         flex-direction: column
         gap: 15px
+
+    @media (min-width:100px) and (max-width:1200px)
+        width: 100% !important
+        max-width: 1000px !important
+        justify-content: space-around !important
+        padding: 0
+        padding-top: 20px
 
     &__numbers
         display: flex
@@ -20,14 +26,13 @@
 
     &__socials
         display: flex
-        gap: 20px
+        gap: 40px
         color: #495251
         cursor: pointer
-    
+
     &__icon
         font-size: 20px
 
         &:hover
             transform: scale(1.2) !important
             transition: 0.6s ease !important
-

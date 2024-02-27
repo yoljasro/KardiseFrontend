@@ -16,10 +16,10 @@ export const Header: FC<any> = () => {
     return (
         <div className={styles.header}>
             <div className={styles.header__info}>
-                <Zoom top cascade>
+                <Fade left cascade>
                     <p className={styles.header__text}>Лидер - в сфере   проектирования
                         и строительства</p>
-                </Zoom>
+                </Fade>
                 <div className={styles.header__btn}>
                     <Btn />
                 </div>

@@ -59,7 +59,7 @@ export const ProjectsLogo: React.FC = () => {
               className={styles.projectLogo__carousel}
               swipeable={true}
               draggable={true}
-              showDots={true}
+              showDots={false}
               responsive={responsive}
               ssr={true}
               infinite={true}

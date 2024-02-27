@@ -1,7 +1,7 @@
 import { useState, FC } from "react";
 import { GoogleMap, LoadScript, Marker, InfoWindow } from "@react-google-maps/api";
 import Image from "next/image";
-import { Zoom, Rotate } from "react-reveal";
+import { Zoom, Rotate  , Fade} from "react-reveal";
 import styles from './index.module.sass';
 
 const mapContainerStyle = {
@@ -49,7 +49,7 @@ export const Location: FC<MapProps> = () => {
 
     return (
         <>
-            <Zoom bottom cascade>
+            <Fade bottom cascade>
                 <div className={styles.location}>
                     <div>
                         {selectedPlace && (
@@ -85,7 +85,6 @@ export const Location: FC<MapProps> = () => {
                             </GoogleMap>
                         </LoadScript>
                     </div>
-                    <Rotate cascade>
                         <div className={styles.location__adress}>
                             <div className={styles.location__card}>
                                 <div className={styles.location__cardLine}></div>
@@ -111,9 +110,8 @@ export const Location: FC<MapProps> = () => {
                                 </div>
                             </div>
                         </div>
-                    </Rotate>
                 </div>
-            </Zoom>
+            </Fade>
         </>
     );
 };

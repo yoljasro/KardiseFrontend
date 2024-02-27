@@ -13,9 +13,9 @@ export const Construction: FC<any> = () => {
         <div>
 
             <div className={styles.construction}>
-                <Zoom left cascade>
+                <Fade left cascade>
                     <Image src={'/assets/img/img.png'} alt="image" className={styles.construction__image} width={850} height={600} />
-                </Zoom>
+                </Fade>
                 <Zoom top cascade>
                     <div className={styles.construction__card}>
                         <p className={styles.construction__title}>Строительная группа</p>

@@ -42,9 +42,9 @@ export const Nav: FC<any> = () => {
         <hr className={styles.nav__hr} />
         <Link href={"/"}>
           <Fade left cascade>
-            <Image
+            <img
               className={styles.nav__logo}
-              src={"/assets/img/logosvg.svg"}
+              src={"/assets/img/logo2.png"}
               alt="logo"
               width={139}
               height={44}

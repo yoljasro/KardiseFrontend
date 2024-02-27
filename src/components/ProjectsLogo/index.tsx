@@ -11,6 +11,7 @@ import "react-multi-carousel/lib/styles.css";
 import styles from './index.module.sass'
 // react-reveal
 import { Zoom } from 'react-reveal';
+import Image from 'next/image';
 
 
 const responsive = {

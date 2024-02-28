@@ -47,12 +47,12 @@ export const Clients: FC<any> = () => {
                         {clients.map((client: Client) => (
                             <div className={styles.client__videos} key={client._id}>
                                 <div className={styles.client__video} onClick={handleVideoClick}>
-                                    <div className={styles.client__play}>
-                                        <div className={styles.client__triangle}></div>
-                                    </div>
-                                    <video ref={videoRef} className={styles.client__video__video} width="100%" height="200">
+                                    <video ref={videoRef} className={styles.client__videoPlay} width="50%" height="200">
                                         <source src={`http://152.42.162.108${client.video}`} type="video/mp4" />
                                     </video>
+                                    <div className={styles.client__play}>
+                                        <div className={styles.client__play__triangle}></div>
+                                    </div>
                                 </div>
                             </div>
                         ))}

@@ -4,8 +4,9 @@
     display: flex
     flex-direction: column
     justify-content: center
-    margin-top: 90px
+    margin-top: 120px
     width: 100%
+    overflow-x: hidden
 
     &__title
         @include font(14px , #B4C634 , light)
@@ -38,10 +39,17 @@
         background-image: url("/assets/img/uzumPage.png")
         background-size: cover
         background-repeat: no-repeat
+        // position: relative
+        // top: 100px
 
         @media (max-width:769px)
             width: 95%
             height: 350px
+
+    &__videoPlay
+        position: relative
+        top: 100px
+        border-radius: 10px
 
     &__videoTitle
         @include font(24px , black , light)
@@ -62,17 +70,24 @@
         cursor: pointer
         background-color: black
         position: relative
-        top: -200px
+        top: -40px
+        &:hover
+            background: green
+            transition: 0.3s ease
 
-    &__triangle
-        width: 0
-        height: 0
-        position: absolute
-        border-top: 18px solid transparent
-        border-bottom: 18px solid transparent
-        border-left: 30px solid #FFF
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        cursor: pointer
-        transition: transform 0.3s ease-in-out
+        &:hover &__triangle
+            border-left: 30px solid red
+            transition: 0.3 ease
+
+        &__triangle
+            width: 0
+            height: 0
+            position: absolute
+            border-top: 18px solid transparent
+            border-bottom: 18px solid transparent
+            border-left: 30px solid #FFF
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            cursor: pointer
+            transition: transform 0.3s ease-in-out

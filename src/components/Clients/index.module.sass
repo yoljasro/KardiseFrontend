@@ -26,14 +26,15 @@
         align-items: center
         width: 100% !important
         margin-top: 50px
-        // height: 500px
-        gap: 50px
+        // gap: 10px
 
     &__video
-        height: 500px
         width: 100% !important
-
-        // max-width: 1920px !important
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-content: center
+        align-items: center
 
         @media (max-width:769px)
             width: 95%
@@ -43,5 +44,32 @@
         @include font(24px , black , light)
 
     &__image
-        width: 100%
-        height: 500px
+        width: 100% !important
+        height: 300px !important
+        object-fit: cover !important
+        object-position: center !important
+        image-orientation: flip !important
+        cursor: pointer !important
+
+    &__play
+        width: 100px
+        height: 100px
+        border-radius: 100%
+        border: none
+        cursor: pointer
+        background-color: black
+        position: relative
+        top: -200px
+
+    &__triangle
+        width: 0
+        height: 0
+        position: absolute
+        border-top: 18px solid transparent
+        border-bottom: 18px solid transparent
+        border-left: 30px solid #FFF
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        cursor: pointer
+        transition: transform 0.3s ease-in-out

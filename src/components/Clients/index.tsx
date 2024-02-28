@@ -1,25 +1,47 @@
-import React, { useEffect, useState } from "react";
-//styles
+// index.tsx yoki index.js fayl
+
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./index.module.sass";
-// FC
-import { Client } from '../../types'; // TypeScript Types or Interface
-import { fetchData, clientsAPI } from '../API'; // ApiComponent manzilini to'g'rilang
+import { Client } from '../../types';
+import { clientsAPI } from '../API';
 import { FC } from "react";
-// next components
 import Image from "next/image";
-import Link from "next/link";
-// react-reveal
-import { Rotate  , Flip , Zoom , Fade} from "react-reveal";
+import { Fade } from "react-reveal";
 
 export const Clients: FC<any> = () => {
     const [clients, setClients] = useState<any>([]);
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const imageRef = useRef<HTMLImageElement>(null);
 
-    const handleVideoClick = (video: HTMLVideoElement) => {
-        if (video.paused) {
-            video.play();
-            video.requestFullscreen(); // Videoni full ekran rejimiga o'tkazish
-        } else {
-            video.pause();
+    const handleVideoClick = () => {
+        if (videoRef.current) {
+            const video = videoRef.current;
+
+            if (video.paused) {
+                video.play();
+                video.requestFullscreen();
+            } else {
+                video.pause();
+            }
+        }
+    };
+
+    const handleImageClick = (client: Client) => {
+        if (videoRef.current && imageRef.current) {
+            const video = videoRef.current;
+            const videoSource = `http://152.42.162.108${client.video}`;
+            const image = imageRef.current;
+
+            if (video.paused) {
+                video.src = videoSource;
+                video.load();
+                video.play();
+                video.requestFullscreen();
+                image.style.display = "none"; // Rasmni yashirish
+            } else {
+                video.pause();
+                image.style.display="none"
+            }
         }
     };
 
@@ -37,14 +59,6 @@ export const Clients: FC<any> = () => {
         fetchClients();
     }, []);
 
-    const handleImageClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
-        const target = event.target as HTMLImageElement;
-        const video = target.nextElementSibling as HTMLVideoElement;
-        if (video) {
-            handleVideoClick(video);
-        }
-    };
-    
     return (
         <>
             <Fade cascade>
@@ -52,19 +66,23 @@ export const Clients: FC<any> = () => {
                     <p className={styles.client__title}>НАМ ДОВЕРЯЮТ  </p>
                     <p className={styles.client__subTitle}>Наши клиенты</p>
                     <div className={styles.client__cards}>
-                        {clients.map((client) => (
+                        {clients.map((client: Client) => (
                             <div className={styles.client__videos} key={client._id}>
-                                <div className={styles.client__video} >
-                                    <Image className={styles.client__image} onClick={handleImageClick} alt="image" src="/assets/img/uzumPage.png" width={300} height={200} />
-                                    <video className={styles.client__video__video}>
-                                        <source src={`http://152.42.162.108${client.video}`} type="video/mp4" />
+                                <div className={styles.client__video} onClick={() => handleImageClick(client)}>
+                                    <Image ref={imageRef} className={styles.client__image} alt="image" src="/assets/img/uzumPage.png" width={300} height={200} />
+                                    <div className={styles.client__play}>
+                                        <div className={styles.client__triangle}></div>
+                                    </div>
+                                    <video ref={videoRef} className={styles.client__video__video}>
+                                        <source src="" type="video/mp4" />
                                     </video>
                                 </div>
                             </div>
-                        ))}
+                        ))}     
                     </div>
                 </div>
             </Fade>
         </>
     );
 };
+

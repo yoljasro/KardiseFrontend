@@ -18,6 +18,12 @@
         justify-content: center
         gap: 80px
 
+    @media (min-width:1200px) and (max-width:1400px)
+        width: 100%
+        gap: 120px
+        flex-wrap: nowrap
+        padding-right: 30px
+
     &__content
         width: 100%
         max-width: 623px
@@ -74,7 +80,7 @@
             // gap: 
 
     &__cardTitle
-        @include font(17px , #000000 , bold)
+        @include font(17px , #000000 , regular)
 
         @media (max-width:769px)
              @include font(15px , #000000 , light)
@@ -86,4 +92,4 @@
         padding-top: 2px
 
         @media (max-width:769px)
-             @include font(15px , #000000 , regular)
+             @include font(15px , #000000 , light)

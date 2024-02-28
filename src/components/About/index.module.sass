@@ -11,7 +11,7 @@
         flex-direction: column
         align-items: center
         align-content: center
-        margin-top: 350px
+        margin-top: 430px
 
     @media (min-width:1000px) and (max-width:1200px)
         padding: 0
@@ -24,8 +24,11 @@
         flex-direction: column
         margin-top: 50px
 
-    &__info
+    @media (min-width:1200px) and (max-width:1400px)
+        padding: 20px 100px
+        // padding: 0
 
+    &__info
         @media (max-width: 769px)
             width: 100%
             text-align: center
@@ -38,12 +41,12 @@
             @include font(12px , #B4C634 , light)
 
     &__desc
-        @include font(50px , #16213E, kanit-semibold)
+        @include font(50px , #16213E, light)
         padding-top: 10px
 
         @media (max-width: 769px)
             font-size: 36px
-            @include font(35px , #16213E, kanit-semibold)
+            @include font(35px , #16213E, light)
 
     &__btn
         @media (max-width:769px)
@@ -66,7 +69,7 @@
             @include font(15px , #495251 , light)
 
     &__company
-        @include font(17px , #41444B , regular)
+        @include font(17px , #41444B , light)
         padding-top: 27px
 
         @media (max-width: 769px)
@@ -88,3 +91,7 @@
 
         @media (min-width:100px) and (max-width:1200px)
             margin-top: 60px
+
+        @media (min-width:1200px) and (max-width:1400px)
+            // width: 300px !important
+            // height: 300px !important

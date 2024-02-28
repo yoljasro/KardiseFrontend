@@ -49,13 +49,13 @@
         text-align: left
         // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important
         @media (max-width:769px)
-            @include font(50px , #FFFFFF ,kanit-semibold )
+            @include font(50px , #FFFFFF ,light )
             text-align: center
 
         @media (min-width:1000px) and (max-width:1200px)
             text-align: center
             justify-content: center
-            @include font(50px , #FFFFFF ,kanit-semibold )
+            @include font(50px , #FFFFFF ,light )
             max-width: 900px
             padding-left: 150px
 
@@ -63,7 +63,7 @@
         display: flex
         justify-content: center
         width: 100%
-        margin-top: 219px
+        margin-top: 375px
         @media (max-width:769px)
             margin-top: 80px
             flex-direction: column
@@ -160,7 +160,6 @@
 
     &__companyText
         @include font(30px , #495251 , light)
-        font-family: Kanit-SemiBold !important
         padding-top: 20px
         @media (max-width:769px)
             @include font(23px , #495251 , kanit-semibold)
@@ -188,6 +187,6 @@
 
     &__subInfo
         padding-top: 18px
-        @include font(19px , #41444B , black)
+        @include font(19px , #41444B , regular)
         @media (max-width:769px)
             @include font(17px , #41444B , light)

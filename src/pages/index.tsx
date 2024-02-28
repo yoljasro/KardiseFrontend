@@ -33,7 +33,7 @@ export default function Home() {
         {/* <Process/> */}
         <ProjectsLogo/>
         <Projects/>
-        {/* <Clients/> */}
+        <Clients/>
         <Location/>
       </main>
     </>

@@ -47,7 +47,6 @@ export const Info: FC<any> = () => {
       </div>
 
       <div className={styles.info__mediaCards}>
-        <Zoom right cascade>
         <div className={styles.info__card}>
           <Image src={'/assets/img/ruler.svg'} alt="ruler" width={78} height={75} />
           <p className={styles.info__cardTitle}>Строительная группа</p>
@@ -72,7 +71,6 @@ export const Info: FC<any> = () => {
               Инженер слаботочных систем - 3 человека.</p>
           </div>
         </div>
-        </Zoom>
       </div>
     </div>
   );

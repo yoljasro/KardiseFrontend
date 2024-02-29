@@ -51,7 +51,7 @@ export const Footer: FC<any> = () => {
 
                                 <li>
                                     <Link className={styles.footer__link} href={'/park'}>
-                                        Техника Парк
+                                    Парк Техники
                                     </Link>
                                 </li>
                             </ul>

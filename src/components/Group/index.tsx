@@ -17,7 +17,7 @@ export const Group: FC<any> = () => {
                 <div className={styles.group}>
                     <div className={styles.group__person}>
                         <div className={styles.group__card}>
-                            <p className={styles.group__cardTitle}>26+</p>
+                            <p className={styles.group__cardTitle}>40+</p>
                             <p className={styles.group__cardSubTitle}>ГОДЫ ОПЫТА </p>
                         </div>
                     </div>

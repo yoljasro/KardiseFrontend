@@ -43,11 +43,9 @@
 
     &__text
         @include font(50px , #FFFFFF , light)
-        // font-family: Roboto !important
         width: 100%
         max-width: 850px
         text-align: left
-        // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important
         @media (max-width:769px)
             @include font(50px , #FFFFFF ,light )
             text-align: center
@@ -141,6 +139,7 @@
         margin-top: -200px
         filter: drop-shadow(0px 2px 4px #00215b54)
         padding-left: 61px
+        overflow: hidden
 
         @media (max-width:769px)
             max-width: 92%
@@ -162,7 +161,7 @@
         @include font(30px , #495251 , light)
         padding-top: 20px
         @media (max-width:769px)
-            @include font(23px , #495251 , kanit-semibold)
+            @include font(23px , #495251 , light)
             text-align: center
 
     &__content
@@ -188,5 +187,6 @@
     &__subInfo
         padding-top: 18px
         @include font(19px , #41444B , regular)
+        
         @media (max-width:769px)
-            @include font(17px , #41444B , light)
+            @include font(16px , #41444B , light)

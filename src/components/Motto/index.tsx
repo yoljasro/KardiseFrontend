@@ -9,38 +9,49 @@ import Link from "next/link";
 import { Btn } from "../Btn";
 // react-reveal
 import { Rotate, Flip, Fade, Zoom } from "react-reveal";
+// react icons
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { GrStatusGood } from "react-icons/gr";
+import { MdAccessTime } from "react-icons/md";
+import { GiProgression } from "react-icons/gi";
 
 export const Motto: FC<any> = () => {
     return (
         <div className={styles.motto}>
             <div className={styles.motto__background}>
                 <Fade left cascade>
-                <p className={styles.motto__name}>Наш девиз</p>
-                <p className={styles.motto__title}>«Будущее берет старт в настоящем»</p>
+                    <p className={styles.motto__name}>Наш девиз</p>
+                    <p className={styles.motto__title}>«Будущее берет старт в настоящем»</p>
                 </Fade>
                 {/* <Btn /> */}
             </div>
             <Fade bottom cascade>
-            <div className={styles.motto__cards}>
-                <div className={styles.motto__card}>
-                    <Image src={'/assets/img/1.svg'} alt="number" width={70} height={72} />
-                    <div className={styles.motto__cardInfo}>
-                        <p className={styles.motto__cardTitle}>НАДЕЖНОСТЬ</p>
+                <div className={styles.motto__cards}>
+                    <div className={styles.motto__card}>
+                        <div className={styles.motto__icon}>
+                            <VscWorkspaceTrusted />
+                        </div>
+                        <div className={styles.motto__cardInfo}>
+                            <p className={styles.motto__cardTitle}>НАДЕЖНОСТЬ</p>
+                        </div>
+                    </div>
+                    <div className={styles.motto__card}>
+                        <div className={styles.motto__icon}>
+                            <GrStatusGood />
+                        </div>
+                        <div className={styles.motto__cardInfo}>
+                            <p className={styles.motto__cardTitle}>КАЧЕСТВО</p>
+                        </div>
+                    </div>
+                    <div className={styles.motto__card}>
+                    <div className={styles.motto__icon}>
+                            <MdAccessTime />
+                        </div>
+                        <div className={styles.motto__cardInfo}>
+                            <p className={styles.motto__cardTitle}>СКОРОСТЬ</p>
+                        </div>
                     </div>
                 </div>
-                <div className={styles.motto__card}>
-                    <Image src={'/assets/img/2.svg'} alt="number" width={70} height={72} />
-                    <div className={styles.motto__cardInfo}>
-                        <p className={styles.motto__cardTitle}>КАЧЕСТВО</p>
-                    </div>
-                </div>
-                <div className={styles.motto__card}>
-                    <Image src={'/assets/img/3.svg'} alt="number" width={70} height={72} />
-                    <div className={styles.motto__cardInfo}>
-                        <p className={styles.motto__cardTitle}>СКОРОСТЬ</p>
-                    </div>
-                </div>
-            </div>
             </Fade>
         </div>
     );

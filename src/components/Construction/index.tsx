@@ -25,7 +25,7 @@ export const Construction: FC<any> = () => {
                 <Zoom top cascade>
                     <div className={styles.construction__card}>
                         <p className={styles.construction__title}>ИТР - состав</p>
-                        <p className={styles.construction__numberText}>14+</p>
+                        <p className={styles.construction__numberText}>40+</p>
                     </div>
                 </Zoom>
                 <Zoom top cascade>

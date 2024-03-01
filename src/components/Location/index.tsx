@@ -1,7 +1,7 @@
 import { useState, FC } from "react";
 import { GoogleMap, LoadScript, Marker, InfoWindow } from "@react-google-maps/api";
 import Image from "next/image";
-import { Zoom, Rotate  , Fade} from "react-reveal";
+import { Zoom, Rotate, Fade } from "react-reveal";
 import styles from './index.module.sass';
 
 const mapContainerStyle = {
@@ -85,31 +85,45 @@ export const Location: FC<MapProps> = () => {
                             </GoogleMap>
                         </LoadScript>
                     </div>
-                        <div className={styles.location__adress}>
-                            <div className={styles.location__card}>
-                                <div className={styles.location__cardLine}></div>
-                                <p className={styles.location__cardTitle}>АДРЕС КОМПАНИИ </p>
-                                <p className={styles.location__cardDesc}> 8A, Ташкентская кольцевая автомобильная дорога</p>
-                            </div>
+                    <div className={styles.location__adress}>
+                        <div className={styles.location__card}>
+                            <div className={styles.location__cardLine}></div>
+                            <p className={styles.location__cardTitle}>АДРЕС КОМПАНИИ </p>
+                            <p className={styles.location__cardDesc}> 8A, Ташкентская кольцевая автомобильная дорога</p>
+                        </div>
 
-                            <div className={styles.location__phone}>
-                                <Image src={'/assets/img/iconcall.svg'} alt="iconcall" width={65} height={65} />
-                                <div>
-                                    <p className={styles.location__companyPhone}>ТЕЛЕФОНЫ КОМПАНИИ </p>
-                                    <p className={styles.location__number}>+ 998 93 389 13 12</p>
-                                    <p className={styles.location__number}>+ 998 93 389 54 39</p>
-                                </div>
-                            </div>
-
-                            <div className={styles.location__email}>
-                                <Image src={'/assets/img/iconemail.svg'} alt="iconemail" width={65} height={65} />
-                                <div>
-                                    <p className={styles.location__companyEmail}>ЭЛЕКТРОННАЯ ПОЧТА </p>
-                                    <p className={styles.location__emailName}>kardise@gmail.com</p>
-                                    <p className={styles.location__emailName}>kardise.info@gmail.com</p>
-                                </div>
+                        <div className={styles.location__phone}>
+                            <Image src={'/assets/img/iconcall.svg'} alt="iconcall" width={65} height={65} />
+                            <div>
+                                <p className={styles.location__companyPhone}>ТЕЛЕФОНЫ КОМПАНИИ </p>
+                                <p className={styles.location__number}><a href="tel:+998933891312">
+                                    + 998 93 389 13 12
+                                </a>
+                                </p>
+                                <p className={styles.location__number}><a href="tel:+998933895439">
+                                    + 998 93 389 54 39
+                                </a></p>
                             </div>
                         </div>
+
+                        <div className={styles.location__email}>
+                            <Image src={'/assets/img/iconemail.svg'} alt="iconemail" width={65} height={65} />
+                            <div>
+                                <p className={styles.location__companyEmail}>ЭЛЕКТРОННАЯ ПОЧТА </p>
+                                <p className={styles.location__emailName}>
+                                    <a href="mailto:kardise@gmail.com">
+                                        kardise@gmail.com
+                                    </a>
+                                </p>
+
+                                <p className={styles.location__emailName}>
+                                    <a href="mailto:kardise.info@gmail.com">
+                                        kardise.info@gmail.com
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Fade>
         </>

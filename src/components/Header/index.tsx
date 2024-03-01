@@ -32,7 +32,7 @@ export const Header: FC<any> = () => {
                     </div>
 
                     <div className={styles.header__cardTwo}>
-                        <p className={styles.header__title}>26+</p>
+                        <p className={styles.header__title}>40+</p>
                         <p className={styles.header__subTitle}>Лет Опыта</p>
                     </div>
                         <div className={styles.header__directions}>

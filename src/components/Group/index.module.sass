@@ -78,7 +78,7 @@
 
         @media (max-width:769px)
             text-align: center
-            @include font(30px , #16213E , regular)
+            @include font(30px , #16213E , light)
 
     &__storyCard
         width: 100%
@@ -97,8 +97,10 @@
 
     &__storyCardInfo
         padding: 22px 61px 0px 51px
-        font-style: 17px
-        color: #000000
+        @include font(17px , #000000 , light)
+
+        @media (max-width:769px)
+            padding: 22px 10px 0px 51px
 
     &__storyCardName
         @include font(25px , #16213E , extra-regular)

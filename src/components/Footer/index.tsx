@@ -7,28 +7,32 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 // react icons
-import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube, FaTelegram } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr"
 // react-reveal
-import { Rotate, Flip, Zoom , Fade} from "react-reveal";
+import { Rotate, Flip, Zoom, Fade } from "react-reveal";
 
 export const Footer: FC<any> = () => {
     return (
         <>
-            <Fade  cascade>
+            <Fade cascade>
                 <div className={styles.footer}>
                     <div className={styles.footer__contact}>
                         <Fade left cascade>
                             <p className={styles.footer__title}>KARDISE</p>
                             <p className={styles.footer__subTitle}>ENGINEERING</p>
                             <p className={styles.footer__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ</p>
-                            <p className={styles.footer__phone}>+ 998 93 389 13 12</p>
+                            <p className={styles.footer__phone}>
+                                <a href="tel:+998933891312">
+                                    + 998 93 389 13 12
+                                </a>
+                            </p>
                         </Fade>
                         <Rotate cascade>
                             <div className={styles.footer__social}>
                                 <div className={styles.footer__circle}><GrInstagram className={styles.footer__circle__icon} /></div>
                                 <div className={styles.footer__circle}><FaFacebookF className={styles.footer__circle__icon} /></div>
-                                <div className={styles.footer__circle}><FaLinkedinIn className={styles.footer__circle__icon} /></div>
+                                <div className={styles.footer__circle}><FaTelegram className={styles.footer__circle__icon} /></div>
                                 <div className={styles.footer__circle}><FaYoutube className={styles.footer__circle__icon} /></div>
                             </div>
                         </Rotate>
@@ -51,7 +55,7 @@ export const Footer: FC<any> = () => {
 
                                 <li>
                                     <Link className={styles.footer__link} href={'/park'}>
-                                    Парк Техники
+                                        Парк Техники
                                     </Link>
                                 </li>
                             </ul>

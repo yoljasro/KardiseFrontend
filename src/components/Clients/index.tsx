@@ -42,12 +42,12 @@ export const Clients: FC<any> = () => {
             <Fade cascade>
                 <div className={styles.client}>
                     <p className={styles.client__title}>НАМ ДОВЕРЯЮТ  </p>
-                    <p className={styles.client__subTitle}>Наши клиенты</p>
+                    <p className={styles.client__subTitle}>Наши Проекты</p>
                     <div className={styles.client__cards}>
                         {clients.map((client: Client) => (
                             <div className={styles.client__videos} key={client._id}>
                                 <div className={styles.client__video} onClick={handleVideoClick}>
-                                    <video ref={videoRef} className={styles.client__videoPlay} width="50%" height="200">
+                                    <video ref={videoRef} className={styles.client__videoPlay} width="100%" height="500">
                                         <source src={`http://152.42.162.108${client.video}`} type="video/mp4" />
                                     </video>
                                     <div className={styles.client__play}>

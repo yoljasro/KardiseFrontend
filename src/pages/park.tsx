@@ -19,7 +19,7 @@ const Park: FC<any> = () => {
                 <title>Park Technician</title>
                 <meta name="description" content="Kardise Park Technician page" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/assets/img/logo.png" /> 
+                <link rel="icon" href="/assets/img/logo.png" />
             </Head>
 
             <div className={styles.park}>
@@ -29,8 +29,16 @@ const Park: FC<any> = () => {
                         <div className={styles.park__card}>
                             <div className={styles.park__line}>
                                 <p className={styles.park__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ </p>
-                                <p className={styles.park__number}>+ 998 93 389 13 12</p>
-                                <p className={styles.park__number}>+ 998 93 389 54 39</p>
+                                <p className={styles.park__number}>
+                                    <a href="tel:+998933891312">
+                                        + 998 93 389 13 12
+                                    </a>
+                                </p>
+                                <p className={styles.park__number}>
+                                    <a href="tel:+998933895439">
+                                        + 998 93 389 54 39
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>

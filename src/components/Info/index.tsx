@@ -60,7 +60,7 @@ export const Info: FC<any> = () => {
         </div>
 
         <div className={styles.info__card}>
-          <Image src={'/assets/img/ruler.svg'} alt="ruler" width={78} height={75} />
+          <Image src={'/assets/img/infoicon.svg'} alt="ruler" width={78} height={75} />
           <div>
             <p className={styles.info__cardTitle}>Проектная группа</p>
             <p className={styles.info__cardDesc}>Инженер конструктор - 7 человек; Архитектор - 3 человека;

@@ -7,6 +7,7 @@
     margin-top: 120px
     width: 100%
     overflow-x: hidden
+    overflow-y: hidden
 
     &__title
         @include font(14px , #B4C634 , light)
@@ -26,8 +27,6 @@
         align-content: center
         align-items: center
         width: 100% !important
-        margin-top: 50px
-        // gap: 10px
 
     &__video
         width: 100% !important
@@ -36,7 +35,7 @@
         justify-content: center
         align-content: center
         align-items: center
-        background-image: url("/assets/img/uzumPage.png")
+        // background-image: url("/assets/img/uzumPage.png")
         background-size: cover
         background-repeat: no-repeat
         // position: relative
@@ -63,17 +62,20 @@
         cursor: pointer !important
 
     &__play
-        width: 100px
-        height: 100px
+        width: 80px
+        height: 80px
         border-radius: 100%
         border: none
         cursor: pointer
         background-color: black
         position: relative
-        top: -40px
+        top: -150px
         &:hover
             background: green
             transition: 0.3s ease
+
+        @media (max-width:769px)
+            top: -70px
 
         &:hover &__triangle
             border-left: 30px solid red
@@ -85,9 +87,14 @@
             position: absolute
             border-top: 18px solid transparent
             border-bottom: 18px solid transparent
-            border-left: 30px solid #FFF
+            border-left: 25px solid #FFF
             top: 50%
             left: 50%
             transform: translate(-50%, -50%)
             cursor: pointer
             transition: transform 0.3s ease-in-out
+
+            @media (max-width:769px)
+                border-left: 18px solid #FFF
+                border-bottom: 12px solid transparent
+                border-top: 12px solid transparent

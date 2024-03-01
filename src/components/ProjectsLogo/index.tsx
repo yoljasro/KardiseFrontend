@@ -53,7 +53,7 @@ export const ProjectsLogo: React.FC = () => {
       <Zoom top cascade>
         <div className={styles.projectsLogo}>
           <p className={styles.projectsLogo__title}>НАМ ДОВЕРЯЮТ </p>
-          <p className={styles.projectsLogo__subTitle}>Наши Проекты</p>
+          <p className={styles.projectsLogo__subTitle}>Наши Клиенты</p>
           {projectLogos.length > 0 ? (
             <Carousel
               className={styles.projectLogo__carousel}
@@ -64,11 +64,12 @@ export const ProjectsLogo: React.FC = () => {
               ssr={true}
               infinite={true}
               rewindWithAnimation={true}
-              autoPlay={true}
-              autoPlaySpeed={3000}
+              autoPlay={true}                // Enable automatic scrolling
+              autoPlaySpeed={1500}           // Set the speed (in milliseconds)
+              // rewindWithAnimation={true}
               keyBoardControl={true}
               customTransition="all .6"
-              transitionDuration={200}
+              transitionDuration={0}
               containerClass="carousel-container"
               dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-90-px"

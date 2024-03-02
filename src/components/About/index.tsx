@@ -23,7 +23,7 @@ export const About: FC<any> = () => {
                     <div className={styles.about__btn}>
                         <Btn />
                     </div>
-                </div>
+                </div>  
             </Fade>
             <Fade right cascade> <Zoom cascade>
                 <div className={styles.about__content}>

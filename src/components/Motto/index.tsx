@@ -14,6 +14,7 @@ import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { GrStatusGood } from "react-icons/gr";
 import { MdAccessTime } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
+import { MdViewTimeline } from "react-icons/md";
 
 export const Motto: FC<any> = () => {
     return (
@@ -30,14 +31,14 @@ export const Motto: FC<any> = () => {
                     <div className={styles.motto__card}>
                         <div className={styles.motto__icon}>
                             <VscWorkspaceTrusted />
-                        </div>
+                           </div>
                         <div className={styles.motto__cardInfo}>
                             <p className={styles.motto__cardTitle}>НАДЕЖНОСТЬ</p>
                         </div>
                     </div>
                     <div className={styles.motto__card}>
                         <div className={styles.motto__icon}>
-                            <GrStatusGood />
+                            <MdViewTimeline />
                         </div>
                         <div className={styles.motto__cardInfo}>
                             <p className={styles.motto__cardTitle}>КАЧЕСТВО</p>

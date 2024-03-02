@@ -41,15 +41,15 @@ export const Header: FC<any> = () => {
                             <div className={styles.header__content}>
                                 <div className={styles.header__media}>
                                     <Image src={'/assets/img/shape.svg'} alt="shape" width={61} height={63} />
-                                    <p className={styles.header__subInfo}>Строительство и девелопмент</p>
+                                    <p className={styles.header__subInfo}>Проектирования </p>
                                 </div>
                                 <div className={styles.header__media}>
                                     <Image src={'/assets/img/ruler.svg'} alt="shape" width={61} height={63} />
-                                    <p className={styles.header__subInfo}>Инвестиции в землю</p>
+                                    <p className={styles.header__subInfo}>Монтаж </p>
                                 </div>
                                 <div className={styles.header__media}>
                                     <Image src={'/assets/img/measuring-tool.svg'} alt="shape" width={61} height={63} />
-                                    <p className={styles.header__subInfo}>Инвестиции в сфере обслуживание <br />   машин и механизмов</p>
+                                    <p className={styles.header__subInfo}>Строительство</p>
                                 </div>
                             </div>
                         </div>

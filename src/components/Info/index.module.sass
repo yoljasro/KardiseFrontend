@@ -28,13 +28,17 @@
         display: flex
         gap: 150px
 
+        @media (max-width:769px)
+            flex-direction: column
+            gap: 50px
+
     &__content
         width: 100%
         max-width: 623px
-        @include font(18px  , #000000 , light)
+        @include font(16px  , #000000 , light)
 
         @media (max-width:769px)
-            @include font(16px  , #000000 , light)
+            @include font(14px  , #000000 , light)
             padding: 0 2px
             text-align: left
             padding-left: 15px
@@ -43,10 +47,10 @@
     &__contentTwo
         width: 100%
         max-width: 623px
-        @include font(18px  , #000000 , light)
+        @include font(16px  , #000000 , light)
 
         @media (max-width:769px)
-            @include font(15px  , #000000 , light)
+            @include font(14px  , #000000 , light)
             padding: 0 2px
             text-align: left
             padding-left: 15px

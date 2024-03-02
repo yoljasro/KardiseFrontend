@@ -22,8 +22,10 @@ export const Motto: FC<any> = () => {
         <div className={styles.motto}>
             <div className={styles.motto__background}>
                 <Fade left cascade>
+                    <div className={styles.motto__content}>
                     <p className={styles.motto__name}>Наш девиз</p>
                     <p className={styles.motto__title}>«Будущее берет старт в настоящем»</p>
+                    </div>
                 </Fade>
                 <Fade bottom cascade>
                 <div className={styles.motto__cards}>

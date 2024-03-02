@@ -14,29 +14,43 @@
         background-image: url('/assets/img/mottobg.png')
         background-size: cover
         background-repeat: no-repeat
-        height: 773px
+        height: auto
         display: flex
-        flex-direction: column
-        // justify-content: center
-        align-items: center
         max-width: 1920px
         padding-top: 120px
+        align-content: center
+        align-items: center
 
         @media (max-width:769px)
             text-align: center
             justify-content: start
             padding-top: 80px
             height: 820px
+            flex-direction: column
+
+    &__content
+        display: flex
+        flex-direction: column
+        padding-left: 50px
+        position: relative
+        left: 150px
+        width: 100%
+        // padding-top: -50px
+        margin-top: -200px
+
+        @media (max-width:769px)
+            padding-top: 20px
 
     &__name
-        @include font(25px , #FFFFFF, light)
+        @include font(25px , #FFFFFF, regular)
+        text-align: center
 
         @media (max-width:769px)
             @include font(17px , #FFFFFF, light)
 
     &__title
-        @include font(70px , #FFFFFF , light)
-        padding-top: 20px
+        @include font(40px , #FFFFFF , regular)
+        padding-top: 30px
 
         @media (max-width:769px)
             @include font(35px , #FFFFFF, light)
@@ -49,7 +63,8 @@
         align-items: center
         width: 100%
         gap: 80px
-        margin-top: 120px
+        // margin-top: 120px
+        margin-bottom: 50px
 
         @media (max-width:769px)
             flex-direction: column

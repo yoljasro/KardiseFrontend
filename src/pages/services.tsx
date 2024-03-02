@@ -20,28 +20,11 @@ const Services: FC<any> = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/assets/img/logo.png" />
             </Head>
-
+            <Zoom cascade>
             <div className={styles.services}>
-                <Zoom cascade>
                     <div className={styles.services__background}>
                         <p className={styles.services__title}>Услуги</p>
-                        {/* <div className={styles.services__card}>
-                            <div className={styles.services__line}>
-                                <p className={styles.services__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ </p>
-                                <p className={styles.services__number}>
-                                    <a href="tel:+998933891312">
-                                        + 998 93 389 13 12
-                                    </a>
-                                </p>
-                                <p className={styles.services__number}>
-                                    <a href="tel:+998933895439">
-                                        + 998 93 389 54 39
-                                    </a>
-                                </p>
-                            </div>
-                        </div> */}
                     </div>
-                </Zoom>
 
                 <Zoom bottom cascade>
                     <div className={styles.services__cards}>
@@ -89,6 +72,7 @@ const Services: FC<any> = () => {
                     </div>
                 </Zoom>
             </div >
+            </Zoom>
         </>
     );
 };

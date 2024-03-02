@@ -1,7 +1,7 @@
 @import "../../styles/mixins"
 
 .group
-    margin-top: 217px !important
+    margin-top: 100px !important
     display: flex
     gap: 123px
     width: 100% !important
@@ -55,10 +55,10 @@
         align-items: center
 
     &__cardTitle
-        @include font(100px , #FFFFFF , light)
+        @include font(90px , #FFFFFF , light)
 
         @media (max-width:769px)
-            @include font(85px , #FFFFFF , light)
+            @include font(80px , #FFFFFF , light)
 
     &__cardSubTitle
         @include font(17px, #FFFFFF , light)
@@ -73,12 +73,12 @@
             text-align: center
 
     &__desc
-        @include font(45px , #16213E , light)
+        @include font(40px , #16213E , regular)
         padding-top: 10px
 
         @media (max-width:769px)
             text-align: center
-            @include font(30px , #16213E , light)
+            @include font(28px , #16213E , light)
 
     &__storyCard
         width: 100%
@@ -97,13 +97,14 @@
 
     &__storyCardInfo
         padding: 22px 61px 0px 51px
-        @include font(17px , #000000 , light)
+        @include font(16px , #000000 , light)
 
         @media (max-width:769px)
             padding: 22px 10px 0px 51px
+            @include font(15px , #000000 , light)
 
     &__storyCardName
-        @include font(25px , #16213E , extra-regular)
+        @include font(22px , #16213E , light)
         padding-left: 51px
         padding-top: 10px
         font-family: Verdana, Geneva, Tahoma, sans-serif !important

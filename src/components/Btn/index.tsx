@@ -16,7 +16,7 @@ export const Btn: FC<any> = () => {
         <div>
             <Fade left cascade>
                 <div>
-                    <button className={styles.btn}>
+                    <button className={styles.btn} >
                         УЗНАТЬ БОЛЬШЕ
                         <Image src={'/assets/img/arrow.svg'} alt="arrow" width={13} height={14} />
                     </button >

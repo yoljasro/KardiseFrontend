@@ -27,6 +27,11 @@ export const Footer: FC<any> = () => {
                                     + 998 93 389 13 12
                                 </a>
                             </p>
+                            <p className={styles.footer__phone}>
+                                <a href="tel:+998933895439">
+                                    + 998 93 389 54 39
+                                </a>
+                            </p>
                         </Fade>
                         <Rotate cascade>
                             <div className={styles.footer__social}>

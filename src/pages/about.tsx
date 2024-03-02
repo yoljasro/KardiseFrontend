@@ -23,9 +23,8 @@ const About: FC<any> = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/assets/img/logo.png" />
             </Head>
-
+            <Zoom cascade>
             <div className={styles.about}>
-                <Zoom cascade>
                     <div className={styles.about__background}>
                         <p className={styles.about__title}>О нас</p>
                         {/* <Zoom cascade > */}
@@ -45,11 +44,11 @@ const About: FC<any> = () => {
                             </div>
                         </div> */}
                     </div>
-                </Zoom>
                 <Group />
                 <Motto />
                 <Info />
             </div>
+            </Zoom>
         </>
     );
 };

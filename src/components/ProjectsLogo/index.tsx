@@ -52,7 +52,6 @@ export const ProjectsLogo: React.FC = () => {
     <>
       <Zoom top cascade>
         <div className={styles.projectsLogo}>
-          <p className={styles.projectsLogo__title}>НАМ ДОВЕРЯЮТ </p>
           <p className={styles.projectsLogo__subTitle}>Наши Клиенты</p>
           {projectLogos.length > 0 ? (
             <Carousel

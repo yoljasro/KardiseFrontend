@@ -3,7 +3,6 @@
 .footer
     width: 100%
     display: flex
-    // flex-wrap: wrap
     justify-content: center
     margin-top: 90px
     align-content: center
@@ -46,24 +45,24 @@
             flex-direction: column
 
     &__title
-        @include font(34px , #FFFFFF , light)
+        @include font(34px , #FFFFFF , regular)
         @media (max-width:769px)
             @include font(27px , #FFFFFF , light)
 
     &__subTitle
-        @include font(12px , #FFFFFF , light)
+        @include font(12px , #FFFFFF , regular)
         padding-top: 2px
         @media (max-width:769px)
             @include font(12px , #FFFFFF , light)
 
     &__call
-        @include font(14px , #EBECEE, light)
+        @include font(14px , #EBECEE, regular)
         padding-top: 22px
         @media (max-width:769px)
             @include font(12px , #EBECEE , light)
 
     &__phone
-        @include font(34px ,  #FFFFFF , light)
+        @include font(32px ,  #FFFFFF , regular)
         padding-top: 10px
         @media (max-width:769px)
             @include font(27px , #EBECEE , light)
@@ -98,7 +97,7 @@
             color: #515755 !important
 
     &__reserved
-        @include font(17px , #FFFFFF , light)
+        @include font(17px , #FFFFFF , regular)
         padding-top: 85px
 
     &__links
@@ -121,7 +120,7 @@
             width: 100% !important
 
     &__menu
-        @include font(22px , #FFFFFF , light )
+        @include font(22px , #FFFFFF , regular )
 
     &__nav
         display: flex
@@ -134,10 +133,9 @@
             gap: 2px
 
         & li
-            @include font(17px , #D4D7DD , light)
+            @include font(17px , #D4D7DD , regular)
             padding-top: 20px
             cursor: pointer
-            font-family: Verdana, Geneva, Tahoma, sans-serif !important
 
             @media (min-width:100px) and (max-width:1200px)
                 padding-top: 40px

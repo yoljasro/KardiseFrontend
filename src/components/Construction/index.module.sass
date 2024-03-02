@@ -37,6 +37,12 @@
         background-size: cover
         border: 1px solid #D8D8D8
         margin-left: -5px
+        align-content: center
+        align-items: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        gap: 80px
         &:last-child
             background-image: url('/assets/img/bg3.png')
         &:nth-child(3)
@@ -48,29 +54,25 @@
             border-radius: 10px
 
     &__title
-        @include font(45px , #FFFFFF , light)
+        @include font(35px , #FFFFFF , light)
         padding-left: 27px
-        padding-top: 60px
+        text-align: center
 
         @media (max-width:769px)
-            @include font(30px , #FFFFFF , light)
+            @include font(28px , #FFFFFF , light)
             text-align: center
-            padding-top: 25px
 
     &__number
-        @include font(100px , #FFFFFF , kanit-light)
+        @include font(100px , #FFFFFF , light)
         text-align: center
-        padding-top: 50px
 
         @media (max-width:769px)
-            @include font(78px , #FFFFFF , kanit-light)
-            padding-top: 30px
+            @include font(65px , #FFFFFF , light)
 
     &__numberText
-        @include font(100px , #FFFFFF , kanit-light)
+        @include font(100px , #FFFFFF , light)
         text-align: center
-        padding-top: 100px
+        padding-top: 25px
 
         @media (max-width:769px)
-            @include font(80px , #FFFFFF , kanit-light)
-            padding-top: 30px
+            @include font(65px , #FFFFFF , light)

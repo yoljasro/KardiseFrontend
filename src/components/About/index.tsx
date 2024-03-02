@@ -16,8 +16,8 @@ export const About: FC<any> = () => {
             <Fade left cascade>
                 <div className={styles.about__info}>
                     <p className={styles.about__title}>О НАС </p>
-                    <p className={styles.about__desc}>C нашими знаниями <br />
-                        мы гарантируем успех</p>
+                    <p className={styles.about__desc}>C нашими знаниями и опытом мы <br />
+                         гарантируем успех</p>
                     <p className={styles.about__speed}>НАДЕЖНОСТЬ. КАЧЕСТВО.  СКОРОСТЬ.</p>
                     <p className={styles.about__company}>KARDISE реализует проекты в о всех регионах Узбекистана, а также в странах СНГ. Компания образованав 1997году, и сегодня численность рабочихи служащих превышает 800человек.</p>
                     <div className={styles.about__btn}>

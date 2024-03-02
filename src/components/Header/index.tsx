@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./index.module.sass";
 import { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { Btn } from "../Btn";
 import { Zoom, Fade } from "react-reveal";
@@ -14,19 +15,17 @@ export const Header: FC<any> = () => {
                     <p className={styles.header__text}>Лидер - в сфере проектирования и строительства</p>
                 </Fade>
                 <div className={styles.header__btn}>
+                    <Link href={'/about'}>
                     <Btn />
+                    </Link>
                 </div>
             </div>
             <Fade bottom cascade>
                 <div className={styles.header__cards}>
-                    <div className={styles.header__card}>
-                        <p className={styles.header__title}>13+</p>
-                        <p className={styles.header__subTitle}>Завершенные Проекты</p>
-                    </div>
 
                     <div className={styles.header__cardTwo}>
-                        <p className={styles.header__title}>40+</p>
-                        <p className={styles.header__subTitle}>ИТР </p>
+                        <p className={styles.header__title}>26+</p>
+                        <p className={styles.header__subTitle}>Лет Опыта</p>
                     </div>
                     <div className={styles.header__directions}>
                         <p className={styles.header__companyText}>Основными направлениями деятельности компании KARDISE являются:</p>

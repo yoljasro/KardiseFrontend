@@ -41,7 +41,6 @@ export const Clients: FC<any> = () => {
         <>
             <Fade cascade>
                 <div className={styles.client}>
-                    <p className={styles.client__title}>НАМ ДОВЕРЯЮТ  </p>
                     <p className={styles.client__subTitle}>Наши Проекты</p>
                     <div className={styles.client__cards}>
                         {clients.map((client: Client) => (

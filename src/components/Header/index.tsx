@@ -35,24 +35,24 @@ export const Header: FC<any> = () => {
                         <p className={styles.header__title}>40+</p>
                         <p className={styles.header__subTitle}>Лет Опыта</p>
                     </div>
-                        <div className={styles.header__directions}>
-                            <p className={styles.header__companyText}>Основными направлениями
-                                деятельности компании KARDISE являются:</p>
-                            <div className={styles.header__content}>
-                                <div className={styles.header__media}>
-                                    <Image src={'/assets/img/shape.svg'} alt="shape" width={61} height={63} />
-                                    <p className={styles.header__subInfo}>Строительство и девелопмент</p>
-                                </div>
-                                <div className={styles.header__media}>
-                                    <Image src={'/assets/img/ruler.svg'} alt="shape" width={61} height={63} />
-                                    <p className={styles.header__subInfo}>Инвестиции в землю</p>
-                                </div>
-                                <div className={styles.header__media}>
-                                    <Image src={'/assets/img/measuring-tool.svg'} alt="shape" width={61} height={63} />
-                                    <p className={styles.header__subInfo}>Инвестиции в сфере обслуживание <br />   машин и механизмов</p>
-                                </div>
+                    <div className={styles.header__directions}>
+                        <p className={styles.header__companyText}>Основными направлениями
+                            деятельности компании KARDISE являются:</p>
+                        <div className={styles.header__content}>
+                            <div className={styles.header__media}>
+                                <Image src={'/assets/img/shape.svg'} alt="shape" width={61} height={63} />
+                                <p className={styles.header__subInfo}>Проектирования  </p>
+                            </div>
+                            <div className={styles.header__media}>
+                                <Image src={'/assets/img/ruler.svg'} alt="shape" width={61} height={63} />
+                                <p className={styles.header__subInfo}>Монтаж </p>
+                            </div>
+                            <div className={styles.header__media}>
+                                <Image src={'/assets/img/measuring-tool.svg'} alt="shape" width={61} height={63} />
+                                <p className={styles.header__subInfo}>Строительство</p>
                             </div>
                         </div>
+                    </div>
                 </div>
             </Fade>
         </div>

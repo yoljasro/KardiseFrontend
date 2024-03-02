@@ -29,6 +29,9 @@ export const Contact: FC<any> = () => {
                         </p>
                 </div>
             </Fade >
+            <div className={styles.contact__adress}>
+                <p>8A, Ташкентская кольцевая автомобильная дорога</p>
+            </div>
 
 
             <div className={styles.contact__socials}>

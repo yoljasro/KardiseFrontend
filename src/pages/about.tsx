@@ -29,7 +29,7 @@ const About: FC<any> = () => {
                     <div className={styles.about__background}>
                         <p className={styles.about__title}>О нас</p>
                         {/* <Zoom cascade > */}
-                        <div className={styles.about__card}>
+                        {/* <div className={styles.about__card}>
                             <div className={styles.about__line}>
                                 <p className={styles.about__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ </p>
                                 <p className={styles.about__number}>
@@ -43,7 +43,7 @@ const About: FC<any> = () => {
                                     </a>
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </Zoom>
                 <Group />

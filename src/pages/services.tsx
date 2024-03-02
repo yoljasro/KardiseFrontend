@@ -25,7 +25,7 @@ const Services: FC<any> = () => {
                 <Zoom cascade>
                     <div className={styles.services__background}>
                         <p className={styles.services__title}>Услуги</p>
-                        <div className={styles.services__card}>
+                        {/* <div className={styles.services__card}>
                             <div className={styles.services__line}>
                                 <p className={styles.services__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ </p>
                                 <p className={styles.services__number}>
@@ -39,7 +39,7 @@ const Services: FC<any> = () => {
                                     </a>
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </Zoom>
 

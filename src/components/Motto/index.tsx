@@ -14,6 +14,8 @@ import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { GrStatusGood } from "react-icons/gr";
 import { MdAccessTime } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
+import { MdViewTimeline } from "react-icons/md";
+import { GiTrophyCup } from "react-icons/gi"
 
 export const Motto: FC<any> = () => {
     return (
@@ -23,21 +25,19 @@ export const Motto: FC<any> = () => {
                     <p className={styles.motto__name}>Наш девиз</p>
                     <p className={styles.motto__title}>«Будущее берет старт в настоящем»</p>
                 </Fade>
-                {/* <Btn /> */}
-            </div>
-            <Fade bottom cascade>
+                <Fade bottom cascade>
                 <div className={styles.motto__cards}>
                     <div className={styles.motto__card}>
                         <div className={styles.motto__icon}>
                             <VscWorkspaceTrusted />
-                        </div>
+                           </div>
                         <div className={styles.motto__cardInfo}>
                             <p className={styles.motto__cardTitle}>НАДЕЖНОСТЬ</p>
                         </div>
                     </div>
                     <div className={styles.motto__card}>
                         <div className={styles.motto__icon}>
-                            <GrStatusGood />
+                            <GiTrophyCup  />
                         </div>
                         <div className={styles.motto__cardInfo}>
                             <p className={styles.motto__cardTitle}>КАЧЕСТВО</p>
@@ -53,6 +53,7 @@ export const Motto: FC<any> = () => {
                     </div>
                 </div>
             </Fade>
+            </div>
         </div>
     );
 };

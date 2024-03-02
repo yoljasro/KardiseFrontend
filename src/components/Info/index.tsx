@@ -13,7 +13,7 @@ import { Rotate, Flip, Fade, Zoom } from "react-reveal";
 export const Info: FC<any> = () => {
   return (
     <div className={styles.info}>
-      <div>
+      <div className={styles.info__container}>
         <div className={styles.info__content}>
           <Zoom cascade>
             <p className={styles.info__text}>Компания KARDISE - многопрофильная структура, масштабы бизнеса которой выходят за рамки исключительно девелоперской деятельности.
@@ -46,7 +46,7 @@ export const Info: FC<any> = () => {
         </div>
       </div>
 
-      <div className={styles.info__mediaCards}>
+      {/* <div className={styles.info__mediaCards}>
         <div className={styles.info__card}>
           <Image src={'/assets/img/ruler.svg'} alt="ruler" width={78} height={75} />
           <p className={styles.info__cardTitle}>Строительная группа</p>
@@ -71,7 +71,7 @@ export const Info: FC<any> = () => {
               Инженер слаботочных систем - 3 человека.</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

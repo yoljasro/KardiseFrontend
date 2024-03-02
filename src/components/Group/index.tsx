@@ -17,7 +17,7 @@ export const Group: FC<any> = () => {
                 <div className={styles.group}>
                     <div className={styles.group__person}>
                         <div className={styles.group__card}>
-                            <p className={styles.group__cardTitle}>40+</p>
+                            <p className={styles.group__cardTitle}>26+</p>
                             <p className={styles.group__cardSubTitle}>ГОДЫ ОПЫТА </p>
                         </div>
                     </div>
@@ -28,7 +28,6 @@ export const Group: FC<any> = () => {
                                 <p className={styles.group__desc}>Мы предоставляем лучшее <br /> обслуживание клиентов</p>
                                 <div className={styles.group__storyCard}>
                                     <p className={styles.group__storyCardInfo}>Историянашегоразвития—это иллюстрация прочных и надежных стремлений нашей созидательной работы, многогранной трудовой деятельности коллектива компании,того,как мы постепенно продвигаясь,смогли предвидетьи просчитать будущие шаг и на многое годы вперед.</p>
-                                    <p className={styles.group__storyCardName}> Kardise group</p>
                                 </div>
                             </div>
                         </Fade>

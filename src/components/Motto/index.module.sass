@@ -17,9 +17,10 @@
         height: 773px
         display: flex
         flex-direction: column
-        justify-content: center
+        // justify-content: center
         align-items: center
         max-width: 1920px
+        padding-top: 120px
 
         @media (max-width:769px)
             text-align: center
@@ -28,33 +29,32 @@
             height: 820px
 
     &__name
-        @include font(60px , #FFFFFF, light)
-        font-family: Verdana, Geneva, Tahoma, sans-serif !important
+        @include font(25px , #FFFFFF, light)
 
         @media (max-width:769px)
-            @include font(45px , #FFFFFF, light)
+            @include font(17px , #FFFFFF, light)
 
     &__title
-        @include font(17px , #FFFFFF , light)
-        font-family: Verdana, Geneva, Tahoma, sans-serif !important
+        @include font(70px , #FFFFFF , light)
         padding-top: 20px
 
         @media (max-width:769px)
-            @include font(16px , #FFFFFF, light)
+            @include font(35px , #FFFFFF, light)
 
     &__cards
         display: flex
         justify-content: center
+        flex-direction: column
         align-content: center
         align-items: center
         width: 100%
-        flex-wrap: wrap
-        gap: 18px
+        gap: 80px
+        margin-top: 120px
 
         @media (max-width:769px)
             flex-direction: column
             gap: 80px
-            margin-top: -390px
+            margin-top: 130px
 
     &__card
         width: 100%

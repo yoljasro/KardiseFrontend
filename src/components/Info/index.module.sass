@@ -24,11 +24,14 @@
         flex-wrap: nowrap
         padding-right: 30px
 
+    &__container
+        display: flex
+        gap: 150px
+
     &__content
         width: 100%
         max-width: 623px
-        @include font(16px  , #000000 , regular)
-        font-family: Verdana, Geneva, Tahoma, sans-serif !important
+        @include font(18px  , #000000 , light)
 
         @media (max-width:769px)
             @include font(16px  , #000000 , light)
@@ -40,9 +43,7 @@
     &__contentTwo
         width: 100%
         max-width: 623px
-        @include font(16px  , #000000 , regular)
-        font-family: Verdana, Geneva, Tahoma, sans-serif !important
-        margin-top: 47px
+        @include font(18px  , #000000 , light)
 
         @media (max-width:769px)
             @include font(15px  , #000000 , light)

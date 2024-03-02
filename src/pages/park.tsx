@@ -26,7 +26,7 @@ const Park: FC<any> = () => {
                 <Zoom cascade>
                     <div className={styles.park__background}>
                         <p className={styles.park__title}>Парк Техники</p>
-                        <div className={styles.park__card}>
+                        {/* <div className={styles.park__card}>
                             <div className={styles.park__line}>
                                 <p className={styles.park__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ </p>
                                 <p className={styles.park__number}>
@@ -40,7 +40,7 @@ const Park: FC<any> = () => {
                                     </a>
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </Zoom>
 

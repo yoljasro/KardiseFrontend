@@ -32,9 +32,9 @@ export default function Home() {
         <Construction/>
         {/* <Process/> */}
         <ProjectsLogo/>
-        <Projects/>
+        {/* <Projects/> */}
         <Clients/>
-        <Location/>
+        {/* <Location/> */}
       </main>
     </>
   );

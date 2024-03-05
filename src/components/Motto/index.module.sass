@@ -24,7 +24,7 @@
         @media (max-width:769px)
             text-align: center
             justify-content: start
-            padding-top: 80px
+            padding-top: 80px   
             height: 820px
             flex-direction: column
 
@@ -35,11 +35,12 @@
         position: relative
         left: 150px
         width: 100%
-        // padding-top: -50px
         margin-top: -200px
 
         @media (max-width:769px)
             padding-top: 20px
+            margin-top: 0
+            left: 0
 
     &__name
         @include font(25px , #FFFFFF, regular)
@@ -53,7 +54,8 @@
         padding-top: 30px
 
         @media (max-width:769px)
-            @include font(35px , #FFFFFF, light)
+            @include font(30px , #FFFFFF, light)
+            text-align: center
 
     &__cards
         display: flex

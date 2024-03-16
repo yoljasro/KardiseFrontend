@@ -36,11 +36,18 @@ export const Contact: FC<any> = () => {
 
             <div className={styles.contact__socials}>
                 <Rotate cascade>
+                    <Link target="_blank" href={'https://www.instagram.com/kardisedevelopment/'}>
                     <GrInstagram className={styles.contact__icon} />
+                    </Link>
+                    <Link  target="_blank" href={'https://fb.com/KardiseDevelopment'}>
                     <FaFacebookF className={styles.contact__icon} />
-                    {/* <FaLinkedinIn className={styles.contact__icon} /> */}
+                    </Link>
+                    <Link target="_blank" href={'https://t.me/kardise_engineering'}>
                     <FaTelegram className={styles.contact__icon} />
+                    </Link>
+                    <Link target="_blank" href={'https://www.youtube.com/watch?v=TDo1OF0_bMM'}>
                     <FaYoutube className={styles.contact__icon} />
+                    </Link>
                 </Rotate>
 
             </div>

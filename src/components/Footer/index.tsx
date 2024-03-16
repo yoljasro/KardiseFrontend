@@ -35,10 +35,18 @@ export const Footer: FC<any> = () => {
                         </Fade>
                         <Rotate cascade>
                             <div className={styles.footer__social}>
-                                <div className={styles.footer__circle}><GrInstagram className={styles.footer__circle__icon} /></div>
-                                <div className={styles.footer__circle}><FaFacebookF className={styles.footer__circle__icon} /></div>
-                                <div className={styles.footer__circle}><FaTelegram className={styles.footer__circle__icon} /></div>
-                                <div className={styles.footer__circle}><FaYoutube className={styles.footer__circle__icon} /></div>
+                                <Link target="_blank" href={'https://www.instagram.com/kardisedevelopment/'}>
+                                    <div className={styles.footer__circle}><GrInstagram className={styles.footer__circle__icon} /></div>
+                                </Link>
+                                <Link target="_blank" href={'https://fb.com/KardiseDevelopment'}>
+                                    <div className={styles.footer__circle}><FaFacebookF className={styles.footer__circle__icon} /></div>
+                                </Link>
+                                <Link target="_blank" href={'https://t.me/kardise_engineering'}>
+                                    <div className={styles.footer__circle}><FaTelegram className={styles.footer__circle__icon} /></div>
+                                </Link>
+                                <Link target="_blank" href={'https://www.youtube.com/watch?v=TDo1OF0_bMM'}>
+                                    <div className={styles.footer__circle}><FaYoutube className={styles.footer__circle__icon} /></div>
+                                </Link>
                             </div>
                         </Rotate>
                         <p className={styles.footer__reserved}>KARDISE © Все права защищены. Авторские права 2024.</p>

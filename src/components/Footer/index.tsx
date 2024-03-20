@@ -23,15 +23,21 @@ export const Footer: FC<any> = () => {
                             <p className={styles.footer__subTitle}>ENGINEERING</p>
                             <p className={styles.footer__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ</p>
                             <p className={styles.footer__phone}>
+                                <a href="tel:+998933895439">
+                                    + 998 93 389 54 39
+                                </a>
+                            </p>
+                            <p className={styles.footer__phone}>
                                 <a href="tel:+998933891312">
                                     + 998 93 389 13 12
                                 </a>
                             </p>
                             <p className={styles.footer__phone}>
-                                <a href="tel:+998933895439">
-                                    + 998 93 389 54 39
+                                <a href="tel:+998712955213">
+                                    + 998 71 295 52 13
                                 </a>
                             </p>
+
                         </Fade>
                         <Rotate cascade>
                             <div className={styles.footer__social}>

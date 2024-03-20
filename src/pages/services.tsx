@@ -21,57 +21,43 @@ const Services: FC<any> = () => {
                 <link rel="icon" href="/assets/img/logo.png" />
             </Head>
             <Zoom cascade>
-            <div className={styles.services}>
+                <div className={styles.services}>
                     <div className={styles.services__background}>
                         <p className={styles.services__title}>Услуги</p>
                     </div>
 
-                <Zoom bottom cascade>
-                    <div className={styles.services__cards}>
-                        <div className={styles.services__content}>
-                            <Image src={'/assets/img/service1.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
-                            <div className={styles.services__info}>
-                                <p className={styles.services__cardName}>Услуга I</p>
-                                <Fade right cascade>
-                                    <p className={styles.services__cardType}>cтроительство объектов жилья, социальных
-                                        объектов и коммерческой недвижимости</p>
-                                </Fade>
+                    <Zoom bottom cascade>
+                        <div className={styles.services__cards}>
+                            <div className={styles.services__content}>
+                                <Image src={'/assets/img/service1.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
+                                <div className={styles.services__info}>
+                                    <p className={styles.services__cardName}>Проектирование.</p>
+                                    <Fade right cascade>
+                                    </Fade>
+                                </div>
+
                             </div>
 
-                        </div>
-
-                        <div className={styles.services__content}>
-                            <div className={styles.services__info}>
-                                <p className={styles.services__cardName}>Услуга II</p>
-                                <Fade right cascade>
-                                    <p className={styles.services__cardType}>оформление земельных участков под строительство</p>
-                                </Fade>
+                            <div className={styles.services__content}>
+                                <div className={styles.services__info}>
+                                    <p className={styles.services__cardName}>Поставка строительных материалов и оборудования.</p>
+                                    <Fade right cascade>
+                                    </Fade>
+                                </div>
+                                <Image src={'/assets/img/service2.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
                             </div>
-                            <Image src={'/assets/img/service2.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
-                        </div>
 
-                        <div className={styles.services__content}>
-                            <Image src={'/assets/img/service3.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
-                            <div className={styles.services__info}>
-                                <p className={styles.services__cardName}>Услуга III</p>
-                                <Fade right cascade>
-                                    <p className={styles.services__cardType}>проектные и архитектурные работы</p>
-                                </Fade>
+                            <div className={styles.services__content}>
+                                <Image src={'/assets/img/service3.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
+                                <div className={styles.services__info}>
+                                    <p className={styles.services__cardName}>Строительно-Монтажные работы.</p>
+                                    <Fade right cascade>
+                                    </Fade>
+                                </div>
                             </div>
                         </div>
-
-                        <div className={styles.services__content}>
-                            <div className={styles.services__info}>
-                                <p className={styles.services__cardName}>Услуга IV</p>
-                                <Fade right cascade>
-                                    <p className={styles.services__cardType}>строительно-монтажные работы</p>
-                                </Fade>
-                            </div>
-                            <Image src={'/assets/img/service4.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
-                        </div>
-                    </div>
-                </Zoom>
-            </div >
+                    </Zoom>
+                </div >
             </Zoom>
         </>
     );

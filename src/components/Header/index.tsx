@@ -45,7 +45,7 @@ export const Header: FC<any> = () => {
                             </div>
                             <div className={styles.header__media}>
                                 <Image src={'/assets/img/ruler.svg'} alt="shape" width={61} height={63} />
-                                <p className={styles.header__subInfo}>Монтаж </p>
+                                <p className={styles.header__subInfo}>Поставка строительных материалов и оборудования </p>
                             </div>
                             <div className={styles.header__media}>
                                 <Image src={'/assets/img/measuring-tool.svg'} alt="shape" width={61} height={63} />

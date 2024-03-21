@@ -7,7 +7,7 @@
     background-size: cover
     background-repeat: no-repeat
     backdrop-filter: blur(30px)
-    max-width: 1920px
+    // max-width: 1920px
     @media (max-width:769px)
         padding: 0px 5px
 
@@ -17,8 +17,8 @@
         align-items: center
 
     &__info
-        padding-top: 267px
-        padding-left: 370px
+        padding-top: 50px
+        // padding-left: 200px
         @media (max-width:769px)
             padding-left: 0
             padding-top: 100px
@@ -45,18 +45,17 @@
             display: flex
 
     &__text
-        @include font(40px , #FFFFFF , regular)
+        @include font(40px , #000 , regular)
         width: 100%
-        max-width: 850px
-        text-align: left
+        text-align: center
         @media (max-width:769px)
-            @include font(35px , #FFFFFF ,light )
+            @include font(39px , #000 ,light )
             text-align: center
 
         @media (min-width:1000px) and (max-width:1200px)
             text-align: center
             justify-content: center
-            @include font(50px , #FFFFFF ,light )
+            @include font(50px , #000 ,light )
             max-width: 900px
             padding-left: 150px
 
@@ -64,7 +63,7 @@
         display: flex
         justify-content: center
         width: 100%
-        margin-top: 391px
+        margin-top: 800px
         @media (max-width:769px)
             margin-top: 80px
             flex-direction: column

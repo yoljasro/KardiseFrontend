@@ -8,7 +8,7 @@
     align-content: center
     align-items: center
     margin-top: 15px
-    max-width: 1920px 
+    // max-width: 1920px
 
     @media (max-width:769px)
         width: 100%
@@ -18,8 +18,9 @@
 
     &__background
         width: 100%
-        background-image: url('/assets/img/about.png')
-        background-size: cover
+        background-image: url('/assets/img/command3.png')
+        background-size: contain
+        object-fit: fill
         background-repeat: no-repeat
         height: 419px
         max-width: 1920px
@@ -32,17 +33,18 @@
             align-items: center
             height: 300px
             width: 100%
+            background-size: cover
 
     &__title
-        @include font(55px , #FFFFFF , light)
-        padding-top: 155px
-        padding-left: 371px
+        @include font(55px , #000 , light)
+        padding-top: 400px
+        // padding-left: 371px
+        text-align: center
 
         @media (max-width:769px)
             text-align: center
-            padding-left: 0
-            padding-top: 25px
-            @include font(45px , #FFFFFF , light)
+            padding-top: 250px
+            @include font(45px , #000  , light)
 
     &__card
         width: 100%

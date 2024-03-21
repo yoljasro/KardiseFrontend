@@ -17,14 +17,8 @@ export const Header: FC<any> = () => {
         <div className={styles.header}>
             <div className={styles.header__info}>
                 <Fade left cascade>
-
                     <p className={styles.header__text}>Лидер - в сфере проектирования и строительства</p>
                 </Fade>
-                <div className={styles.header__btn}>
-                    <Link href={'/about'}>
-                        <Btn />
-                    </Link>
-                </div>
             </div>
             <Fade bottom cascade>
                 <div className={styles.header__cards}>

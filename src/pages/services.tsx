@@ -29,7 +29,7 @@ const Services: FC<any> = () => {
                     <Zoom bottom cascade>
                         <div className={styles.services__cards}>
                             <div className={styles.services__content}>
-                                <Image src={'/assets/img/service1.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
+                                <Image src={'/assets/img/projector.png'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
                                 <div className={styles.services__info}>
                                     <p className={styles.services__cardName}>Проектирование.</p>
                                     <Fade right cascade>
@@ -44,11 +44,11 @@ const Services: FC<any> = () => {
                                     <Fade right cascade>
                                     </Fade>
                                 </div>
-                                <Image src={'/assets/img/service2.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
+                                <Image src={'/assets/img/bars.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
                             </div>
 
                             <div className={styles.services__content}>
-                                <Image src={'/assets/img/service3.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
+                                <Image src={'/assets/img/montaj2.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
                                 <div className={styles.services__info}>
                                     <p className={styles.services__cardName}>Строительно-Монтажные работы.</p>
                                     <Fade right cascade>

@@ -86,7 +86,7 @@ export const ProjectsLogo: React.FC = () => {
               ))}
             </Carousel>
           ) : (
-            <p>Rasmlar yuklanmoqda...</p>
+            <p>Loading images</p>
           )
           }
         </div >

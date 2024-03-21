@@ -33,17 +33,19 @@ const Park: FC<any> = () => {
                                 <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                                 <div className={styles.park__info}>
                                     <p className={styles.park__cardName}>КРАН ZOOMLION QY55V</p>
-                                    <div className={styles.park__statistics}>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className={styles.park__content}>
-                                <div className={styles.park__info}>
                                     <p className={styles.park__cardName}>KPAH ZOOMLION QY35V</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div className={styles.park__content}>
+                                <div className={styles.park__info}>
+                                    <p className={styles.park__cardName}>САМОСВАЛ HOWO 6X4 20M3</p>
+                                    <p className={styles.park__cardName}>САМОСВАЛ МАЗ 5551</p>
+                                    <div className={styles.park__statistics}>
+                                    </div>
+                                </div>
                                 <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                             </div>
 
@@ -51,7 +53,8 @@ const Park: FC<any> = () => {
                             <div className={styles.park__content}>
                                 <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                                 <div className={styles.park__info}>
-                                    <p className={styles.park__cardName}>САМОСВАЛ HOWO 6X4 20M3</p>
+                                    <p className={styles.park__cardName}>ЭКСКАВАТОР DOSAN DX140</p>
+                                    <p className={styles.park__cardName}>ЭКСКАВАТОР DOSAN DX210</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
@@ -59,7 +62,25 @@ const Park: FC<any> = () => {
 
                             <div className={styles.park__content}>
                                 <div className={styles.park__info}>
-                                    <p className={styles.park__cardName}>ЭКСКАВАТОР DOSAN DX140</p>
+                                    <p className={styles.park__cardName}>ВИБРОКАТОК  XCMG XS143J</p>
+                                    <div className={styles.park__statistics}>
+                                    </div>
+                                </div>
+                                <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
+                            </div>
+
+                            <div className={styles.park__content}>
+                                <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
+                                <div className={styles.park__info}>
+                                    <p className={styles.park__cardName}>СЕДЕЛЬНЫЙ ТЯГАЧ HOWO 6X4</p>
+                                    <div className={styles.park__statistics}>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={styles.park__content}>
+                                <div className={styles.park__info}>
+                                    <p className={styles.park__cardName}>ПОГРУЗЧИК ДОСАН SD300</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>

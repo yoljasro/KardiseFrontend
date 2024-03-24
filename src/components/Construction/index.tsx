@@ -19,7 +19,7 @@ export const Construction: FC<any> = () => {
                 <Zoom top cascade>
                     <div className={styles.construction__card}>
                         <p className={styles.construction__title}>Проектная группа</p>
-                        <p className={styles.construction__number}>30+</p>
+                        <p className={styles.construction__number}>30+ </p>
                     </div>
                 </Zoom>
                 <Zoom top cascade>

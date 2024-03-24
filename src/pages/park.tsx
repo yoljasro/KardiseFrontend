@@ -30,7 +30,7 @@ const Park: FC<any> = () => {
                     <Fade bottom cascade>
                         <div className={styles.park__cards}>
                             <div className={styles.park__content}>
-                                <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
+                                <Image src={'/assets/img/park01.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                                 <div className={styles.park__info}>
                                     <p className={styles.park__cardName}>КРАН ZOOMLION QY55V</p>
                                     <p className={styles.park__cardName}>KPAH ZOOMLION QY35V</p>
@@ -46,12 +46,12 @@ const Park: FC<any> = () => {
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
-                                <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
+                                <Image src={'/assets/img/park06.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                             </div>
 
 
                             <div className={styles.park__content}>
-                                <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
+                                <Image src={'/assets/img/park02.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                                 <div className={styles.park__info}>
                                     <p className={styles.park__cardName}>ЭКСКАВАТОР DOSAN DX140</p>
                                     <p className={styles.park__cardName}>ЭКСКАВАТОР DOSAN DX210</p>
@@ -66,11 +66,11 @@ const Park: FC<any> = () => {
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
-                                <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
+                                <Image src={'/assets/img/park05.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                             </div>
 
                             <div className={styles.park__content}>
-                                <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
+                                <Image src={'/assets/img/park04.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                                 <div className={styles.park__info}>
                                     <p className={styles.park__cardName}>СЕДЕЛЬНЫЙ ТЯГАЧ HOWO 6X4</p>
                                     <div className={styles.park__statistics}>
@@ -84,7 +84,7 @@ const Park: FC<any> = () => {
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
-                                <Image src={'/assets/img/park.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
+                                <Image src={'/assets/img/park03.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                             </div>
                         </div>
                     </Fade>

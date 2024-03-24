@@ -15,7 +15,7 @@ export const About: FC<any> = () => {
         <div className={styles.about}>
             <Fade left cascade>
                 <div className={styles.about__info}>
-                    <p className={styles.about__title}>О НАС </p>
+                    <p className={styles.about__title}>О  НАС </p>
                     <p className={styles.about__desc}>C нашими знаниями и опытом мы <br />
                         гарантируем успех</p>
                     <p className={styles.about__speed}>НАДЕЖНОСТЬ. КАЧЕСТВО.  СКОРОСТЬ.</p>

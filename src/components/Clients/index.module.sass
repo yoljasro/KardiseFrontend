@@ -9,14 +9,11 @@
     overflow-x: hidden
     overflow-y: hidden
 
-    &__title
-        @include font(14px , #B4C634 , light)
-        text-align: center
-
     &__subTitle
         @include font(55px , #16213E , light)
         text-align: center
         padding-top: 10px
+        padding-bottom: 50px
 
         @media (max-width:769px)
             @include font(40px , #16213E , light)
@@ -39,8 +36,6 @@
         // background-image: url("/assets/img/uzumPage.png")
         background-size: cover
         background-repeat: no-repeat
-        // position: relative
-        // top: 100px
 
         @media (max-width:769px)
             width: 95%
@@ -48,8 +43,9 @@
 
     &__videoPlay
         position: relative
-        top: 100px
+        top: 0
         border-radius: 10px
+        max-width: 100% // Changed width to max-width
 
     &__videoTitle
         @include font(24px , black , light)
@@ -70,13 +66,13 @@
         cursor: pointer
         background-color: black
         position: relative
-        top: -150px
+        top: -270px
         &:hover
             background: green
             transition: 0.3s ease
 
         @media (max-width:769px)
-            top: -70px
+            top: -160px
 
         &:hover &__triangle
             border-left: 30px solid red

@@ -77,7 +77,7 @@ export const ProjectsLogo: React.FC = () => {
                 <div key={index} className={styles.projectsLogo__logos}>
                   <img
                     // className={styles.projectLogo__logo}
-                    src={`http://152.42.162.108${logo.image}`}
+                    src={`https://api.kardise.com${logo.image}`}
                     alt={`Logo ${index + 1}`}
                     width="100%"
                     height="auto"

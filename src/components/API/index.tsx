@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { ApiResponse, ClientsResponse , ProjectLogoResponse } from '../../types'; // O'zgartirish kerak
 
-const apiUrl = 'http://152.42.162.108'; // BaseUrl
+const apiUrl = 'https://api.kardise.com'; // BaseUrl
 const projectsEndpoint = '/projects'; // Backend projects endPoint
 const clientsEndpoint = '/clients'; // Backend clients endPoint
 const mottoEndpoint = '/motto'; // Backend motto endpoint

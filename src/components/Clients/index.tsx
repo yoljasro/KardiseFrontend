@@ -1,5 +1,3 @@
-// index.tsx yoki index.js fayl
-
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./index.module.sass";
 import { Client } from '../../types';
@@ -47,7 +45,7 @@ export const Clients: FC<any> = () => {
                             <div className={styles.client__videos} key={client._id}>
                                 <div className={styles.client__video} onClick={handleVideoClick}>
                                     <video ref={videoRef} className={styles.client__videoPlay} width="100%" height="500">
-                                        <source src={`http://152.42.162.108${client.video}`} type="video/mp4" />
+                                        <source src={`https://api.kardise.com${client.video}`} type="video/mp4" />
                                     </video>
                                     <div className={styles.client__play}>
                                         <div className={styles.client__play__triangle}></div>

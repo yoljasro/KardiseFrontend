@@ -64,10 +64,10 @@ export const ProjectsLogo: React.FC = () => {
               infinite={true}
               rewindWithAnimation={true}
               autoPlay={true}                // Enable automatic scrolling
-              autoPlaySpeed={1500}           // Set the speed (in milliseconds)
+              autoPlaySpeed={2000}           // Set the speed (in milliseconds)
               // rewindWithAnimation={true}
               keyBoardControl={true}
-              customTransition="all .6"
+              customTransition="all .8"
               transitionDuration={0}
               containerClass="carousel-container"
               dotListClass="custom-dot-list-style"

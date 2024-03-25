@@ -8,7 +8,6 @@
     align-content: center
     align-items: center
     margin-top: 15px
-    // max-width: 1920px
 
     @media (max-width:769px)
         width: 100%
@@ -19,11 +18,11 @@
     &__background
         width: 100%
         background-image: url('/assets/img/command3.png')
-        background-size: contain
-        object-fit: fill
+        background-size: cover
+        background-position: center
         background-repeat: no-repeat
-        height: 419px
-        max-width: 1920px
+        height: auto 
+        max-width: 100%
 
         @media (max-width:769px)
             display: flex
@@ -31,14 +30,13 @@
             justify-content: center
             align-content: center
             align-items: center
-            height: 300px
+            height: auto 
             width: 100%
-            background-size: cover
+            background-size: cover !important
 
     &__title
         @include font(55px , #000 , light)
         padding-top: 400px
-        // padding-left: 371px
         text-align: center
 
         @media (max-width:769px)

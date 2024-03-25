@@ -44,7 +44,7 @@ const Services: FC<any> = () => {
                                     <Fade right cascade>
                                     </Fade>
                                 </div>
-                                <Image src={'/assets/img/bars.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
+                                <Image src={'/assets/img/bars-min.jpg'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
                             </div>
 
                             <div className={styles.services__content}>

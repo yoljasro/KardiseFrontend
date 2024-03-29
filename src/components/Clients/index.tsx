@@ -7,15 +7,15 @@ import { Fade } from "react-reveal";
 
 export const Clients: FC<any> = () => {
     const [clients, setClients] = useState<any>([]);
-    const videoRefs = useRef<HTMLVideoElement[]>([]); // Alohwda ref'lar massivi
+    const videoRefs = useRef<(HTMLVideoElement | null)[]>([]); // Massivdagi har bir element ref'ni yoki null'ni saqlaydi
 
     const handleVideoClick = (index: number) => () => { // Indeks orqali alohida funksiya ochish
         const video = videoRefs.current[index];
 
-        if (video.paused) {
-            video.play().then(() => video.requestFullscreen());
-        } else {
+        if (video && !video.paused) { // Videoni to'g'ri obyekt bo'lib bo'lishini va to'xtatilmaganligini tekshirish
             video.pause();
+        } else if (video) {
+            video.play().then(() => video.requestFullscreen());
         }
     };
 

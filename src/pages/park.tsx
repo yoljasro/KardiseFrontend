@@ -86,6 +86,26 @@ const Park: FC<any> = () => {
                                 </div>
                                 <Image src={'/assets/img/park03.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                             </div>
+
+                            <div className={styles.park__content}>
+                            <Image src={'/assets/img/grader1.jpg'} alt="parkmage" className={styles.park__image} width={589} height={433} />
+                                <div className={styles.park__info}>
+                                    <p className={styles.park__cardName}>LUIGONG 4180 ГРЕЙДЕР ТЯЖЕЛОГО КЛАССА</p>
+                                    <div className={styles.park__statistics}>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={styles.park__content}>
+                                <div className={styles.park__info}>
+                                    <p className={styles.park__cardName}>LUIGONG B160C БУЛЬДОЗЕР</p>
+                                    <div className={styles.park__statistics}>
+                                    </div>
+                                </div>
+                                <Image src={'/assets/img/buldozer.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
+                            </div>
+
+
                         </div>
                     </Fade>
                 </div >

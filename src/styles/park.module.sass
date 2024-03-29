@@ -106,6 +106,13 @@
 
     &__content
         display: flex
+        @media (max-width:769px)
+            &:nth-last-child(5)
+                flex-direction: column-reverse
+            &:nth-last-child(3)
+                flex-direction: column-reverse
+            &:nth-last-child(1)
+                flex-direction: column-reverse
 
         @media (max-width:769px)
             flex-direction: column
@@ -147,7 +154,7 @@
         @include font(28px , #FFFFFF , light)
 
         @media (max-width:769px)
-            @include font(20px , #FFFFFF , light)
+            @include font(18px , #FFFFFF , light)
             text-align: center
 
     &__statistics

@@ -18,7 +18,7 @@
 
     &__background
         width: 100%
-        background-image: url('/assets/img/service5.png')
+        background-image: url('/assets/img/service5mini.png')
         background-size: cover
         background-repeat: no-repeat
         height: 419px
@@ -112,6 +112,10 @@
             width: 100%
             gap: 15px
 
+            &:nth-last-child(2)
+                flex-direction: column-reverse
+                
+
     &__image
         width: 100% !important
         max-width: 589px !important
@@ -141,6 +145,8 @@
 
     &__cardName
         @include font(30px , #FFFFFF , light)
+        @media (max-width:769px)
+            @include font(26px , #FFFFFF , light)
 
     &__cardType
         @include font(24px , #FFFFFF , light)

@@ -7,17 +7,15 @@ import { Fade } from "react-reveal";
 
 export const Clients: FC<any> = () => {
     const [clients, setClients] = useState<any>([]);
-    const videoRef = useRef<HTMLVideoElement>(null);
+    const videoRefs = useRef<HTMLVideoElement[]>([]); // Alohwda ref'lar massivi
 
-    const handleVideoClick = () => {
-        if (videoRef.current) {
-            const video = videoRef.current;
+    const handleVideoClick = (index: number) => () => { // Indeks orqali alohida funksiya ochish
+        const video = videoRefs.current[index];
 
-            if (video.paused) {
-                video.play().then(() => video.requestFullscreen());
-            } else {
-                video.pause();
-            }
+        if (video.paused) {
+            video.play().then(() => video.requestFullscreen());
+        } else {
+            video.pause();
         }
     };
 
@@ -26,7 +24,6 @@ export const Clients: FC<any> = () => {
             try {
                 const data = await clientsAPI();
                 setClients(data || []);
-                console.log(data);
             } catch (error) {
                 console.error('Error fetching clients:', error);
             }
@@ -41,10 +38,10 @@ export const Clients: FC<any> = () => {
                 <div className={styles.client}>
                     <p className={styles.client__subTitle}>Наши Проекты</p>
                     <div className={styles.client__cards}>
-                        {clients.map((client: Client) => (
+                        {clients.map((client: Client, index: number) => ( // Indeks sifatida index qo'shildi
                             <div className={styles.client__videos} key={client._id}>
-                                <div className={styles.client__video} onClick={handleVideoClick}>
-                                    <video ref={videoRef} className={styles.client__videoPlay} width="100%" height="500">
+                                <div className={styles.client__video} onClick={handleVideoClick(index)}> {/* Alohwda funksiya chaqirilishi */}
+                                    <video ref={(ref) => videoRefs.current[index] = ref} className={styles.client__videoPlay} width="100%" height="500">
                                         <source src={`https://api.kardise.com${client.video}`} type="video/mp4" />
                                     </video>
                                     <div className={styles.client__play}>

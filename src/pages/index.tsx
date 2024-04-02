@@ -14,6 +14,7 @@ import { Process } from "../components/Process";
 import {Projects} from "../components/Projects";
 import { Clients } from "../components/Clients";
 import { ProjectsLogo } from "../components/ProjectsLogo";
+import type { NextPage, GetStaticProps } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,3 +40,11 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      messages: (await import(`../messages/${locale}.json`)).default,
+    },
+  };
+};

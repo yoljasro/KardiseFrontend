@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 //styles
 import styles from "./index.module.sass";
 // FC
@@ -11,8 +11,22 @@ import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube, FaInstagram, FaTelegra
 import { GrInstagram } from "react-icons/gr";
 // react reveal
 import { Fade, Zoom, Flip, Rotate } from "react-reveal";
+import { useRouter } from "next/router";
+import { useTranslations } from "next-intl";
 
 export const Contact: FC<any> = () => {
+    const t = useTranslations();
+    const router = useRouter();
+    const [selectedLang, setSelectedLang] = useState(router.locale);
+
+
+    useEffect(() => {
+        if (selectedLang) {
+            router.push(router.asPath, undefined, {
+                locale: selectedLang,
+            });
+        }
+    }, [selectedLang]);
     return (
         <div className={styles.contact}>
             <Fade left cascade>
@@ -54,7 +68,12 @@ export const Contact: FC<any> = () => {
                         <FaYoutube className={styles.contact__icon} />
                     </Link>
                 </Rotate>
-
+                <select value={selectedLang}
+                    onChange={(e) => setSelectedLang(e.target.value)} className={styles.contact__select}>
+                    <option value="ru">ru</option>
+                    <option value="en">en</option>
+                    <option value="uz">uz</option>
+                </select>
             </div>
         </div >
     );

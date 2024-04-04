@@ -36,13 +36,13 @@
 
     &__socials
         display: flex
-        gap: 40px
+        gap: 30px
         color: #495251
         cursor: pointer
 
     &__adress
         @include font(13px ,#41444B, light )
-        text-align: center
+        text-align: center 
 
     &__icon
         font-size: 20px
@@ -50,3 +50,12 @@
         &:hover
             transform: scale(1.2) !important
             transition: 0.6s ease !important
+
+    &__select
+        border: none
+        outline: none
+        @include font(18px , #41444B , regular)
+        cursor: pointer
+
+        & option 
+            cursor: pointer !important

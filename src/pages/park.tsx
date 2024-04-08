@@ -19,7 +19,7 @@ const Park: FC<any> = () => {
                 <title>Park Technician</title>
                 <meta name="description" content="Kardise Park Technician page" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/assets/img/logo.png" />
+                <link rel="icon" href="/assets/img/logoseo.png" />+
             </Head>
 
             <Zoom cascade>

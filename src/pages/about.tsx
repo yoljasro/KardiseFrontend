@@ -21,7 +21,7 @@ const About: FC<any> = () => {
                 <title>About Page</title>
                 <meta name="description" content="Kardise About Page" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/assets/img/logo.png" />
+                <link rel="icon" href="/assets/img/logoseo.png" />
             </Head>
             <Zoom cascade>
             <div className={styles.about}>

@@ -18,7 +18,7 @@ const Services: FC<any> = () => {
                 <title>Services Page</title>
                 <meta name="description" content="Kardise Services Page" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/assets/img/logo.png" />
+                <link rel="icon" href="/assets/img/logoseo.png" />
             </Head>
             <Zoom cascade>
                 <div className={styles.services}>

@@ -25,7 +25,7 @@ export default function Home() {
         <title>Kardise</title>
         <meta name="description" content="Kardise Company Official web site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/assets/img/logo.png" />
+        <link rel="icon" href="/assets/img/logoseo.png" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
          <Header/>

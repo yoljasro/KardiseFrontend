@@ -11,8 +11,10 @@ import { FaTwitter, FaFacebookF, FaLinkedinIn, FaYoutube, FaTelegram } from "rea
 import { GrInstagram } from "react-icons/gr"
 // react-reveal
 import { Rotate, Flip, Zoom, Fade } from "react-reveal";
+import { useTranslations } from "next-intl";
 
 export const Footer: FC<any> = () => {
+    const t = useTranslations()
     return (
         <>
             <Fade cascade>
@@ -21,7 +23,7 @@ export const Footer: FC<any> = () => {
                         <Fade left cascade>
                             <p className={styles.footer__title}>KARDISE</p>
                             <p className={styles.footer__subTitle}>ENGINEERING</p>
-                            <p className={styles.footer__call}>ПОЗВОНИТЕ НАМ СЕГОДНЯ</p>
+                            <p className={styles.footer__call}>{t("footer.call")}</p>
                             <p className={styles.footer__phone}>
                                 <a href="tel:+998933895439">
                                     + 998 93 389 54 39
@@ -59,22 +61,22 @@ export const Footer: FC<any> = () => {
                     </div>
                     <div className={styles.footer__links}>
                         <Rotate cascade>
-                            <p className={styles.footer__menu}>Быстрые ссылки</p>
+                            <p className={styles.footer__menu}>{t("footer.links")}</p>
                             <ul className={styles.footer__nav}>
                                 <li>
                                     <Link className={styles.footer__link} href={'/about'}>
-                                        О нас
+                                    {t("footer.about")}
                                     </Link>
                                 </li>
                                 <li>
                                     <Link className={styles.footer__link} href={'/services'}>
-                                        Услуги
+                                    {t("footer.services")}
                                     </Link>
                                 </li>
 
                                 <li>
                                     <Link className={styles.footer__link} href={'/park'}>
-                                        Парк Техники
+                                    {t("footer.park")}
                                     </Link>
                                 </li>
                             </ul>

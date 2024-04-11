@@ -12,8 +12,11 @@ import { Info } from "../components/Info";
 // react-reveal
 import { Rotate, Flip, Fade, Zoom } from "react-reveal";
 import Head from "next/head";
+import { GetStaticProps } from "next";
+import { useTranslations } from "next-intl";
 
 const About: FC<any> = () => {
+    const t = useTranslations()
     return (
         <>
 
@@ -26,7 +29,7 @@ const About: FC<any> = () => {
             <Zoom cascade>
             <div className={styles.about}>
                     <div className={styles.about__background}>
-                        <p className={styles.about__title}>О нас</p>
+                        <p className={styles.about__title}>{t("footer.about")}</p>
                         {/* <Zoom cascade > */}
                         {/* <div className={styles.about__card}>
                             <div className={styles.about__line}>
@@ -54,3 +57,11 @@ const About: FC<any> = () => {
 };
 
 export default About;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+    return {
+      props: {
+        messages: (await import(`../messages/${locale}.json`)).default,
+      },
+    };
+  };

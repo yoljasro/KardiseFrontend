@@ -9,9 +9,12 @@ import Link from "next/link";
 // react-reveal
 import { Rotate, Flip, Fade, Zoom, Reveal } from "react-reveal";
 import Head from "next/head";
+import { GetStaticProps } from "next";
+import { useTranslations } from "next-intl";
 
 
 const Park: FC<any> = () => {
+    const t = useTranslations()
     return (
         <>
 
@@ -25,15 +28,15 @@ const Park: FC<any> = () => {
             <Zoom cascade>
                 <div className={styles.park}>
                     <div className={styles.park__background}>
-                        <p className={styles.park__title}>Парк Техники</p>
+                        <p className={styles.park__title}>{t("footer.park")}</p>
                     </div>
                     <Fade bottom cascade>
                         <div className={styles.park__cards}>
                             <div className={styles.park__content}>
                                 <Image src={'/assets/img/park01.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                                 <div className={styles.park__info}>
-                                    <p className={styles.park__cardName}>КРАН ZOOMLION QY55V</p>
-                                    <p className={styles.park__cardName}>KPAH ZOOMLION QY35V</p>
+                                    <p className={styles.park__cardName}>{t("park.first")}</p>
+                                    <p className={styles.park__cardName}>{t("park.second")}</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
@@ -41,8 +44,8 @@ const Park: FC<any> = () => {
 
                             <div className={styles.park__content}>
                                 <div className={styles.park__info}>
-                                    <p className={styles.park__cardName}>САМОСВАЛ HOWO 6X4 20M3</p>
-                                    <p className={styles.park__cardName}>САМОСВАЛ МАЗ 5551</p>
+                                    <p className={styles.park__cardName}>{t("park.third")}</p>
+                                    <p className={styles.park__cardName}>{t("park.fourth")}</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
@@ -53,8 +56,8 @@ const Park: FC<any> = () => {
                             <div className={styles.park__content}>
                                 <Image src={'/assets/img/park02.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                                 <div className={styles.park__info}>
-                                    <p className={styles.park__cardName}>ЭКСКАВАТОР DOSAN DX140</p>
-                                    <p className={styles.park__cardName}>ЭКСКАВАТОР DOSAN DX210</p>
+                                    <p className={styles.park__cardName}>{t("park.five")}</p>
+                                    <p className={styles.park__cardName}>{t("park.six")}</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
@@ -62,7 +65,7 @@ const Park: FC<any> = () => {
 
                             <div className={styles.park__content}>
                                 <div className={styles.park__info}>
-                                    <p className={styles.park__cardName}>ВИБРОКАТОК  XCMG XS143J</p>
+                                    <p className={styles.park__cardName}>{t("park.seven")}</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
@@ -72,7 +75,7 @@ const Park: FC<any> = () => {
                             <div className={styles.park__content}>
                                 <Image src={'/assets/img/park04.png'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                                 <div className={styles.park__info}>
-                                    <p className={styles.park__cardName}>СЕДЕЛЬНЫЙ ТЯГАЧ HOWO 6X4</p>
+                                    <p className={styles.park__cardName}>{t("park.eight")}</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
@@ -80,7 +83,7 @@ const Park: FC<any> = () => {
 
                             <div className={styles.park__content}>
                                 <div className={styles.park__info}>
-                                    <p className={styles.park__cardName}>ПОГРУЗЧИК ДОСАН SD300</p>
+                                    <p className={styles.park__cardName}>{t("park.nine")}</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
@@ -90,7 +93,7 @@ const Park: FC<any> = () => {
                             <div className={styles.park__content}>
                             <Image src={'/assets/img/grader1.jpg'} alt="parkmage" className={styles.park__image} width={589} height={433} />
                                 <div className={styles.park__info}>
-                                    <p className={styles.park__cardName}>LUIGONG 4180 ГРЕЙДЕР ТЯЖЕЛОГО КЛАССА</p>
+                                    <p className={styles.park__cardName}>{t("park.ten")}</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
@@ -98,7 +101,7 @@ const Park: FC<any> = () => {
 
                             <div className={styles.park__content}>
                                 <div className={styles.park__info}>
-                                    <p className={styles.park__cardName}>LUIGONG B160C БУЛЬДОЗЕР</p>
+                                    <p className={styles.park__cardName}>{t("park.x")}</p>
                                     <div className={styles.park__statistics}>
                                     </div>
                                 </div>
@@ -115,3 +118,11 @@ const Park: FC<any> = () => {
 };
 
 export default Park;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+    return {
+      props: {
+        messages: (await import(`../messages/${locale}.json`)).default,
+      },
+    };
+  };

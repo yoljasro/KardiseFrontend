@@ -9,17 +9,19 @@ import Link from "next/link";
 // react icons
 import { Btn } from "../Btn";
 import { Fade, Zoom } from "react-reveal";
+import { useTranslations } from "next-intl";
 
 export const About: FC<any> = () => {
+    const t = useTranslations();
+
     return (
         <div className={styles.about}>
             <Fade left cascade>
                 <div className={styles.about__info}>
-                    <p className={styles.about__title}>О  НАС </p>
-                    <p className={styles.about__desc}>C нашими знаниями и опытом мы <br />
-                        гарантируем успех</p>
-                    <p className={styles.about__speed}>НАДЕЖНОСТЬ. КАЧЕСТВО.  СКОРОСТЬ.</p>
-                    <p className={styles.about__company}>KARDISE реализует проекты во всех регионах Узбекистана. Компания образована в 1997 году, на сегодняшний день численность сотрудников включая Инженерно-Технических рабочих составляет более 800 человек.</p>
+                    <p className={styles.about__title}>{t("about.title")} </p>
+                    <p className={styles.about__desc}>{t("about.desc")}</p>
+                    <p className={styles.about__speed}>{t("about.speed")}</p>
+                    <p className={styles.about__company}>{t("about.info")}</p>
                     <div className={styles.about__btn}>
                         <Link href={'/about'}>
                             <Btn />

@@ -9,8 +9,11 @@ import Link from "next/link";
 // react-reveal
 import { Rotate, Flip, Fade, Zoom } from "react-reveal";
 import Head from "next/head";
+import { GetStaticProps } from "next";
+import { useTranslations } from "next-intl";
 
 const Services: FC<any> = () => {
+    const t = useTranslations()
     return (
         <>
 
@@ -23,7 +26,7 @@ const Services: FC<any> = () => {
             <Zoom cascade>
                 <div className={styles.services}>
                     <div className={styles.services__background}>
-                        <p className={styles.services__title}>Услуги</p>
+                        <p className={styles.services__title}>{t("footer.services")}</p>
                     </div>
 
                     <Zoom bottom cascade>
@@ -31,7 +34,7 @@ const Services: FC<any> = () => {
                             <div className={styles.services__content}>
                                 <Image src={'/assets/img/projector.png'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
                                 <div className={styles.services__info}>
-                                    <p className={styles.services__cardName}>Проектирование.</p>
+                                    <p className={styles.services__cardName}>{t("header.project")}</p>
                                     <Fade right cascade>
                                     </Fade>
                                 </div>
@@ -40,7 +43,7 @@ const Services: FC<any> = () => {
 
                             <div className={styles.services__content}>
                                 <div className={styles.services__info}>
-                                    <p className={styles.services__cardName}>Поставка строительных материалов и оборудования.</p>
+                                    <p className={styles.services__cardName}>{t("header.supply")}</p>
                                     <Fade right cascade>
                                     </Fade>
                                 </div>
@@ -50,7 +53,7 @@ const Services: FC<any> = () => {
                             <div className={styles.services__content}>
                                 <Image src={'/assets/img/montaj.png'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
                                 <div className={styles.services__info}>
-                                    <p className={styles.services__cardName}>Строительно-Монтажные работы.</p>
+                                    <p className={styles.services__cardName}>{t("info.installation")}</p>
                                     <Fade right cascade>
                                     </Fade>
                                 </div>
@@ -64,3 +67,11 @@ const Services: FC<any> = () => {
 };
 
 export default Services;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+    return {
+      props: {
+        messages: (await import(`../messages/${locale}.json`)).default,
+      },
+    };
+  };

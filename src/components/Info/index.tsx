@@ -9,35 +9,37 @@ import Link from "next/link";
 import { Btn } from "../Btn";
 // react-reveal
 import { Rotate, Flip, Fade, Zoom } from "react-reveal";
+import { useTranslations } from "next-intl";
 
 export const Info: FC<any> = () => {
+  const t = useTranslations();
+
   return (
     <div className={styles.info}>
       <div className={styles.info__container}>
         <div className={styles.info__content}>
           <Zoom cascade>
-            <p className={styles.info__text}>Компания KARDISE - многопрофильная структура, масштабы <br /> бизнеса которой выходят за рамки исключительно девелоперской деятельности.
-              Деятельность группы сфокусирована на нескольких бизнес-направлениях:</p>
+            <p className={styles.info__text}>{t("info.title")}</p>
           </Zoom>
           <ul className={styles.info__list}>
             <Fade left cascade>
-              <li>Проектирование. </li>
-              <li>Строительство промышленных и гражданских обьектов.</li>
-              <li>Полный спектр проектно-инженерных работ.</li>
+              <li>{t("info.project")}</li>
+              <li>{t("info.build")}</li>
+              <li>{t("info.work")}</li>
             </Fade>
           </ul>
         </div>
 
         <div className={styles.info__contentTwo}>
           <Zoom cascade>
-            <p className={styles.info__text}>Основными направлениями деятельности компании KARDISE <br /> являются:</p>
+            <p className={styles.info__text}>{t("info.activities")}</p>
           </Zoom>
           <ul className={styles.info__list}>
-              <li>Проектирование. </li>
-              <li>Строительно-монтажные работы.</li>
-              <li>Устройство инженерии и телекоммуникаций.</li>
-              <li>Отделочные работы и благоустройство территорий.</li>
-              <li>Производство металических и железо-бетонных конструкций.</li>
+              <li>{t("info.project")}. </li>
+              <li>{t("info.installation")}</li>
+              <li>{t("info.injener")}</li>
+              <li>{t("info.landscape")}</li>
+              <li>{t("info.production")}.</li>
           </ul>
         </div>
       </div>

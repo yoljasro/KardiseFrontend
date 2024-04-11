@@ -1,3 +1,75 @@
 {
-    "test" : "uz test"
+    "adress": "Bektemir tumani, Chirchiq Buyi ko'chasi-16",
+    "menu": {
+        "about": "Biz haqimizda",
+        "services": "Xizmatlar",
+        "park": "Texnika parki"
+    },
+    "header": {
+        "title": "Dizayn va qurilish sohasida lider",
+        "project": "Dizayn",
+        "supply": "Qurilish materiallari va texnikasi ta'minoti",
+        "build": "Qurilish",
+        "location": "Manzil",
+        "skill": "Tajribaviy yillar"
+    },
+    "about": {
+        "title": "BIZ HAQIMIZDA",
+        "desc": "Bilim va tajribamiz bilan muvaffaqiyatni ta'minlaymiz",
+        "speed": "ISLOHOT. SIFAT. TEZLIK.",
+        "info": "KARDISE O'zbekistonning barcha mintaqalarida loyihalarni amalga oshiradi. Kompaniya 1997-yilda tashkil etilgan bo'lib, bugungi kunda inzhener-texnik xodimlar bilan birga ishlaydigan xodimlar soni 800 dan ortiq.",
+        "btn": "KO'PROQ MA'LUMOT"
+    },
+    "construction": {
+        "project": "Dizayn guruh",
+        "content": "Injener-texnik xodimlar",
+        "group": "Qurilish guruh",
+        "clients": "Bizning mijozlarimiz",
+        "projects": "Bizning loyihalarimiz"
+    },
+    "footer": {
+        "logoname": "KARDISE MUXANDISLIK",
+        "call": "BUGUN BIZGA QO'NG'IROQ QILING",
+        "links": "Tezkor havolalar",
+        "about": "Biz haqimizda",
+        "services": "Xizmatlar",
+        "park": "Texnika parki"
+    },
+    "group": {
+        "clients": "Biz eng yaxshi mijoz xizmatini taqdim etamiz",
+        "info": "Bizning rivojlanish tariximiz, bizning yaratqich ish faoliyatimizning kuchli va ishonchli g'amxo'rlarini tasvirlaydi, kompaniyamiz jamoasi tomonidan ko'rsatilgan murakkab va ko'p tomonlama faoliyatining tarixi, qadam-darajani qanday qilib oldindan ko'rib, ko'plab yillar oldin keladigan kelajak harakatlarni ko'rsatadi.",
+        "experience": "Tajribaviy yillar"
+    },
+    "motto": {
+        "title": "Bizning devizimiz",
+        "name": "«Kelajak hozir boshlanadi»",
+        "reality": "ISLOHOT",
+        "quality": "SIFAT",
+        "speed": "TEZLIK"
+    },
+    "info": {
+        "title": "KARDISE kompaniyasi faqatgina rivojlanish faoliyati bilan cheklangan biznes struktura, yagona rivojlanish faoliyati bilan cheklangan biznes struktura emas. Guruhning faoliyatini bir nechta biznes yo'nalishiga fokuslashgan:",
+        "project": "Dizayn.",
+        "build": "Sanoat va fuqarolik obyektlarining qurilishi.",
+        "work": "To'liq qat'iyot va injenerlik ishlarining to'liq spektri.",
+        "activities": "KARDISE kompaniyasining asosiy faoliyat yo'nalishlari:",
+        "installation": "Qurilish va o'rnatish ishlari.",
+        "injener": "Injiniring va kommunikatsiya vositalarini o'rnatish.",
+        "landscape": "Tayyorlash ishlari va maydonni yaxshilash.",
+        "production": "Metall va armatura konstruksiyalar ishlab chiqarish.",
+        "supply": "Qurilish materiallari va texnikasi ta'minoti."
+    },
+    "park": {
+        "first": "ZOOMLION QY55V KRAN",
+        "second": "ZOOMLION QY35V KRAN",
+        "third": "HOWO 6X4 20M3 TOSHUV MASHINASI",
+        "fourth": "MAZ 5551 TOSHUV MASHINASI",
+        "five": "DOSAN DX140 ESKAVATOR",
+        "six": "DOSAN DX210 ESKAVATOR",
+        "seven": "XCMG XS143J YOL LAYNERI",
+        "eight": "HOWO 6X4 TRAKTOR BIRIKMASI",
+        "nine": "DOSAN SD300 NAVVAT",
+        "ten": "LUIGONG 4180 OG'IRKLAR UCHUN YUQORI SINFLI GRADER",
+        "x": "LUIGONG B160C BULDOZER"
+    }
 }

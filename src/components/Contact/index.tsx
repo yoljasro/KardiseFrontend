@@ -49,7 +49,7 @@ export const Contact: FC<any> = () => {
                 </div>
             </Fade >
             <div className={styles.contact__adress}>
-                <p>Бектемирский район, Улица Чирчик Буи-16</p>
+                <p>{t("adress")}</p>
             </div>
 
 

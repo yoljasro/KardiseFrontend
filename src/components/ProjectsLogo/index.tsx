@@ -12,6 +12,7 @@ import styles from './index.module.sass'
 // react-reveal
 import { Zoom } from 'react-reveal';
 import Image from 'next/image';
+import { useTranslations } from "next-intl";
 
 
 const responsive = {
@@ -33,6 +34,7 @@ const responsive = {
 };
 
 export const ProjectsLogo: React.FC = () => {
+  const t = useTranslations()
   const [projectLogos, setProjectLogos] = useState<any>([]);
 
   useEffect(() => {
@@ -52,7 +54,7 @@ export const ProjectsLogo: React.FC = () => {
     <>
       <Zoom top cascade>
         <div className={styles.projectsLogo}>
-          <p className={styles.projectsLogo__subTitle}>Наши Клиенты</p>
+          <p className={styles.projectsLogo__subTitle}>{t("construction.clients")}</p>
           {projectLogos.length > 0 ? (
             <Carousel
               className={styles.projectLogo__carousel}

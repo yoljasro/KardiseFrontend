@@ -1,3 +1,75 @@
 {
-    "test" : "ru test"
+    "adress": "Bektemir District, Chirchik Buyi Street-16",
+    "menu": {
+        "about": "About Us",
+        "services": "Services",
+        "park": "Equipment Park"
+    },
+    "header": {
+        "title": "Leader in Design and Construction Sphere",
+        "project": "Design",
+        "supply": "Supply of Building Materials and Equipment",
+        "build": "Construction",
+        "location": "Location",
+        "skill": "Years of Experience"
+    },
+    "about": {
+        "title": "ABOUT US",
+        "desc": "With our knowledge and experience, we guarantee success",
+        "speed": "RELIABILITY. QUALITY. SPEED.",
+        "info": "KARDISE implements projects in all regions of Uzbekistan. The company was founded in 1997, and today the number of employees, including engineering and technical staff, exceeds 800 people.",
+        "btn": "LEARN MORE"
+    },
+    "construction": {
+        "project": "Design Group",
+        "content": "Engineering and Technical Staff",
+        "group": "Construction Group",
+        "clients": "Our Clients",
+        "projects": "Our Projects"
+    },
+    "footer": {
+        "logoname": "KARDISE ENGINEERING",
+        "call": "CALL US TODAY",
+        "links": "Quick Links",
+        "about": "About Us",
+        "services": "Services",
+        "park": "Equipment Park"
+    },
+    "group": {
+        "clients": "We provide the best customer service",
+        "info": "The history of our development is an illustration of the strong and reliable aspirations of our constructive work, the multifaceted work of the company's team, how gradually, moving forward, we were able to foresee and plan future steps for many years ahead.",
+        "experience": "YEARS OF EXPERIENCE"
+    },
+    "motto": {
+        "title": "Our Motto",
+        "name": "“The future starts now”",
+        "reality": "RELIABILITY",
+        "quality": "QUALITY",
+        "speed": "SPEED"
+    },
+    "info": {
+        "title": "The KARDISE company is a diversified structure, the scale of whose business goes beyond exclusively developer activities. The group's activities are focused on several business areas:",
+        "project": "Design.",
+        "build": "Construction of industrial and civil facilities.",
+        "work": "A full range of design and engineering work.",
+        "activities": "The main directions of KARDISE company's activities are:",
+        "installation": "Construction and installation works.",
+        "injener": "Installation of engineering and telecommunications.",
+        "landscape": "Finishing works and landscaping.",
+        "production": "Production of metal and reinforced concrete structures.",
+        "supply": "Supply of building materials and equipment."
+    },
+    "park": {
+        "first": "ZOOMLION QY55V CRANE",
+        "second": "ZOOMLION QY35V CRANE",
+        "third": "HOWO 6X4 20M3 DUMP TRUCK",
+        "fourth": "MAZ 5551 DUMP TRUCK",
+        "five": "DOSAN DX140 EXCAVATOR",
+        "six": "DOSAN DX210 EXCAVATOR",
+        "seven": "XCMG XS143J ROAD ROLLER",
+        "eight": "HOWO 6X4 TRACTOR UNIT",
+        "nine": "DOSAN SD300 LOADER",
+        "ten": "LUIGONG 4180 HEAVY-DUTY GRADER",
+        "x": "LUIGONG B160C BULLDOZER"
+    }
 }

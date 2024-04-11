@@ -9,8 +9,10 @@ import Link from "next/link";
 import { Btn } from "../Btn";
 // react-reveal
 import { Rotate, Flip, Fade, Zoom } from "react-reveal";
+import { useTranslations } from "next-intl";
 
 export const Group: FC<any> = () => {
+    const t = useTranslations()
     return (
         <>
             <Zoom cascade>
@@ -18,16 +20,16 @@ export const Group: FC<any> = () => {
                     <div className={styles.group__person}>
                         <div className={styles.group__card}>
                             <p className={styles.group__cardTitle}>26+</p>
-                            <p className={styles.group__cardSubTitle}>ГОДЫ ОПЫТА </p>
+                            <p className={styles.group__cardSubTitle}>{t("group.clients")} </p>
                         </div>
                     </div>
                     <>
                         <Fade bottom cascade>
                             <div className={styles.group__info}>
-                                <p className={styles.group__title}>О НАС </p>
-                                <p className={styles.group__desc}>Мы предоставляем лучшее <br /> обслуживание клиентов</p>
+                                <p className={styles.group__title}> {t("footer.about")}</p>
+                                <p className={styles.group__desc}>{t("group.clients")}</p>
                                 <div className={styles.group__storyCard}>
-                                    <p className={styles.group__storyCardInfo}>История нашего развития— иллюстрация прочных и надежных стремлений нашей созидательной работы, многогранной трудовой деятельности коллектива компании, того, как мы постепенно продвигаясь, смогли предвидеть и просчитать будущие шаги на многое годы вперед.</p>
+                                    <p className={styles.group__storyCardInfo}>{t("group.info")}</p>
                                 </div>
                             </div>
                         </Fade>

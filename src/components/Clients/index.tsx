@@ -4,8 +4,10 @@ import { Client } from '../../types';
 import { clientsAPI } from '../API';
 import { FC } from "react";
 import { Fade } from "react-reveal";
+import { useTranslations } from "next-intl";
 
 export const Clients: FC<any> = () => {
+    const t = useTranslations()
     const [clients, setClients] = useState<any>([]);
     const videoRefs = useRef<(HTMLVideoElement | null)[]>([]); // Massivdagi har bir element ref'ni yoki null'ni saqlaydi
 
@@ -36,7 +38,7 @@ export const Clients: FC<any> = () => {
         <>
             <Fade cascade>
                 <div className={styles.client}>
-                    <p className={styles.client__subTitle}>Наши Проекты</p>
+                    <p className={styles.client__subTitle}>{t("construction.projects")}</p>
                     <div className={styles.client__cards}>
                         {clients.map((client: Client, index: number) => ( // Indeks sifatida index qo'shildi
                             <div className={styles.client__videos} key={client._id}>

@@ -3,14 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import anime, { AnimeInstance } from "animejs"
 import styles from "./index.module.sass";
-
 //react-reveal
 import Zoom from 'react-reveal/Zoom'
 import Fade from 'react-reveal/Fade'
-
-
+import { useTranslations } from "next-intl";
 
 export const Nav: FC<any> = () => {
+  const t = useTranslations();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navRef = useRef(null);
 
@@ -70,17 +69,17 @@ export const Nav: FC<any> = () => {
           <Zoom cascade>
             <Link className={styles.nav__link} onClick={closeMenu} href={"/about"}>
               <li className={styles.nav__li}>
-                O нас</li>
+               {t("menu.about")}</li>
             </Link>
           </Zoom>
           <Zoom cascade>
             <Link className={styles.nav__link} onClick={closeMenu} href={"/services"}>
-              <li className={styles.nav__li}>Услуги</li>
+              <li className={styles.nav__li}>{t("menu.services")}</li>
             </Link>
           </Zoom>
           <Zoom cascade>
             <Link className={styles.nav__link} onClick={closeMenu} href={"/park"}>
-              <li className={styles.nav__li}>Парк Техники</li>
+              <li className={styles.nav__li}>{t("menu.park")}</li>
             </Link>
           </Zoom>
 

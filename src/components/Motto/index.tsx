@@ -16,15 +16,17 @@ import { MdAccessTime } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
 import { MdViewTimeline } from "react-icons/md";
 import { GiTrophyCup } from "react-icons/gi"
+import { useTranslations } from "next-intl";
 
 export const Motto: FC<any> = () => {
+    const t = useTranslations()
     return (
         <div className={styles.motto}>
             <div className={styles.motto__background}>
                 <Fade left cascade>
                     <div className={styles.motto__content}>
-                    <p className={styles.motto__name}>Наш девиз</p>
-                    <p className={styles.motto__title}>«Будущее берет старт в настоящем»</p>
+                    <p className={styles.motto__name}>{t("motto.title")}</p>
+                    <p className={styles.motto__title}>{t("motto.name")}</p>
                     </div>
                 </Fade>
                 <Fade bottom cascade>
@@ -34,7 +36,7 @@ export const Motto: FC<any> = () => {
                             <VscWorkspaceTrusted />
                            </div>
                         <div className={styles.motto__cardInfo}>
-                            <p className={styles.motto__cardTitle}>НАДЕЖНОСТЬ</p>
+                            <p className={styles.motto__cardTitle}>{t("motto.reality")}</p>
                         </div>
                     </div>
                     <div className={styles.motto__card}>
@@ -42,7 +44,7 @@ export const Motto: FC<any> = () => {
                             <GiTrophyCup  />
                         </div>
                         <div className={styles.motto__cardInfo}>
-                            <p className={styles.motto__cardTitle}>КАЧЕСТВО</p>
+                            <p className={styles.motto__cardTitle}>{t("motto.quality")}</p>
                         </div>
                     </div>
                     <div className={styles.motto__card}>
@@ -50,7 +52,7 @@ export const Motto: FC<any> = () => {
                             <MdAccessTime />
                         </div>
                         <div className={styles.motto__cardInfo}>
-                            <p className={styles.motto__cardTitle}>СКОРОСТЬ</p>
+                            <p className={styles.motto__cardTitle}>{t("motto.speed")}</p>
                         </div>
                     </div>
                 </div>

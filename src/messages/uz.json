@@ -11,7 +11,8 @@
         "supply": "Qurilish materiallari va texnikasi ta'minoti",
         "build": "Qurilish",
         "location": "Manzil",
-        "skill": "Tajribaviy yillar"
+        "skill": "Tajribaviy yillar",
+        "projects": "Dizayn"
     },
     "about": {
         "title": "BIZ HAQIMIZDA",

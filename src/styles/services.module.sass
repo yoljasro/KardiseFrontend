@@ -100,6 +100,8 @@
         justify-content: center
         align-content: center
         align-items: center
+        @media (max-width:769px)
+            gap: 15px   
 
     &__content
         display: flex
@@ -110,7 +112,7 @@
             align-content: center
             align-items: center
             width: 100%
-            gap: 15px
+            // gap: 1px
 
             &:nth-last-child(2)
                 flex-direction: column-reverse

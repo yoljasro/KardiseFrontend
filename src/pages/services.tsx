@@ -34,7 +34,7 @@ const Services: FC<any> = () => {
                             <div className={styles.services__content}>
                                 <Image src={'/assets/img/projector.png'} alt="serviceImage" className={styles.services__image} width={589} height={433} />
                                 <div className={styles.services__info}>
-                                    <p className={styles.services__cardName}>{t("header.project")}</p>
+                                    <p className={styles.services__cardName}>{t("header.projects")}</p>
                                     <Fade right cascade>
                                     </Fade>
                                 </div>

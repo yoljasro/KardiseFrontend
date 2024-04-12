@@ -11,7 +11,8 @@
         "supply": "Supply of Building Materials and Equipment",
         "build": "Construction",
         "location": "Location",
-        "skill": "Years of Experience"
+        "skill": "Years of Experience",
+        "projects" : "Design"
     },
     "about": {
         "title": "ABOUT US",
